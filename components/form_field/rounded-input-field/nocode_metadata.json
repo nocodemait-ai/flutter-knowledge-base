@@ -1,0 +1,15 @@
+{
+  "id": "rounded-input-field",
+  "type": "component",
+  "name": "Rounded Input Field",
+  "description": "Customisable rounded text-input field widget with icon prefix.",
+  "component_type": "form_field",
+  "domain": "generic",
+  "source_repo": "awesome-flutter-ui-master",
+  "tags": [
+    "input",
+    "form",
+    "rounded",
+    "text-field"
+  ]
+}

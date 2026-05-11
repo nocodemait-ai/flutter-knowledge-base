@@ -1,0 +1,14 @@
+{
+  "id": "search-app-bar",
+  "type": "component",
+  "name": "Search App Bar",
+  "description": "App bar with integrated search field and animated transition.",
+  "component_type": "app_bar",
+  "domain": "generic",
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "app-bar",
+    "search",
+    "animation"
+  ]
+}

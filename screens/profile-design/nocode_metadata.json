@@ -1,0 +1,15 @@
+{
+  "id": "profile-design",
+  "type": "screen",
+  "name": "Profile Design Screen",
+  "description": "Alternative profile design with distinct visual treatment.",
+  "screen_type": "detail",
+  "domain": "social",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "profile",
+    "social",
+    "design"
+  ]
+}

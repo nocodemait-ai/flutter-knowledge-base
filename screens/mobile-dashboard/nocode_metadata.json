@@ -1,0 +1,15 @@
+{
+  "id": "mobile-dashboard",
+  "type": "screen",
+  "name": "Mobile Dashboard Screen",
+  "description": "General-purpose mobile dashboard with stats and overview cards.",
+  "screen_type": "dashboard",
+  "domain": "generic",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "dashboard",
+    "stats",
+    "cards"
+  ]
+}

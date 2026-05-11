@@ -1,0 +1,14 @@
+{
+  "id": "titled-bottom-bar",
+  "type": "component",
+  "name": "Titled Bottom Bar",
+  "description": "Bottom navigation bar that shows titles alongside icons.",
+  "component_type": "nav_bar",
+  "domain": "generic",
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "nav",
+    "bottom",
+    "titled"
+  ]
+}

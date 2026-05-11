@@ -1,0 +1,15 @@
+{
+  "id": "profile-challenge",
+  "type": "screen",
+  "name": "Profile Challenge Screen",
+  "description": "Creative profile screen with animated avatar and stats.",
+  "screen_type": "detail",
+  "domain": "social",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "profile",
+    "social",
+    "avatar"
+  ]
+}

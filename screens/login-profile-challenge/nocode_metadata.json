@@ -1,0 +1,15 @@
+{
+  "id": "login-profile-challenge",
+  "type": "screen",
+  "name": "Login Profile Challenge Screen",
+  "description": "Combined login and profile challenge screen.",
+  "screen_type": "auth",
+  "domain": "social",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "login",
+    "profile",
+    "auth"
+  ]
+}

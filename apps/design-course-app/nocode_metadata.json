@@ -1,0 +1,35 @@
+{
+  "id": "design-course-app",
+  "type": "app",
+  "name": "Design Course App",
+  "description": "Education app for design courses with ratings, cards and detail views.",
+  "domain": "education",
+  "app_type": "reader",
+  "source_repo": "Best-Flutter-UI-Templates-master",
+  "screens": [
+    {
+      "id": "course-home",
+      "name": "Course Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "course-detail",
+      "name": "Course Detail",
+      "screen_type": "detail"
+    }
+  ],
+  "packages": [
+    "font_awesome_flutter",
+    "flutter_rating_bar"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  },
+  "tags": [
+    "education",
+    "courses",
+    "rating",
+    "design"
+  ]
+}

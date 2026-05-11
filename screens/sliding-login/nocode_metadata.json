@@ -1,0 +1,16 @@
+{
+  "id": "sliding-login",
+  "type": "screen",
+  "name": "Sliding Login Screen",
+  "description": "Login screen with sliding panel animation between login and signup.",
+  "screen_type": "auth",
+  "domain": "generic",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "login",
+    "auth",
+    "sliding",
+    "animation"
+  ]
+}

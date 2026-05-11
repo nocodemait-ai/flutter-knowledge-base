@@ -1,0 +1,15 @@
+{
+  "id": "bsd-login-register",
+  "type": "screen",
+  "name": "BSD Login/Register Screen",
+  "description": "Login and registration screen with BSD-style layout.",
+  "screen_type": "auth",
+  "domain": "generic",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "login",
+    "register",
+    "auth"
+  ]
+}

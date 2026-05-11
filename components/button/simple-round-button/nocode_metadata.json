@@ -1,0 +1,13 @@
+{
+  "id": "simple-round-button",
+  "type": "component",
+  "name": "Simple Round Button",
+  "description": "Rounded rectangular button widget with customisable label and color.",
+  "component_type": "button",
+  "domain": "generic",
+  "source_repo": "FlutterScreens-master",
+  "tags": [
+    "button",
+    "round"
+  ]
+}

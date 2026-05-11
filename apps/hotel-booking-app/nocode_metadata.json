@@ -1,0 +1,40 @@
+{
+  "id": "hotel-booking-app",
+  "type": "app",
+  "name": "Hotel Booking App",
+  "description": "Hotel search and booking UI with date pickers and smooth animations.",
+  "domain": "travel",
+  "app_type": "booking",
+  "source_repo": "Best-Flutter-UI-Templates-master",
+  "screens": [
+    {
+      "id": "hotel-home",
+      "name": "Hotel Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "hotel-list",
+      "name": "Hotel List",
+      "screen_type": "list"
+    },
+    {
+      "id": "hotel-detail",
+      "name": "Hotel Detail",
+      "screen_type": "detail"
+    }
+  ],
+  "packages": [
+    "intl",
+    "animations"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  },
+  "tags": [
+    "hotel",
+    "travel",
+    "booking",
+    "animation"
+  ]
+}

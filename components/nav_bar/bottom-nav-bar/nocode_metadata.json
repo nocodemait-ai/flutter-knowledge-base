@@ -1,0 +1,14 @@
+{
+  "id": "bottom-nav-bar",
+  "type": "component",
+  "name": "Bottom Nav Bar",
+  "description": "Stylised bottom navigation bar with active-state indicator.",
+  "component_type": "nav_bar",
+  "domain": "generic",
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "nav",
+    "bottom",
+    "indicator"
+  ]
+}

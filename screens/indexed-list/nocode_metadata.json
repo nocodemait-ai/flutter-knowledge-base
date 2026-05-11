@@ -1,0 +1,15 @@
+{
+  "id": "indexed-list",
+  "type": "screen",
+  "name": "Indexed List Screen",
+  "description": "Alphabetically indexed scrollable list with sticky headers.",
+  "screen_type": "list",
+  "domain": "generic",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "list",
+    "index",
+    "scroll"
+  ]
+}

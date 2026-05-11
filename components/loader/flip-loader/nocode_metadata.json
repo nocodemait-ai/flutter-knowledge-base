@@ -1,0 +1,15 @@
+{
+  "id": "flip-loader",
+  "type": "component",
+  "name": "Flip Loader",
+  "description": "3D flip animation loader widget.",
+  "component_type": "loader",
+  "domain": "generic",
+  "source_repo": "FlutterScreens-master",
+  "tags": [
+    "loader",
+    "flip",
+    "3d",
+    "animation"
+  ]
+}

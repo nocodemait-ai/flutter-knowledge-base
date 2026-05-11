@@ -1,0 +1,14 @@
+{
+  "id": "buttons-collection",
+  "type": "component",
+  "name": "Buttons Collection",
+  "description": "Gallery of multiple button styles in a single example file.",
+  "component_type": "button",
+  "domain": "generic",
+  "source_repo": "FlutterScreens-master",
+  "tags": [
+    "button",
+    "collection",
+    "example"
+  ]
+}

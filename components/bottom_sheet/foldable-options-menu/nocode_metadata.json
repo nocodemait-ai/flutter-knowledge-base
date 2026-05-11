@@ -1,0 +1,15 @@
+{
+  "id": "foldable-options-menu",
+  "type": "component",
+  "name": "Foldable Options Menu",
+  "description": "Bottom sheet that unfolds to reveal a menu of action options.",
+  "component_type": "bottom_sheet",
+  "domain": "generic",
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "bottom-sheet",
+    "menu",
+    "fold",
+    "animation"
+  ]
+}

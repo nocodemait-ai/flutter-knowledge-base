@@ -1,0 +1,15 @@
+{
+  "id": "bubbles-rain",
+  "type": "component",
+  "name": "Bubbles Rain",
+  "description": "Particle effect widget showing animated falling bubbles.",
+  "component_type": "card",
+  "domain": "generic",
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "card",
+    "particle",
+    "animation",
+    "bubbles"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "banking-app-screen",
+  "type": "screen",
+  "name": "Banking App Screen",
+  "description": "Financial dashboard with account overview and transaction list.",
+  "screen_type": "dashboard",
+  "domain": "finance",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "banking",
+    "finance",
+    "dashboard"
+  ]
+}

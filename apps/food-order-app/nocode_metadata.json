@@ -1,0 +1,40 @@
+{
+  "id": "food-order-app",
+  "type": "app",
+  "name": "Food Order App",
+  "description": "Food marketplace with animated page transitions and order flow.",
+  "domain": "ecommerce",
+  "app_type": "marketplace",
+  "source_repo": "awesome-flutter-ui-master",
+  "screens": [
+    {
+      "id": "home-screen",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "food-detail-screen",
+      "name": "Food Detail",
+      "screen_type": "detail"
+    },
+    {
+      "id": "cart-screen",
+      "name": "Cart",
+      "screen_type": "form"
+    }
+  ],
+  "packages": [
+    "simple_animations",
+    "page_transition"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  },
+  "tags": [
+    "food",
+    "ecommerce",
+    "animation",
+    "order"
+  ]
+}

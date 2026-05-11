@@ -1,0 +1,15 @@
+{
+  "id": "world-clock",
+  "type": "screen",
+  "name": "World Clock Screen",
+  "description": "World clock showing multiple timezone clocks.",
+  "screen_type": "dashboard",
+  "domain": "utility",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "clock",
+    "timezone",
+    "utility"
+  ]
+}

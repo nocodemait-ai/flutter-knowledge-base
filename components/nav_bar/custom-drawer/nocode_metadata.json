@@ -1,0 +1,15 @@
+{
+  "id": "custom-drawer",
+  "type": "component",
+  "name": "Custom Drawer",
+  "description": "Animated side drawer with user controller from Best Flutter UI Templates.",
+  "component_type": "nav_bar",
+  "domain": "generic",
+  "source_repo": "Best-Flutter-UI-Templates-master",
+  "tags": [
+    "nav",
+    "drawer",
+    "animation",
+    "side-menu"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "login-challenge",
+  "type": "screen",
+  "name": "Login Challenge Screen",
+  "description": "Login screen challenge with creative layout.",
+  "screen_type": "auth",
+  "domain": "generic",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "login",
+    "auth",
+    "challenge"
+  ]
+}

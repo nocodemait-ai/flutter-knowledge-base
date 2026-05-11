@@ -1,0 +1,35 @@
+{
+  "id": "awesome-login-app",
+  "type": "app",
+  "name": "Awesome Login App",
+  "description": "Polished login/signup page with rounded SVG input fields and a custom alert service.",
+  "domain": "generic",
+  "app_type": "utility",
+  "source_repo": "awesome-flutter-ui-master",
+  "screens": [
+    {
+      "id": "login-screen",
+      "name": "Login Screen",
+      "screen_type": "auth"
+    },
+    {
+      "id": "register-screen",
+      "name": "Register Screen",
+      "screen_type": "auth"
+    }
+  ],
+  "packages": [
+    "flutter_svg",
+    "flutter_screenutil"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  },
+  "tags": [
+    "login",
+    "auth",
+    "svg",
+    "screenutil"
+  ]
+}

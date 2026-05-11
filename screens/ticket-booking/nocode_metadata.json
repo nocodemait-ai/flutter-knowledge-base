@@ -1,0 +1,16 @@
+{
+  "id": "ticket-booking",
+  "type": "screen",
+  "name": "Ticket Booking Screen",
+  "description": "Event/transport ticket booking form with seat/date selection.",
+  "screen_type": "form",
+  "domain": "travel",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "ticket",
+    "booking",
+    "travel",
+    "form"
+  ]
+}

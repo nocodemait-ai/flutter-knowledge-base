@@ -1,0 +1,14 @@
+{
+  "id": "flying-widget",
+  "type": "component",
+  "name": "Flying Widget",
+  "description": "Animated widget that flies across the screen on interaction.",
+  "component_type": "card",
+  "domain": "generic",
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "card",
+    "animation",
+    "flying"
+  ]
+}

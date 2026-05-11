@@ -1,0 +1,14 @@
+{
+  "id": "color-loader-4",
+  "type": "component",
+  "name": "Color Loader 4",
+  "description": "Animated color-cycling loader widget variant 4.",
+  "component_type": "loader",
+  "domain": "generic",
+  "source_repo": "FlutterScreens-master",
+  "tags": [
+    "loader",
+    "animation",
+    "color"
+  ]
+}

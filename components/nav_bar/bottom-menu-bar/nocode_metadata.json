@@ -1,0 +1,14 @@
+{
+  "id": "bottom-menu-bar",
+  "type": "component",
+  "name": "Bottom Menu Bar",
+  "description": "Custom bottom navigation bar with icon + label menu items.",
+  "component_type": "nav_bar",
+  "domain": "generic",
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "nav",
+    "bottom",
+    "menu"
+  ]
+}

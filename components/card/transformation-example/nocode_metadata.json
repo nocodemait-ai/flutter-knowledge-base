@@ -1,0 +1,15 @@
+{
+  "id": "transformation-example",
+  "type": "component",
+  "name": "Transformation Example",
+  "description": "GestureDetector + Matrix4 transform widget demonstrating pinch/zoom/rotate.",
+  "component_type": "card",
+  "domain": "generic",
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "card",
+    "transform",
+    "gesture",
+    "matrix"
+  ]
+}

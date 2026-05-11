@@ -1,0 +1,35 @@
+{
+  "id": "book-app-ui",
+  "type": "app",
+  "name": "Book App UI",
+  "description": "Reader-style app with staggered grid book listing and detail screens.",
+  "domain": "media",
+  "app_type": "reader",
+  "source_repo": "awesome-flutter-ui-master",
+  "screens": [
+    {
+      "id": "book-list-screen",
+      "name": "Book List",
+      "screen_type": "list"
+    },
+    {
+      "id": "book-detail-screen",
+      "name": "Book Detail",
+      "screen_type": "detail"
+    }
+  ],
+  "packages": [
+    "flutter_svg",
+    "flutter_staggered_grid_view"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  },
+  "tags": [
+    "books",
+    "grid",
+    "staggered",
+    "media"
+  ]
+}

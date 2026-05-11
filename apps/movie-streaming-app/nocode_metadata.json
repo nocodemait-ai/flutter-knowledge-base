@@ -1,0 +1,34 @@
+{
+  "id": "movie-streaming-app",
+  "type": "app",
+  "name": "Movie Streaming App",
+  "description": "Dashboard streaming app with animated hero banners and movie cards.",
+  "domain": "media",
+  "app_type": "dashboard",
+  "source_repo": "awesome-flutter-ui-master",
+  "screens": [
+    {
+      "id": "home-screen",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "movie-detail-screen",
+      "name": "Movie Detail",
+      "screen_type": "detail"
+    }
+  ],
+  "packages": [
+    "simple_animations"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  },
+  "tags": [
+    "movies",
+    "streaming",
+    "animation",
+    "media"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "flutter-login-screen-3",
+  "type": "screen",
+  "name": "Flutter Login Screen 3",
+  "description": "Standalone Flutter login screen design variant 3.",
+  "screen_type": "auth",
+  "domain": "generic",
+  "app": null,
+  "source_repo": "FlutterScreens-master",
+  "tags": [
+    "login",
+    "auth",
+    "variant-3"
+  ]
+}

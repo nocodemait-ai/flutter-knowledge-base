@@ -1,0 +1,15 @@
+{
+  "id": "liquid-swipe",
+  "type": "component",
+  "name": "Liquid Swipe",
+  "description": "Liquid swipe page-transition animation widget.",
+  "component_type": "card",
+  "domain": "generic",
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "card",
+    "liquid",
+    "swipe",
+    "animation"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "flutter-experiment",
+  "type": "screen",
+  "name": "Flutter Experiment Screen",
+  "description": "Experimental Flutter widget composition and layout exploration.",
+  "screen_type": "general",
+  "domain": "generic",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "experiment",
+    "widget",
+    "layout"
+  ]
+}

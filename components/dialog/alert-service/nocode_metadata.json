@@ -1,0 +1,14 @@
+{
+  "id": "alert-service",
+  "type": "component",
+  "name": "Alert Service",
+  "description": "Reusable alert dialog helper widget with configurable title/message/actions.",
+  "component_type": "dialog",
+  "domain": "generic",
+  "source_repo": "awesome-flutter-ui-master",
+  "tags": [
+    "dialog",
+    "alert",
+    "service"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "slide-list-view",
+  "type": "component",
+  "name": "Slide List View",
+  "description": "Horizontally sliding card list view widget.",
+  "component_type": "card",
+  "domain": "generic",
+  "source_repo": "FlutterScreens-master",
+  "tags": [
+    "card",
+    "list",
+    "slide",
+    "scroll"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "fitness-app",
+  "type": "app",
+  "name": "Fitness App",
+  "description": "Fitness tracker with diary, training plans, and animated custom UI views.",
+  "domain": "fitness",
+  "app_type": "tracker",
+  "source_repo": "Best-Flutter-UI-Templates-master",
+  "screens": [
+    {
+      "id": "fitness-home",
+      "name": "Fitness Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "my-diary",
+      "name": "My Diary",
+      "screen_type": "list"
+    },
+    {
+      "id": "training",
+      "name": "Training",
+      "screen_type": "detail"
+    }
+  ],
+  "packages": [
+    "font_awesome_flutter",
+    "intl",
+    "animations"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  },
+  "tags": [
+    "fitness",
+    "health",
+    "tracker",
+    "animation",
+    "diary"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "sushi-order",
+  "type": "screen",
+  "name": "Sushi Order Screen",
+  "description": "Food ordering screen for a sushi restaurant with item selector.",
+  "screen_type": "form",
+  "domain": "ecommerce",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "food",
+    "order",
+    "sushi",
+    "ecommerce"
+  ]
+}

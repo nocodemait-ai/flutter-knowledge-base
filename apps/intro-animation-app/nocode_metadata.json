@@ -1,0 +1,38 @@
+{
+  "id": "intro-animation-app",
+  "type": "app",
+  "name": "Intro Animation App",
+  "description": "Onboarding introduction sequence with elegant page animations.",
+  "domain": "generic",
+  "app_type": "utility",
+  "source_repo": "Best-Flutter-UI-Templates-master",
+  "screens": [
+    {
+      "id": "intro-1",
+      "name": "Intro Screen 1",
+      "screen_type": "onboarding"
+    },
+    {
+      "id": "intro-2",
+      "name": "Intro Screen 2",
+      "screen_type": "onboarding"
+    },
+    {
+      "id": "intro-3",
+      "name": "Intro Screen 3",
+      "screen_type": "onboarding"
+    }
+  ],
+  "packages": [
+    "animations"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  },
+  "tags": [
+    "onboarding",
+    "intro",
+    "animation"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "grid-list-example",
+  "type": "component",
+  "name": "Grid List Example",
+  "description": "Grid-layout list demonstrating staggered and uniform grid tiles.",
+  "component_type": "list_tile",
+  "domain": "generic",
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "list-tile",
+    "grid",
+    "layout"
+  ]
+}

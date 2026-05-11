@@ -1,0 +1,14 @@
+{
+  "id": "simple-round-icon-button",
+  "type": "component",
+  "name": "Simple Round Icon Button",
+  "description": "Rounded button with leading icon and label.",
+  "component_type": "button",
+  "domain": "generic",
+  "source_repo": "FlutterScreens-master",
+  "tags": [
+    "button",
+    "icon",
+    "round"
+  ]
+}

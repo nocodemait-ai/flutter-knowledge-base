@@ -1,0 +1,14 @@
+{
+  "id": "rating",
+  "type": "component",
+  "name": "Rating Widget",
+  "description": "Star-rating list tile widget with interactive touch support.",
+  "component_type": "list_tile",
+  "domain": "generic",
+  "source_repo": "FlutterScreens-master",
+  "tags": [
+    "list-tile",
+    "rating",
+    "stars"
+  ]
+}

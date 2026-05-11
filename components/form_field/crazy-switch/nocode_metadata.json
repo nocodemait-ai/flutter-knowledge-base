@@ -1,0 +1,15 @@
+{
+  "id": "crazy-switch",
+  "type": "component",
+  "name": "Crazy Switch",
+  "description": "Creatively animated toggle switch widget.",
+  "component_type": "form_field",
+  "domain": "generic",
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "switch",
+    "toggle",
+    "form",
+    "animation"
+  ]
+}

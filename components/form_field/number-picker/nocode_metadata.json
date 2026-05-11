@@ -1,0 +1,15 @@
+{
+  "id": "number-picker",
+  "type": "component",
+  "name": "Number Picker",
+  "description": "Scrollable number picker / spinner widget.",
+  "component_type": "form_field",
+  "domain": "generic",
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "picker",
+    "number",
+    "spinner",
+    "form"
+  ]
+}

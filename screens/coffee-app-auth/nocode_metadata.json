@@ -1,0 +1,15 @@
+{
+  "id": "coffee-app-auth",
+  "type": "screen",
+  "name": "Coffee App Auth Screen",
+  "description": "Coffee-themed login/signup screen with warm tones.",
+  "screen_type": "auth",
+  "domain": "ecommerce",
+  "app": null,
+  "source_repo": "my_flutter_challenges-master",
+  "tags": [
+    "coffee",
+    "auth",
+    "theme"
+  ]
+}
