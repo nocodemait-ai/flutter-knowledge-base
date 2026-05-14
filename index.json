@@ -399,6 +399,13 @@
       "path": "components/bottom_sheet/foldable-options-menu",
       "name": "Foldable Options Menu",
       "component_type": "bottom_sheet"
+    },
+    {
+      "id": "app",
+      "type": "app",
+      "path": "apps/app",
+      "name": "GrowHabit",
+      "domain": "productivity"
     }
   ]
 }

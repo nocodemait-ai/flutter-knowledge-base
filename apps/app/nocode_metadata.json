@@ -1,0 +1,67 @@
+{
+  "id": "app",
+  "type": "app",
+  "name": "GrowHabit",
+  "description": "GrowHabit is a zen-inspired habit tracking application designed to transform routine building into a rewarding growth experience. By leveraging a virtual gardening metaphor, users track habits across ",
+  "domain": "productivity",
+  "app_type": "tracker",
+  "source_repo": "droplr-ai-platform",
+  "screens": [
+    {
+      "id": "homescreen",
+      "name": "HomeScreen",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "statsscreen",
+      "name": "StatsScreen",
+      "screen_type": "form"
+    },
+    {
+      "id": "habitmanagescreen",
+      "name": "HabitManageScreen",
+      "screen_type": "list"
+    },
+    {
+      "id": "addedithabitscreen",
+      "name": "AddEditHabitScreen",
+      "screen_type": "form"
+    },
+    {
+      "id": "gardenscreen",
+      "name": "GardenScreen",
+      "screen_type": "list"
+    }
+  ],
+  "packages": [
+    "flutter_riverpod",
+    "go_router",
+    "google_fonts",
+    "intl",
+    "isar",
+    "isar_flutter_libs",
+    "fl_chart",
+    "table_calendar",
+    "uuid",
+    "cupertino_icons",
+    "flutter_test",
+    "build_runner",
+    "isar_generator",
+    "flutter_lints"
+  ],
+  "build": {
+    "status": "generated",
+    "fixer_attempts": 0
+  },
+  "tags": [
+    "productivity",
+    "tracker",
+    "nocode",
+    "droplr-ai",
+    "habit",
+    "routine",
+    "streak",
+    "growth",
+    "tree"
+  ]
+}
