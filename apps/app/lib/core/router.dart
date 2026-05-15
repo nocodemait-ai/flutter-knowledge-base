@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../shared/widgets/app_shell.dart';
-import '../features/home/screen.dart';
-import '../features/stats/screen.dart';
-import '../features/manage/screen.dart';
-import '../features/garden/screen.dart';
-import '../features/add_edit/screen.dart';
+import '../features/dashboard/dashboard_screen.dart';
+import '../features/budgets/budget_screen.dart';
+import '../features/investments/investment_screen.dart';
+import '../features/subscriptions/subscription_screen.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/',
@@ -13,12 +12,19 @@ final appRouter = GoRouter(
     StatefulShellRoute.indexedStack(
       builder: (context, state, shell) => AppShell(shell: shell),
       branches: [
-        StatefulShellBranch(routes: [GoRoute(path: '/', builder: (c, s) => const HomeScreen())]),
-        StatefulShellBranch(routes: [GoRoute(path: '/stats', builder: (c, s) => const StatsScreen())]),
-        StatefulShellBranch(routes: [GoRoute(path: '/habits', builder: (c, s) => const HabitManageScreen())]),
-        StatefulShellBranch(routes: [GoRoute(path: '/garden', builder: (c, s) => const GardenScreen())]),
+        StatefulShellBranch(routes: [
+          GoRoute(path: '/', builder: (c, s) => const DashboardScreen()),
+        ]),
+        StatefulShellBranch(routes: [
+          GoRoute(path: '/budgets', builder: (c, s) => const BudgetScreen()),
+        ]),
+        StatefulShellBranch(routes: [
+          GoRoute(path: '/investments', builder: (c, s) => const InvestmentScreen()),
+        ]),
+        StatefulShellBranch(routes: [
+          GoRoute(path: '/subscriptions', builder: (c, s) => const SubscriptionScreen()),
+        ]),
       ],
     ),
-    GoRoute(path: '/add-habit', builder: (c, s) => const AddEditHabitScreen()),
   ],
 );

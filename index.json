@@ -401,18 +401,18 @@
       "component_type": "bottom_sheet"
     },
     {
-      "id": "app",
-      "type": "app",
-      "path": "apps/app",
-      "name": "GrowHabit",
-      "domain": "productivity"
-    },
-    {
       "id": "demo-todo-app",
       "type": "app",
       "path": "apps/demo-todo-app",
       "name": "Demo Todo App",
       "domain": "productivity"
+    },
+    {
+      "id": "app",
+      "type": "app",
+      "path": "apps/app",
+      "name": "FinTrak Pocket",
+      "domain": "finance"
     }
   ]
 }

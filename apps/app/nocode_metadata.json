@@ -1,67 +1,59 @@
 {
   "id": "app",
   "type": "app",
-  "name": "GrowHabit",
-  "description": "GrowHabit is a zen-inspired habit tracking application designed to transform routine building into a rewarding growth experience. By leveraging a virtual gardening metaphor, users track habits across ",
-  "domain": "productivity",
+  "name": "FinTrak Pocket",
+  "description": "FinTrak Pocket is a privacy-focused personal finance manager designed to help individuals maintain financial stability and long-term growth. It provides a centralized dashboard for manual expense logg",
+  "domain": "finance",
   "app_type": "tracker",
   "source_repo": "droplr-ai-platform",
   "screens": [
     {
-      "id": "homescreen",
-      "name": "HomeScreen",
-      "screen_type": "dashboard"
+      "id": "dashboardscreen",
+      "name": "DashboardScreen",
+      "screen_type": "detail"
     },
     {
-      "id": "statsscreen",
-      "name": "StatsScreen",
+      "id": "addtransactionmodal",
+      "name": "AddTransactionModal",
       "screen_type": "form"
     },
     {
-      "id": "habitmanagescreen",
-      "name": "HabitManageScreen",
-      "screen_type": "list"
+      "id": "budgetscreen",
+      "name": "BudgetScreen",
+      "screen_type": "general"
     },
     {
-      "id": "addedithabitscreen",
-      "name": "AddEditHabitScreen",
-      "screen_type": "form"
+      "id": "investmentscreen",
+      "name": "InvestmentScreen",
+      "screen_type": "general"
     },
     {
-      "id": "gardenscreen",
-      "name": "GardenScreen",
-      "screen_type": "list"
+      "id": "subscriptionmanager",
+      "name": "SubscriptionManager",
+      "screen_type": "general"
     }
   ],
   "packages": [
-    "flutter_riverpod",
+    "cupertino_icons",
     "go_router",
     "google_fonts",
-    "intl",
-    "isar",
-    "isar_flutter_libs",
-    "fl_chart",
-    "table_calendar",
-    "uuid",
-    "cupertino_icons",
-    "flutter_test",
-    "build_runner",
-    "isar_generator",
-    "flutter_lints"
+    "provider",
+    "flutter_lints",
+    "flutter_test"
   ],
   "build": {
     "status": "generated",
     "fixer_attempts": 0
   },
   "tags": [
-    "productivity",
+    "finance",
     "tracker",
     "nocode",
     "droplr-ai",
-    "habit",
-    "routine",
-    "streak",
-    "growth",
-    "tree"
+    "expense",
+    "budget",
+    "subscription",
+    "investment",
+    "ledger"
   ]
 }
