@@ -406,6 +406,13 @@
       "path": "apps/app",
       "name": "GrowHabit",
       "domain": "productivity"
+    },
+    {
+      "id": "demo-todo-app",
+      "type": "app",
+      "path": "apps/demo-todo-app",
+      "name": "Demo Todo App",
+      "domain": "productivity"
     }
   ]
 }
