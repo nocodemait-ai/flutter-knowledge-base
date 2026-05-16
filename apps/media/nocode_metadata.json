@@ -1,0 +1,59 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "media-2026-05-16",
+  "name": "Media App",
+  "description": "Flutter UI template for Media App",
+  "domain": "media",
+  "app_type": "manager",
+  "keywords": [
+    "flutter",
+    "ui",
+    "media",
+    "manager",
+    "template"
+  ],
+  "tags": [
+    "nocode-flutter",
+    "stateful",
+    "local",
+    "media",
+    "manager",
+    "app"
+  ],
+  "built_at": "2026-05-16",
+  "platform": "manual",
+  "app": {
+    "name": "Media App",
+    "slug": "media",
+    "app_type": "manager",
+    "prd_summary": "Flutter UI template for Media App"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 1
+  },
+  "screens": [
+    {
+      "name": "HomeScreen",
+      "route": "/",
+      "purpose": "Main landing screen",
+      "screen_type": "general",
+      "interactions": [],
+      "widgets": [
+        "Container",
+        "Text"
+      ]
+    }
+  ],
+  "models": [],
+  "packages": [],
+  "build": {
+    "status": "passed",
+    "fixer_attempts": 0,
+    "warnings": 0
+  }
+}

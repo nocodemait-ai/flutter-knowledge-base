@@ -1,0 +1,59 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "dribble-2026-05-16",
+  "name": "Dribble Clone",
+  "description": "Flutter UI template for Dribble Clone",
+  "domain": "social",
+  "app_type": "portfolio",
+  "keywords": [
+    "flutter",
+    "ui",
+    "social",
+    "portfolio",
+    "template"
+  ],
+  "tags": [
+    "nocode-flutter",
+    "stateful",
+    "local",
+    "social",
+    "portfolio",
+    "app"
+  ],
+  "built_at": "2026-05-16",
+  "platform": "manual",
+  "app": {
+    "name": "Dribble Clone",
+    "slug": "dribble",
+    "app_type": "portfolio",
+    "prd_summary": "Flutter UI template for Dribble Clone"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 1
+  },
+  "screens": [
+    {
+      "name": "HomeScreen",
+      "route": "/",
+      "purpose": "Main landing screen",
+      "screen_type": "general",
+      "interactions": [],
+      "widgets": [
+        "Container",
+        "Text"
+      ]
+    }
+  ],
+  "models": [],
+  "packages": [],
+  "build": {
+    "status": "passed",
+    "fixer_attempts": 0,
+    "warnings": 0
+  }
+}

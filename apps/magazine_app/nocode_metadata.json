@@ -1,0 +1,59 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "magazine_app-2026-05-16",
+  "name": "Magazine App",
+  "description": "Flutter UI template for Magazine App",
+  "domain": "media",
+  "app_type": "reader",
+  "keywords": [
+    "flutter",
+    "ui",
+    "media",
+    "reader",
+    "template"
+  ],
+  "tags": [
+    "nocode-flutter",
+    "stateful",
+    "local",
+    "media",
+    "reader",
+    "app"
+  ],
+  "built_at": "2026-05-16",
+  "platform": "manual",
+  "app": {
+    "name": "Magazine App",
+    "slug": "magazine_app",
+    "app_type": "reader",
+    "prd_summary": "Flutter UI template for Magazine App"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 1
+  },
+  "screens": [
+    {
+      "name": "HomeScreen",
+      "route": "/",
+      "purpose": "Main landing screen",
+      "screen_type": "general",
+      "interactions": [],
+      "widgets": [
+        "Container",
+        "Text"
+      ]
+    }
+  ],
+  "models": [],
+  "packages": [],
+  "build": {
+    "status": "passed",
+    "fixer_attempts": 0,
+    "warnings": 0
+  }
+}

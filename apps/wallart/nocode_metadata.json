@@ -1,0 +1,59 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "wallart-2026-05-16",
+  "name": "Wall Art App",
+  "description": "Flutter UI template for Wall Art App",
+  "domain": "media",
+  "app_type": "portfolio",
+  "keywords": [
+    "flutter",
+    "ui",
+    "media",
+    "portfolio",
+    "template"
+  ],
+  "tags": [
+    "nocode-flutter",
+    "stateful",
+    "local",
+    "media",
+    "portfolio",
+    "app"
+  ],
+  "built_at": "2026-05-16",
+  "platform": "manual",
+  "app": {
+    "name": "Wall Art App",
+    "slug": "wallart",
+    "app_type": "portfolio",
+    "prd_summary": "Flutter UI template for Wall Art App"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 1
+  },
+  "screens": [
+    {
+      "name": "HomeScreen",
+      "route": "/",
+      "purpose": "Main landing screen",
+      "screen_type": "general",
+      "interactions": [],
+      "widgets": [
+        "Container",
+        "Text"
+      ]
+    }
+  ],
+  "models": [],
+  "packages": [],
+  "build": {
+    "status": "passed",
+    "fixer_attempts": 0,
+    "warnings": 0
+  }
+}

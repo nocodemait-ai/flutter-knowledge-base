@@ -1,0 +1,59 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "bloom-2026-05-16",
+  "name": "Bloom App",
+  "description": "Flutter UI template for Bloom App",
+  "domain": "ecommerce",
+  "app_type": "marketplace",
+  "keywords": [
+    "flutter",
+    "ui",
+    "ecommerce",
+    "marketplace",
+    "template"
+  ],
+  "tags": [
+    "nocode-flutter",
+    "stateful",
+    "local",
+    "ecommerce",
+    "marketplace",
+    "app"
+  ],
+  "built_at": "2026-05-16",
+  "platform": "manual",
+  "app": {
+    "name": "Bloom App",
+    "slug": "bloom",
+    "app_type": "marketplace",
+    "prd_summary": "Flutter UI template for Bloom App"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 1
+  },
+  "screens": [
+    {
+      "name": "HomeScreen",
+      "route": "/",
+      "purpose": "Main landing screen",
+      "screen_type": "general",
+      "interactions": [],
+      "widgets": [
+        "Container",
+        "Text"
+      ]
+    }
+  ],
+  "models": [],
+  "packages": [],
+  "build": {
+    "status": "passed",
+    "fixer_attempts": 0,
+    "warnings": 0
+  }
+}

@@ -413,6 +413,76 @@
       "path": "apps/app",
       "name": "FinTrak Pocket",
       "domain": "finance"
+    },
+    {
+      "id": "bloom",
+      "type": "app",
+      "path": "apps/bloom",
+      "name": "Bloom App",
+      "domain": "ecommerce"
+    },
+    {
+      "id": "dribble",
+      "type": "app",
+      "path": "apps/dribble",
+      "name": "Dribble Clone",
+      "domain": "social"
+    },
+    {
+      "id": "flightapp",
+      "type": "app",
+      "path": "apps/flightapp",
+      "name": "Flight Booking App",
+      "domain": "travel"
+    },
+    {
+      "id": "magazine_app",
+      "type": "app",
+      "path": "apps/magazine_app",
+      "name": "Magazine App",
+      "domain": "media"
+    },
+    {
+      "id": "media",
+      "type": "app",
+      "path": "apps/media",
+      "name": "Media App",
+      "domain": "media"
+    },
+    {
+      "id": "news_app",
+      "type": "app",
+      "path": "apps/news_app",
+      "name": "News App",
+      "domain": "media"
+    },
+    {
+      "id": "plant_app",
+      "type": "app",
+      "path": "apps/plant_app",
+      "name": "Plant App",
+      "domain": "ecommerce"
+    },
+    {
+      "id": "shopping_cart",
+      "type": "app",
+      "path": "apps/shopping_cart",
+      "name": "Shopping Cart",
+      "domain": "ecommerce"
+    },
+    {
+      "id": "shopping_cart2",
+      "type": "app",
+      "path": "apps/shopping_cart2",
+      "name": "Shopping Cart 2",
+      "domain": "ecommerce"
+    },
+    {
+      "id": "wallart",
+      "type": "app",
+      "path": "apps/wallart",
+      "name": "Wall Art App",
+      "domain": "media"
     }
   ]
 }
