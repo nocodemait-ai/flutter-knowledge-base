@@ -1,40 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../features/auth/screen.dart';
-import '../features/dashboard/screen.dart';
+import '../features/setup/screen.dart';
+import '../features/matchmaking/screen.dart';
 import '../shared/widgets/app_shell.dart';
 
-// Placeholder dummy screen for the Menu route as per instructions
-class MenuScreenPlaceholder extends StatelessWidget {
-  const MenuScreenPlaceholder({super.key});
-  @override
-  Widget build(BuildContext context) => const Scaffold(body: Center(child: Text('Menu Coming Soon')));
-}
+final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>();
+final GlobalKey<NavigatorState> _shellNavigatorKey = GlobalKey<NavigatorState>();
 
 final GoRouter appRouter = GoRouter(
-  initialLocation: '/auth',
+  navigatorKey: _rootNavigatorKey,
+  initialLocation: '/setup',
   routes: [
-    GoRoute(
-      path: '/auth',
-      builder: (context, state) => const AuthScreen(),
-    ),
     StatefulShellRoute.indexedStack(
-      builder: (context, state, navigationShell) => AppShell(shell: navigationShell),
+      builder: (context, state, navigationShell) => AppShell(navigationShell: navigationShell),
       branches: [
         StatefulShellBranch(
+          navigatorKey: _shellNavigatorKey,
           routes: [
-            GoRoute(
-              path: '/dashboard',
-              builder: (context, state) => const DashboardScreen(),
-            ),
+            GoRoute(path: '/setup', builder: (context, state) => const SetupScreen()),
           ],
         ),
         StatefulShellBranch(
           routes: [
-            GoRoute(
-              path: '/menu',
-              builder: (context, state) => const MenuScreenPlaceholder(),
-            ),
+            GoRoute(path: '/matchmaking', builder: (context, state) => const MatchmakingScreen()),
           ],
         ),
       ],

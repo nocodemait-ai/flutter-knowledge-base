@@ -1,36 +1,31 @@
 {
   "id": "app",
   "type": "app",
-  "name": "Love & Latte",
-  "description": "Love & Latte is a customer loyalty and menu discovery application designed to gamify the coffee-buying experience. It enables customers to view the full product menu, track their personal coffee progr",
-  "domain": "productivity",
+  "name": "Badminton Mate",
+  "description": "This application serves as a dedicated utility for amateur badminton players to manage ad-hoc round-robin tournaments. It eliminates the friction of manual teaming by automatically generating pair com",
+  "domain": "fitness",
   "app_type": "tracker",
   "source_repo": "droplr-ai-platform",
   "screens": [
     {
-      "id": "authscreen",
-      "name": "AuthScreen",
-      "screen_type": "auth"
+      "id": "setupscreen",
+      "name": "SetupScreen",
+      "screen_type": "settings"
     },
     {
-      "id": "dashboardscreen",
-      "name": "DashboardScreen",
-      "screen_type": "detail"
-    },
-    {
-      "id": "menuscreen",
-      "name": "MenuScreen",
-      "screen_type": "list"
+      "id": "matchmakingscreen",
+      "name": "MatchmakingScreen",
+      "screen_type": "general"
     }
   ],
   "packages": [
     "flutter_riverpod",
     "go_router",
     "google_fonts",
-    "mobile_scanner",
-    "cached_network_image",
-    "flutter_svg",
     "provider",
+    "cupertino_icons",
+    "hive",
+    "hive_flutter",
     "flutter_test",
     "flutter_lints"
   ],
@@ -39,14 +34,14 @@
     "fixer_attempts": 0
   },
   "tags": [
-    "productivity",
+    "fitness",
     "tracker",
     "nocode",
     "droplr-ai",
-    "loyalty",
-    "rewards",
-    "coffee",
-    "gamification",
-    "qr-code"
+    "badminton",
+    "tournament",
+    "round-robin",
+    "teaming",
+    "rotation"
   ]
 }

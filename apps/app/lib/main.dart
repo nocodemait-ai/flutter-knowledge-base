@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'love_and_latte',
+      title: 'tournament_app',
       debugShowCheckedModeBanner: false,
       theme: lightTheme,
       routerConfig: appRouter,

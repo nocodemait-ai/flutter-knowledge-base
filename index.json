@@ -509,8 +509,8 @@
       "id": "app",
       "type": "app",
       "path": "apps/app",
-      "name": "Love & Latte",
-      "domain": "productivity"
+      "name": "Badminton Mate",
+      "domain": "fitness"
     }
   ]
 }
