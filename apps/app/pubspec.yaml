@@ -1,22 +1,21 @@
-name: smart_home_manager
-description: A state-of-the-art smart home management application.
+name: love_and_latte
+description: A new Flutter project.
 version: 1.0.0+1
-
 environment:
   sdk: ^3.5.0
-
 dependencies:
   flutter:
     sdk: flutter
+  flutter_riverpod: ^2.4.9
   go_router: ^14.0.0
   google_fonts: ^6.2.1
-  flutter_riverpod: ^2.6.1
-  riverpod_annotation: ^2.6.0
-  cupertino_icons: ^1.0.8
-
+  mobile_scanner: ^3.4.0
+  cached_network_image: ^3.3.0
+  flutter_svg: ^2.0.9
+  provider: ^6.1.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
-  riverpod_generator: ^2.6.0
-  build_runner: ^2.4.12
+flutter:
+  uses-material-design: true

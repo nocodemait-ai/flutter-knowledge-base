@@ -478,13 +478,6 @@
       "domain": "media"
     },
     {
-      "id": "app",
-      "type": "app",
-      "path": "apps/app",
-      "name": "DeskOS",
-      "domain": "productivity"
-    },
-    {
       "id": "grow-habit",
       "type": "app",
       "path": "apps/grow-habit",
@@ -511,6 +504,13 @@
       "path": "apps/desk-os",
       "name": "DeskOS",
       "domain": "iot"
+    },
+    {
+      "id": "app",
+      "type": "app",
+      "path": "apps/app",
+      "name": "Love & Latte",
+      "domain": "productivity"
     }
   ]
 }
