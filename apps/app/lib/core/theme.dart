@@ -1,46 +1,46 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AppTheme {
-  static const Color primary = Color(0xFF2E7D32);
-  static const Color surface = Color(0xFFFFFFFF);
-  static const Color onSurface = Color(0xFF121212);
-  static const Color background = Color(0xFFF5F5F5);
-  static const Color error = Color(0xFFB00020);
+const Color primary = Color(0xFF38BDF8);
+const Color onPrimary = Color(0xFF020617);
+const Color secondary = Color(0xFF1E293B);
+const Color onSecondary = Color(0xFFF1F5F9);
+const Color background = Color(0xFF020617);
+const Color surface = Color(0xFF0F172A);
+const Color onSurface = Color(0xFFF1F5F9);
+const Color error = Color(0xFFEF4444);
+const Color onError = Color(0xFFFFFFFF);
 
-  static ThemeData get theme => ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: primary,
-          primary: primary,
-          onPrimary: Colors.white,
-          secondary: const Color(0xFF4CAF50),
-          onSecondary: Colors.white,
-          surface: surface,
-          onSurface: onSurface,
-          background: background,
-          error: error,
-          onError: Colors.white,
+ThemeData get deskTheme => ThemeData(
+      useMaterial3: true,
+      brightness: Brightness.dark,
+      scaffoldBackgroundColor: background,
+      colorScheme: const ColorScheme.dark(
+        primary: primary,
+        onPrimary: onPrimary,
+        secondary: secondary,
+        onSecondary: onSecondary,
+        surface: surface,
+        onSurface: onSurface,
+        error: error,
+        onError: onError,
+        surfaceContainerHigh: Color(0xFF1E293B),
+      ),
+      textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme).copyWith(
+        displayLarge: const TextStyle(color: onSurface, fontWeight: FontWeight.bold),
+        bodyMedium: const TextStyle(color: onSurface, fontSize: 16),
+      ),
+      cardTheme: CardTheme(
+        color: surface.withOpacity(0.8),
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+          side: BorderSide(color: Colors.white.withOpacity(0.1)),
         ),
-        scaffoldBackgroundColor: background,
-        textTheme: TextTheme(
-          headlineMedium: GoogleFonts.inter(
-            fontSize: 28,
-            fontWeight: FontWeight.w700,
-            color: onSurface,
-          ),
-          bodyLarge: GoogleFonts.inter(
-            fontSize: 16,
-            fontWeight: FontWeight.w400,
-            color: onSurface,
-          ),
-        ),
-        cardTheme: CardTheme(
-          elevation: 2,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
-          surfaceTintColor: surface,
-        ),
-      );
-}
+      ),
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+      ),
+    );

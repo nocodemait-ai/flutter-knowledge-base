@@ -408,13 +408,6 @@
       "domain": "productivity"
     },
     {
-      "id": "app",
-      "type": "app",
-      "path": "apps/app",
-      "name": "FinTrak Pocket",
-      "domain": "finance"
-    },
-    {
       "id": "bloom",
       "type": "app",
       "path": "apps/bloom",
@@ -483,6 +476,13 @@
       "path": "apps/wallart",
       "name": "Wall Art App",
       "domain": "media"
+    },
+    {
+      "id": "app",
+      "type": "app",
+      "path": "apps/app",
+      "name": "DeskOS",
+      "domain": "productivity"
     }
   ]
 }

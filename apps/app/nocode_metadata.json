@@ -1,59 +1,61 @@
 {
   "id": "app",
   "type": "app",
-  "name": "FinTrak Pocket",
-  "description": "FinTrak Pocket is a privacy-focused personal finance manager designed to help individuals maintain financial stability and long-term growth. It provides a centralized dashboard for manual expense logg",
-  "domain": "finance",
-  "app_type": "tracker",
+  "name": "DeskOS",
+  "description": "DeskOS is a centralized command-and-control hub for high-end productivity setups, bridging the gap between hardware devices like ESP32 modules and Raspberry Pi AI nodes. It provides a real-time, glass",
+  "domain": "productivity",
+  "app_type": "dashboard",
   "source_repo": "droplr-ai-platform",
   "screens": [
     {
       "id": "dashboardscreen",
       "name": "DashboardScreen",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "assistantscreen",
+      "name": "AssistantScreen",
+      "screen_type": "general"
+    },
+    {
+      "id": "devicemanagementscreen",
+      "name": "DeviceManagementScreen",
+      "screen_type": "general"
+    },
+    {
+      "id": "automationscreen",
+      "name": "AutomationScreen",
+      "screen_type": "general"
+    },
+    {
+      "id": "ambientvisualizationscreen",
+      "name": "AmbientVisualizationScreen",
       "screen_type": "detail"
-    },
-    {
-      "id": "addtransactionmodal",
-      "name": "AddTransactionModal",
-      "screen_type": "form"
-    },
-    {
-      "id": "budgetscreen",
-      "name": "BudgetScreen",
-      "screen_type": "general"
-    },
-    {
-      "id": "investmentscreen",
-      "name": "InvestmentScreen",
-      "screen_type": "general"
-    },
-    {
-      "id": "subscriptionmanager",
-      "name": "SubscriptionManager",
-      "screen_type": "general"
     }
   ],
   "packages": [
-    "cupertino_icons",
     "go_router",
     "google_fonts",
-    "provider",
+    "flutter_riverpod",
+    "riverpod_annotation",
+    "cupertino_icons",
+    "flutter_test",
     "flutter_lints",
-    "flutter_test"
+    "riverpod_generator",
+    "build_runner"
   ],
   "build": {
     "status": "generated",
     "fixer_attempts": 0
   },
   "tags": [
-    "finance",
-    "tracker",
+    "productivity",
+    "dashboard",
     "nocode",
     "droplr-ai",
-    "expense",
-    "budget",
-    "subscription",
-    "investment",
-    "ledger"
+    "iot",
+    "automation",
+    "mqtt",
+    "telemetry"
   ]
 }
