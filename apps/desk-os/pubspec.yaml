@@ -1,0 +1,22 @@
+name: smart_home_manager
+description: A state-of-the-art smart home management application.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^14.0.0
+  google_fonts: ^6.2.1
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  riverpod_generator: ^2.6.0
+  build_runner: ^2.4.12

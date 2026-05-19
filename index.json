@@ -483,6 +483,34 @@
       "path": "apps/app",
       "name": "DeskOS",
       "domain": "productivity"
+    },
+    {
+      "id": "grow-habit",
+      "type": "app",
+      "path": "apps/grow-habit",
+      "name": "Grow Habit",
+      "domain": "productivity"
+    },
+    {
+      "id": "memories-and-albums",
+      "type": "app",
+      "path": "apps/memories-and-albums",
+      "name": "Memories & Albums",
+      "domain": "lifestyle"
+    },
+    {
+      "id": "fintrak-pocket",
+      "type": "app",
+      "path": "apps/fintrak-pocket",
+      "name": "FinTrak Pocket",
+      "domain": "finance"
+    },
+    {
+      "id": "desk-os",
+      "type": "app",
+      "path": "apps/desk-os",
+      "name": "DeskOS",
+      "domain": "iot"
     }
   ]
 }
