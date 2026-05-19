@@ -4,7 +4,14 @@ import '../features/auth/screen.dart';
 import '../features/dashboard/screen.dart';
 import '../shared/widgets/app_shell.dart';
 
-final appRouter = GoRouter(
+// Placeholder dummy screen for the Menu route as per instructions
+class MenuScreenPlaceholder extends StatelessWidget {
+  const MenuScreenPlaceholder({super.key});
+  @override
+  Widget build(BuildContext context) => const Scaffold(body: Center(child: Text('Menu Coming Soon')));
+}
+
+final GoRouter appRouter = GoRouter(
   initialLocation: '/auth',
   routes: [
     GoRoute(
@@ -14,20 +21,22 @@ final appRouter = GoRouter(
     StatefulShellRoute.indexedStack(
       builder: (context, state, navigationShell) => AppShell(shell: navigationShell),
       branches: [
-        StatefulShellBranch(routes: [
-          GoRoute(
-            path: '/dashboard',
-            builder: (context, state) => const DashboardScreen(),
-          ),
-        ]),
-        StatefulShellBranch(routes: [
-          GoRoute(
-            path: '/menu',
-            builder: (context, state) => Scaffold(
-              body: Center(child: Text('Menu Screen', style: Theme.of(context).textTheme.headlineMedium)),
+        StatefulShellBranch(
+          routes: [
+            GoRoute(
+              path: '/dashboard',
+              builder: (context, state) => const DashboardScreen(),
             ),
-          ),
-        ]),
+          ],
+        ),
+        StatefulShellBranch(
+          routes: [
+            GoRoute(
+              path: '/menu',
+              builder: (context, state) => const MenuScreenPlaceholder(),
+            ),
+          ],
+        ),
       ],
     ),
   ],

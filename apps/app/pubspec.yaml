@@ -1,8 +1,9 @@
 name: love_and_latte
-description: A new Flutter project.
+description: A coffee shop application.
 version: 1.0.0+1
 environment:
   sdk: ^3.5.0
+
 dependencies:
   flutter:
     sdk: flutter
@@ -13,9 +14,11 @@ dependencies:
   cached_network_image: ^3.3.0
   flutter_svg: ^2.0.9
   provider: ^6.1.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+
 flutter:
   uses-material-design: true

@@ -6,14 +6,16 @@ class UserNotifier extends StateNotifier<User> {
 
   void incrementProgress() {
     final newCount = state.rewardCount + 1;
-    String newBadge = 'Bean Novice';
-    if (newCount > 10) {
-      newBadge = 'Barista Master';
-    } else if (newCount > 5) {
-      newBadge = 'Coffee Aficionado';
-    }
+    state = state.copyWith(
+      rewardCount: newCount,
+      badgeLevel: _calculateBadge(newCount),
+    );
+  }
 
-    state = state.copyWith(rewardCount: newCount, badgeLevel: newBadge);
+  String _calculateBadge(int count) {
+    if (count <= 5) return 'Bean Novice';
+    if (count <= 10) return 'Coffee Aficionado';
+    return 'Barista Master';
   }
 
   String get currentBadge => state.badgeLevel;

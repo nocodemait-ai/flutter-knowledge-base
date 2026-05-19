@@ -1,18 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:go_router/go_router.dart';
-import 'lib/providers/user_provider.dart';
-import 'lib/router.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'core/router.dart';
+import 'core/theme.dart';
 
 void main() {
-  runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => UserNotifier()),
-      ],
-      child: const MyApp(),
-    ),
-  );
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -21,11 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'App',
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-      ),
+      title: 'love_and_latte',
+      debugShowCheckedModeBanner: false,
+      theme: lightTheme,
       routerConfig: appRouter,
     );
   }

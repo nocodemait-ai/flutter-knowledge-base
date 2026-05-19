@@ -25,10 +25,11 @@ class MenuItem {
     String? name,
     double? price,
     String? description,
-  }) =>
-      MenuItem(
-        name: name ?? this.name,
-        price: price ?? this.price,
-        description: description ?? this.description,
-      );
+  }) {
+    return MenuItem(
+      name: name ?? this.name,
+      price: price ?? this.price,
+      description: description ?? this.description,
+    );
+  }
 }

@@ -16,7 +16,12 @@ class _AppShellState extends State<AppShell> {
       body: widget.shell,
       bottomNavigationBar: NavigationBar(
         selectedIndex: widget.shell.currentIndex,
-        onDestinationSelected: widget.shell.goBranch,
+        onDestinationSelected: (int index) {
+          widget.shell.goBranch(
+            index,
+            initialLocation: index == widget.shell.currentIndex,
+          );
+        },
         destinations: const [
           NavigationDestination(
             icon: Icon(Icons.dashboard_outlined),

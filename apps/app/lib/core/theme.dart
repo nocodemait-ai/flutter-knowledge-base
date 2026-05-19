@@ -19,13 +19,14 @@ class AppTheme {
       onSurface: onSurface,
       background: background,
       error: error,
-      onPrimary: Colors.white,
     ),
     textTheme: GoogleFonts.poppinsTextTheme(),
     scaffoldBackgroundColor: background,
-    cardTheme: CardTheme(
+    cardTheme: const CardThemeData(
       elevation: 2,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(12)),
+      ),
       color: surface,
     ),
     filledButtonTheme: FilledButtonThemeData(
@@ -34,10 +35,10 @@ class AppTheme {
         minimumSize: const Size(double.infinity, 56),
       ),
     ),
-    inputDecorationTheme: InputDecorationTheme(
-      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-      filled: true,
-      fillColor: surface,
+    appBarTheme: const AppBarTheme(
+      backgroundColor: background,
+      elevation: 0,
+      centerTitle: true,
     ),
   );
 }
