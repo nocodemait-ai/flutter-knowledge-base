@@ -483,6 +483,244 @@
       "path": "apps/wallart",
       "name": "Wall Art App",
       "domain": "media"
+    },
+    {
+      "id": "flutter_browser_app",
+      "type": "app",
+      "path": "apps/flutter_browser_app",
+      "name": "Flutter Browser App",
+      "domain": "generic"
+    },
+    {
+      "id": "Flutter-Music-Player",
+      "type": "app",
+      "path": "apps/Flutter-Music-Player",
+      "name": "Flute Example",
+      "domain": "media"
+    },
+    {
+      "id": "FlutterMates",
+      "type": "app",
+      "path": "apps/FlutterMates",
+      "name": "Flutter Mates",
+      "domain": "generic"
+    },
+    {
+      "id": "spotube",
+      "type": "app",
+      "path": "apps/spotube",
+      "name": "Spotube",
+      "domain": "media"
+    },
+    {
+      "id": "FlutterFurnitureAppUI",
+      "type": "app",
+      "path": "apps/FlutterFurnitureAppUI",
+      "name": "Furniture App",
+      "domain": "generic"
+    },
+    {
+      "id": "mobileraker",
+      "type": "app",
+      "path": "apps/mobileraker",
+      "name": "Mobileraker",
+      "domain": "media"
+    },
+    {
+      "id": "harpy",
+      "type": "app",
+      "path": "apps/harpy",
+      "name": "Harpy",
+      "domain": "media"
+    },
+    {
+      "id": "FlutterGrocery-ShoppingAppUI",
+      "type": "app",
+      "path": "apps/FlutterGrocery-ShoppingAppUI",
+      "name": "Fryo",
+      "domain": "ecommerce"
+    },
+    {
+      "id": "taskwarrior-flutter",
+      "type": "app",
+      "path": "apps/taskwarrior-flutter",
+      "name": "Taskwarrior",
+      "domain": "social"
+    },
+    {
+      "id": "FlatApp-Firebase-Flutter",
+      "type": "app",
+      "path": "apps/FlatApp-Firebase-Flutter",
+      "name": "Flutter Flat App",
+      "domain": "generic"
+    },
+    {
+      "id": "timy-messenger",
+      "type": "app",
+      "path": "apps/timy-messenger",
+      "name": "Circles App",
+      "domain": "media"
+    },
+    {
+      "id": "Our-E-School",
+      "type": "app",
+      "path": "apps/Our-E-School",
+      "name": "Oureschool",
+      "domain": "ecommerce"
+    },
+    {
+      "id": "flutter-settings-ui",
+      "type": "app",
+      "path": "apps/flutter-settings-ui",
+      "name": "Settings Ui",
+      "domain": "generic"
+    },
+    {
+      "id": "flutter_flipperkit",
+      "type": "app",
+      "path": "apps/flutter_flipperkit",
+      "name": "Flutter Flipperkit",
+      "domain": "generic"
+    },
+    {
+      "id": "SocialFishMobile",
+      "type": "app",
+      "path": "apps/SocialFishMobile",
+      "name": "Socialfish",
+      "domain": "media"
+    },
+    {
+      "id": "app-flutter-mobile-banking",
+      "type": "app",
+      "path": "apps/app-flutter-mobile-banking",
+      "name": "Banking App",
+      "domain": "finance"
+    },
+    {
+      "id": "bbb_app",
+      "type": "app",
+      "path": "apps/bbb_app",
+      "name": "Bbb App",
+      "domain": "social"
+    },
+    {
+      "id": "app.mobile.flutter-instagram-app-ui",
+      "type": "app",
+      "path": "apps/app.mobile.flutter-instagram-app-ui",
+      "name": "Ig Ui App",
+      "domain": "social"
+    },
+    {
+      "id": "Flutter-Onboarding-UI-Concept",
+      "type": "app",
+      "path": "apps/Flutter-Onboarding-UI-Concept",
+      "name": "Flutter Onboarding Ui Concept",
+      "domain": "generic"
+    },
+    {
+      "id": "flutter-app",
+      "type": "app",
+      "path": "apps/flutter-app",
+      "name": "Todo Open",
+      "domain": "generic"
+    },
+    {
+      "id": "Flutter-TDD-Clean-Architecture-E-Commerce-App",
+      "type": "app",
+      "path": "apps/Flutter-TDD-Clean-Architecture-E-Commerce-App",
+      "name": "Eshop",
+      "domain": "social"
+    },
+    {
+      "id": "tweety-mobile",
+      "type": "app",
+      "path": "apps/tweety-mobile",
+      "name": "Tweety Mobile",
+      "domain": "media"
+    },
+    {
+      "id": "lakasir_flutter",
+      "type": "app",
+      "path": "apps/lakasir_flutter",
+      "name": "Lakasir",
+      "domain": "social"
+    },
+    {
+      "id": "player",
+      "type": "app",
+      "path": "apps/player",
+      "name": "App",
+      "domain": "media"
+    },
+    {
+      "id": "Flutter-Grocery-App",
+      "type": "app",
+      "path": "apps/Flutter-Grocery-App",
+      "name": "My Grocery",
+      "domain": "generic"
+    },
+    {
+      "id": "conference2020",
+      "type": "app",
+      "path": "apps/conference2020",
+      "name": "Conferenceapp",
+      "domain": "media"
+    },
+    {
+      "id": "okuna-app",
+      "type": "app",
+      "path": "apps/okuna-app",
+      "name": "Okuna",
+      "domain": "media"
+    },
+    {
+      "id": "AdaptySDK-Flutter",
+      "type": "app",
+      "path": "apps/AdaptySDK-Flutter",
+      "name": "Adapty Flutter",
+      "domain": "generic"
+    },
+    {
+      "id": "EtornamVpnFlutter",
+      "type": "app",
+      "path": "apps/EtornamVpnFlutter",
+      "name": "Etornam Vpn",
+      "domain": "generic"
+    },
+    {
+      "id": "Mobile-App",
+      "type": "app",
+      "path": "apps/Mobile-App",
+      "name": "Tsec App",
+      "domain": "ecommerce"
+    },
+    {
+      "id": "my_ollama_app",
+      "type": "app",
+      "path": "apps/my_ollama_app",
+      "name": "My Ollama",
+      "domain": "social"
+    },
+    {
+      "id": "Tabs",
+      "type": "app",
+      "path": "apps/Tabs",
+      "name": "Tabs",
+      "domain": "ecommerce"
+    },
+    {
+      "id": "sharik",
+      "type": "app",
+      "path": "apps/sharik",
+      "name": "Sharik",
+      "domain": "generic"
+    },
+    {
+      "id": "flutter_parallax_scroll",
+      "type": "app",
+      "path": "apps/flutter_parallax_scroll",
+      "name": "Flutter Parallax Scroll",
+      "domain": "generic"
     }
   ]
 }
