@@ -1,0 +1,27 @@
+{
+  "id": "memories-and-albums",
+  "type": "app",
+  "name": "Memories & Albums",
+  "description": "A photo memories and albums app with auth, image picking, animated transitions, and profile management.",
+  "domain": "lifestyle",
+  "app_type": "gallery",
+  "source_repo": "droplr-ai-platform",
+  "screens": [
+    {"id": "splashscreen", "name": "SplashScreen", "screen_type": "auth"},
+    {"id": "loginscreen", "name": "LoginScreen", "screen_type": "auth"},
+    {"id": "homescreen", "name": "HomeScreen", "screen_type": "dashboard"},
+    {"id": "albumlistscreen", "name": "AlbumListScreen", "screen_type": "list"},
+    {"id": "albumdetailscreen", "name": "AlbumDetailScreen", "screen_type": "detail"},
+    {"id": "memorydetailscreen", "name": "MemoryDetailScreen", "screen_type": "detail"},
+    {"id": "creatememoryscreen", "name": "CreateMemoryScreen", "screen_type": "form"},
+    {"id": "editmemoryscreen", "name": "EditMemoryScreen", "screen_type": "form"},
+    {"id": "profilescreen", "name": "ProfileScreen", "screen_type": "general"}
+  ],
+  "packages": [
+    "provider", "go_router", "google_fonts", "cached_network_image",
+    "image_picker", "intl", "flutter_animate", "uuid", "shared_preferences"
+  ],
+  "build": {"status": "generated", "fixer_attempts": 0},
+  "keywords": ["memories", "albums", "photos", "gallery", "auth", "profile", "animations"],
+  "tags": ["lifestyle", "gallery", "photos", "memories", "provider", "nocode", "droplr-ai"]
+}

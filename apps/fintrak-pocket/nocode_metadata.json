@@ -1,0 +1,21 @@
+{
+  "id": "fintrak-pocket",
+  "type": "app",
+  "name": "FinTrak Pocket",
+  "description": "A personal finance tracker with dashboard overview, budget management, investment tracking, and subscription monitoring.",
+  "domain": "finance",
+  "app_type": "utility",
+  "source_repo": "droplr-ai-platform",
+  "screens": [
+    {"id": "dashboardscreen", "name": "DashboardScreen", "screen_type": "dashboard"},
+    {"id": "budgetscreen", "name": "BudgetScreen", "screen_type": "list"},
+    {"id": "investmentscreen", "name": "InvestmentScreen", "screen_type": "list"},
+    {"id": "subscriptionscreen", "name": "SubscriptionScreen", "screen_type": "list"}
+  ],
+  "packages": [
+    "provider", "go_router", "google_fonts"
+  ],
+  "build": {"status": "generated", "fixer_attempts": 0},
+  "keywords": ["finance", "budget", "investments", "subscriptions", "money", "tracker", "expense"],
+  "tags": ["finance", "budget", "investments", "utility", "provider", "nocode", "droplr-ai"]
+}

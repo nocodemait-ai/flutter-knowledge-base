@@ -1,59 +1,47 @@
 {
   "id": "app",
   "type": "app",
-  "name": "FinTrak Pocket",
-  "description": "FinTrak Pocket is a privacy-focused personal finance manager designed to help individuals maintain financial stability and long-term growth. It provides a centralized dashboard for manual expense logg",
-  "domain": "finance",
+  "name": "Badminton Mate",
+  "description": "This application serves as a dedicated utility for amateur badminton players to manage ad-hoc round-robin tournaments. It eliminates the friction of manual teaming by automatically generating pair com",
+  "domain": "fitness",
   "app_type": "tracker",
   "source_repo": "droplr-ai-platform",
   "screens": [
     {
-      "id": "dashboardscreen",
-      "name": "DashboardScreen",
-      "screen_type": "detail"
+      "id": "setupscreen",
+      "name": "SetupScreen",
+      "screen_type": "settings"
     },
     {
-      "id": "addtransactionmodal",
-      "name": "AddTransactionModal",
-      "screen_type": "form"
-    },
-    {
-      "id": "budgetscreen",
-      "name": "BudgetScreen",
-      "screen_type": "general"
-    },
-    {
-      "id": "investmentscreen",
-      "name": "InvestmentScreen",
-      "screen_type": "general"
-    },
-    {
-      "id": "subscriptionmanager",
-      "name": "SubscriptionManager",
+      "id": "matchmakingscreen",
+      "name": "MatchmakingScreen",
       "screen_type": "general"
     }
   ],
   "packages": [
-    "cupertino_icons",
+    "flutter_riverpod",
     "go_router",
     "google_fonts",
     "provider",
-    "flutter_lints",
-    "flutter_test"
+    "cupertino_icons",
+    "hive",
+    "hive_flutter",
+    "flutter_test",
+    "flutter_lints"
   ],
   "build": {
     "status": "generated",
     "fixer_attempts": 0
   },
   "tags": [
-    "finance",
+    "fitness",
     "tracker",
     "nocode",
     "droplr-ai",
-    "expense",
-    "budget",
-    "subscription",
-    "investment",
-    "ledger"
+    "badminton",
+    "tournament",
+    "round-robin",
+    "teaming",
+    "rotation"
   ]
 }

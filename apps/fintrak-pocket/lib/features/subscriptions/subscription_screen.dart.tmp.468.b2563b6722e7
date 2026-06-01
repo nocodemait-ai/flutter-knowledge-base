@@ -1,0 +1,192 @@
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../../services/transaction_service.dart';
+import '../../models/transaction.dart';
+import '../../core/theme.dart';
+
+// Categories treated as subscriptions
+const _subCategories = {'Streaming', 'Subscriptions'};
+
+// Static known subscriptions (augments transaction data)
+const _knownSubs = [
+  _SubInfo('Netflix', 'Streaming', 15.99, Icons.play_circle_fill, Color(0xFFE50914)),
+  _SubInfo('Spotify', 'Streaming', 9.99, Icons.music_note, Color(0xFF1DB954)),
+  _SubInfo('iCloud', 'Subscriptions', 2.99, Icons.cloud, Color(0xFF147EFB)),
+  _SubInfo('YouTube Premium', 'Streaming', 13.99, Icons.smart_display, Color(0xFFFF0000)),
+];
+
+class _SubInfo {
+  final String name;
+  final String category;
+  final double price;
+  final IconData icon;
+  final Color color;
+  const _SubInfo(this.name, this.category, this.price, this.icon, this.color);
+}
+
+class SubscriptionScreen extends StatelessWidget {
+  const SubscriptionScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final txns = context.watch<TransactionService>().transactions;
+    final subTxns = txns.where((t) => _subCategories.contains(t.category)).toList();
+    final txnTotal = subTxns.fold(0.0, (s, t) => s + t.amount);
+    final knownTotal = _knownSubs.fold(0.0, (s, sub) => s + sub.price);
+
+    return Scaffold(
+      backgroundColor: AppTheme.background,
+      appBar: AppBar(
+        backgroundColor: AppTheme.primary,
+        foregroundColor: Colors.white,
+        title: const Text('Subscriptions', style: TextStyle(fontWeight: FontWeight.w700)),
+        elevation: 0,
+      ),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: [
+          _SubSummaryCard(monthlyTotal: knownTotal),
+          const SizedBox(height: 20),
+          Text('Active Subscriptions',
+              style: Theme.of(context)
+                  .textTheme
+                  .titleMedium
+                  ?.copyWith(fontWeight: FontWeight.w700)),
+          const SizedBox(height: 12),
+          ..._knownSubs.map((s) => _SubCard(sub: s)),
+          if (subTxns.isNotEmpty) ...[
+            const SizedBox(height: 20),
+            Text('From Transactions',
+                style: Theme.of(context)
+                    .textTheme
+                    .titleMedium
+                    ?.copyWith(fontWeight: FontWeight.w700)),
+            const SizedBox(height: 12),
+            ...subTxns.map((t) => _TxnSubTile(transaction: t)),
+          ],
+        ],
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        backgroundColor: AppTheme.primary,
+        foregroundColor: Colors.white,
+        onPressed: () {},
+        icon: const Icon(Icons.add),
+        label: const Text('Add Subscription'),
+      ),
+    );
+  }
+}
+
+class _SubSummaryCard extends StatelessWidget {
+  final double monthlyTotal;
+  const _SubSummaryCard({required this.monthlyTotal});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(18),
+        child: Row(
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('Monthly Cost',
+                      style: TextStyle(fontSize: 12, color: Colors.grey)),
+                  const SizedBox(height: 4),
+                  Text(
+                    '\$${monthlyTotal.toStringAsFixed(2)}',
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w800,
+                      color: AppTheme.primary,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    '\$${(monthlyTotal * 12).toStringAsFixed(2)} / year',
+                    style: const TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
+                ],
+              ),
+            ),
+            CircleAvatar(
+              radius: 28,
+              backgroundColor: AppTheme.primary.withOpacity(0.1),
+              child: Icon(Icons.subscriptions, color: AppTheme.primary, size: 28),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _SubCard extends StatelessWidget {
+  final _SubInfo sub;
+  const _SubCard({required this.sub});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: const EdgeInsets.only(bottom: 10),
+      child: ListTile(
+        leading: CircleAvatar(
+          backgroundColor: sub.color.withOpacity(0.12),
+          child: Icon(sub.icon, color: sub.color, size: 22),
+        ),
+        title: Text(sub.name,
+            style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 14)),
+        subtitle: Text(sub.category,
+            style: const TextStyle(fontSize: 12, color: Colors.grey)),
+        trailing: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            Text(
+              '\$${sub.price.toStringAsFixed(2)}',
+              style: TextStyle(
+                color: AppTheme.primary,
+                fontWeight: FontWeight.w700,
+                fontSize: 15,
+              ),
+            ),
+            const Text('/ mo', style: TextStyle(fontSize: 10, color: Colors.grey)),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _TxnSubTile extends StatelessWidget {
+  final Transaction transaction;
+  const _TxnSubTile({required this.transaction});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: const EdgeInsets.only(bottom: 8),
+      child: ListTile(
+        leading: CircleAvatar(
+          backgroundColor: Colors.blueGrey.shade50,
+          child: const Icon(Icons.receipt, color: Colors.blueGrey, size: 18),
+        ),
+        title: Text(transaction.category,
+            style: const TextStyle(fontWeight: FontWeight.w500)),
+        subtitle: Text(
+          '${transaction.date.day}/${transaction.date.month}/${transaction.date.year}',
+          style: const TextStyle(fontSize: 12),
+        ),
+        trailing: Text(
+          '-\$${transaction.amount.toStringAsFixed(2)}',
+          style: const TextStyle(
+            color: Color(0xFFB00020),
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+      ),
+    );
+  }
+}

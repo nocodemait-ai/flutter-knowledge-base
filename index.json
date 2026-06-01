@@ -408,13 +408,6 @@
       "domain": "productivity"
     },
     {
-      "id": "app",
-      "type": "app",
-      "path": "apps/app",
-      "name": "FinTrak Pocket",
-      "domain": "finance"
-    },
-    {
       "id": "bloom",
       "type": "app",
       "path": "apps/bloom",
@@ -483,6 +476,41 @@
       "path": "apps/wallart",
       "name": "Wall Art App",
       "domain": "media"
+    },
+    {
+      "id": "grow-habit",
+      "type": "app",
+      "path": "apps/grow-habit",
+      "name": "Grow Habit",
+      "domain": "productivity"
+    },
+    {
+      "id": "memories-and-albums",
+      "type": "app",
+      "path": "apps/memories-and-albums",
+      "name": "Memories & Albums",
+      "domain": "lifestyle"
+    },
+    {
+      "id": "fintrak-pocket",
+      "type": "app",
+      "path": "apps/fintrak-pocket",
+      "name": "FinTrak Pocket",
+      "domain": "finance"
+    },
+    {
+      "id": "desk-os",
+      "type": "app",
+      "path": "apps/desk-os",
+      "name": "DeskOS",
+      "domain": "iot"
+    },
+    {
+      "id": "app",
+      "type": "app",
+      "path": "apps/app",
+      "name": "Badminton Mate",
+      "domain": "fitness"
     },
     {
       "id": "flutter_browser_app",

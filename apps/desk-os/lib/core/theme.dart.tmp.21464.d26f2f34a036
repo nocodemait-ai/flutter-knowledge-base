@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+const Color primary = Color(0xFF38BDF8);
+const Color onPrimary = Color(0xFF020617);
+const Color secondary = Color(0xFF1E293B);
+const Color onSecondary = Color(0xFFF1F5F9);
+const Color background = Color(0xFF020617);
+const Color surface = Color(0xFF0F172A);
+const Color onSurface = Color(0xFFF1F5F9);
+const Color error = Color(0xFFEF4444);
+const Color onError = Color(0xFFFFFFFF);
+
+ThemeData get deskTheme => ThemeData(
+      useMaterial3: true,
+      brightness: Brightness.dark,
+      scaffoldBackgroundColor: background,
+      colorScheme: const ColorScheme.dark(
+        primary: primary,
+        onPrimary: onPrimary,
+        secondary: secondary,
+        onSecondary: onSecondary,
+        surface: surface,
+        onSurface: onSurface,
+        error: error,
+        onError: onError,
+        surfaceContainerHigh: Color(0xFF1E293B),
+      ),
+      textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme).copyWith(
+        displayLarge: const TextStyle(color: onSurface, fontWeight: FontWeight.bold),
+        bodyMedium: const TextStyle(color: onSurface, fontSize: 16),
+      ),
+
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+      ),
+    );

@@ -1,31 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:go_router/go_router.dart';
-import 'services/transaction_service.dart';
-import 'router.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'core/router.dart';
+import 'core/theme.dart';
 
 void main() {
-  runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => TransactionService()),
-      ],
-      child: const FinanceApp(),
-    ),
-  );
+  runApp(const ProviderScope(child: MyApp()));
 }
 
-class FinanceApp extends StatelessWidget {
-  const FinanceApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Finance Tracker',
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
+      title: 'tournament_app',
+      debugShowCheckedModeBanner: false,
+      theme: lightTheme,
       routerConfig: appRouter,
     );
   }

@@ -1,0 +1,22 @@
+{
+  "id": "desk-os",
+  "type": "app",
+  "name": "DeskOS",
+  "description": "A smart home management app for controlling IoT devices, automation rules, AI assistant, and environment monitoring.",
+  "domain": "iot",
+  "app_type": "dashboard",
+  "source_repo": "droplr-ai-platform",
+  "screens": [
+    {"id": "dashboardscreen", "name": "DashboardScreen", "screen_type": "dashboard"},
+    {"id": "assistantscreen", "name": "AssistantScreen", "screen_type": "general"},
+    {"id": "automationscreen", "name": "AutomationScreen", "screen_type": "list"},
+    {"id": "devicesscreen", "name": "DevicesScreen", "screen_type": "list"},
+    {"id": "environmentscreen", "name": "EnvironmentScreen", "screen_type": "analytics"}
+  ],
+  "packages": [
+    "flutter_riverpod", "riverpod_annotation", "go_router", "google_fonts"
+  ],
+  "build": {"status": "generated", "fixer_attempts": 0},
+  "keywords": ["smart home", "iot", "automation", "devices", "dashboard", "assistant", "environment"],
+  "tags": ["iot", "smart-home", "automation", "dashboard", "riverpod", "nocode", "droplr-ai"]
+}
