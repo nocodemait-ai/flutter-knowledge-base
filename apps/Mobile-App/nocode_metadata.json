@@ -1,0 +1,294 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "Mobile-App",
+  "name": "Tsec App",
+  "description": "A new Flutter project.",
+  "domain": "ecommerce",
+  "app_type": "marketplace",
+  "source_repo": "https://github.com/TSEC-MAD-Club/Mobile-App",
+  "keywords": [],
+  "tags": [
+    "animation",
+    "app",
+    "auth",
+    "dashboard",
+    "image",
+    "list",
+    "local",
+    "localization",
+    "nocode-flutter"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Tsec App",
+    "slug": "mobile_app",
+    "app_type": "marketplace",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 41
+  },
+  "screens": [
+    {
+      "id": "about-us",
+      "name": "About Us",
+      "screen_type": "general"
+    },
+    {
+      "id": "add-attendance-screen",
+      "name": "Add Attendance",
+      "screen_type": "form"
+    },
+    {
+      "id": "attendance-screen",
+      "name": "Attendance",
+      "screen_type": "general"
+    },
+    {
+      "id": "attendance-container",
+      "name": "Attendance Container",
+      "screen_type": "general"
+    },
+    {
+      "id": "attendance-header2025",
+      "name": "Attendance Header2025",
+      "screen_type": "general"
+    },
+    {
+      "id": "coming-soon",
+      "name": "Coming Soon",
+      "screen_type": "general"
+    },
+    {
+      "id": "committees-screen",
+      "name": "Committees",
+      "screen_type": "general"
+    },
+    {
+      "id": "old-committess-screen",
+      "name": "Old Committess",
+      "screen_type": "general"
+    },
+    {
+      "id": "daily-question-screen",
+      "name": "Daily Question",
+      "screen_type": "general"
+    },
+    {
+      "id": "e-r-p-screen",
+      "name": "E R P",
+      "screen_type": "general"
+    },
+    {
+      "id": "my-app",
+      "name": "My App",
+      "screen_type": "general"
+    },
+    {
+      "id": "web-view-example",
+      "name": "Web View Example",
+      "screen_type": "general"
+    },
+    {
+      "id": "guide-lines-screen",
+      "name": "Guide Lines",
+      "screen_type": "general"
+    },
+    {
+      "id": "home-screen-shimmer-loader",
+      "name": "Home Screen Shimmer Loader",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "image-shimmer",
+      "name": "Image Shimmer",
+      "screen_type": "general"
+    },
+    {
+      "id": "time-container",
+      "name": "Time Container",
+      "screen_type": "general"
+    },
+    {
+      "id": "launch-screen",
+      "name": "Launch",
+      "screen_type": "general"
+    },
+    {
+      "id": "maintainance-screen",
+      "name": "Maintainance",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "address-field",
+      "name": "Address Field",
+      "screen_type": "form"
+    },
+    {
+      "id": "faculty-field",
+      "name": "Faculty Field",
+      "screen_type": "general"
+    },
+    {
+      "id": "phone-field",
+      "name": "Phone Field",
+      "screen_type": "general"
+    },
+    {
+      "id": "profile-dropdown-field",
+      "name": "Profile Dropdown Field",
+      "screen_type": "detail"
+    },
+    {
+      "id": "railway-dropdown-field",
+      "name": "Railway Dropdown Field",
+      "screen_type": "general"
+    },
+    {
+      "id": "railway-dropdown-search",
+      "name": "Railway Dropdown Search",
+      "screen_type": "list"
+    },
+    {
+      "id": "railway-text-field",
+      "name": "Railway Text Field",
+      "screen_type": "general"
+    },
+    {
+      "id": "status-stepper",
+      "name": "Status Stepper",
+      "screen_type": "general"
+    },
+    {
+      "id": "department-list-screen",
+      "name": "Department List",
+      "screen_type": "list"
+    },
+    {
+      "id": "department-list",
+      "name": "Department List",
+      "screen_type": "list"
+    },
+    {
+      "id": "department-screen",
+      "name": "Department",
+      "screen_type": "general"
+    },
+    {
+      "id": "about-section",
+      "name": "About Section",
+      "screen_type": "general"
+    },
+    {
+      "id": "curriculum-section",
+      "name": "Curriculum Section",
+      "screen_type": "general"
+    },
+    {
+      "id": "faculty-details-section",
+      "name": "Faculty Details Section",
+      "screen_type": "detail"
+    },
+    {
+      "id": "chip-styled-text",
+      "name": "Chip Styled Text",
+      "screen_type": "general"
+    },
+    {
+      "id": "login-screen",
+      "name": "Login",
+      "screen_type": "auth"
+    },
+    {
+      "id": "custom-text-with-divider",
+      "name": "Custom Text With Divider",
+      "screen_type": "general"
+    },
+    {
+      "id": "profile-text-field",
+      "name": "Profile Text Field",
+      "screen_type": "detail"
+    },
+    {
+      "id": "railway-text-with-divider",
+      "name": "Railway Text With Divider",
+      "screen_type": "general"
+    },
+    {
+      "id": "intern-ships",
+      "name": "Intern Ships",
+      "screen_type": "general"
+    },
+    {
+      "id": "t-p-c-screen",
+      "name": "T P C",
+      "screen_type": "general"
+    },
+    {
+      "id": "tpc-image-shimmer",
+      "name": "Tpc Image Shimmer",
+      "screen_type": "general"
+    },
+    {
+      "id": "tpc-divider-shimmer",
+      "name": "Tpc Divider Shimmer",
+      "screen_type": "general"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "cached_network_image",
+    "carousel_slider",
+    "cloud_firestore",
+    "date_picker_timeline",
+    "expandable",
+    "file_picker",
+    "firebase_auth",
+    "firebase_core",
+    "firebase_messaging",
+    "firebase_storage",
+    "flutter_linkify",
+    "flutter_riverpod",
+    "get_it",
+    "go_router",
+    "image_picker",
+    "intl",
+    "json_annotation",
+    "lottie",
+    "open_file",
+    "path_provider",
+    "permission_handler",
+    "shared_preferences",
+    "textfield_search",
+    "top_snackbar_flutter",
+    "url_launcher",
+    "dropdown_search",
+    "autocomplete_textfield",
+    "animations",
+    "equatable",
+    "dio",
+    "smooth_page_indicator",
+    "webview_flutter",
+    "webview_flutter_android",
+    "webview_flutter_wkwebview",
+    "flutter_blurhash",
+    "easy_stepper",
+    "flutter_local_notifications",
+    "bcrypt",
+    "shimmer_animation",
+    "badges",
+    "timeline_tile",
+    "pie_chart",
+    "edge_detection_plus"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

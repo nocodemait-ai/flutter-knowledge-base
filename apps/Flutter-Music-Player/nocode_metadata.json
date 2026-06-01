@@ -1,0 +1,57 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "Flutter-Music-Player",
+  "name": "Flute Example",
+  "description": "Demonstrates how to use the flute_music_player plugin.",
+  "domain": "media",
+  "app_type": "streaming",
+  "source_repo": "https://github.com/iampawan/Flutter-Music-Player",
+  "keywords": [],
+  "tags": [
+    "app",
+    "list",
+    "local",
+    "nocode-flutter"
+  ],
+  "built_at": "2026-05-28",
+  "platform": "manual",
+  "app": {
+    "name": "Flute Example",
+    "slug": "flutter_music_player",
+    "app_type": "streaming",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 3
+  },
+  "screens": [
+    {
+      "id": "now-playing",
+      "name": "Now Playing",
+      "screen_type": "general"
+    },
+    {
+      "id": "root-page",
+      "name": "Root",
+      "screen_type": "general"
+    },
+    {
+      "id": "m-p-list-view",
+      "name": "M P List",
+      "screen_type": "list"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "flute_music_player"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

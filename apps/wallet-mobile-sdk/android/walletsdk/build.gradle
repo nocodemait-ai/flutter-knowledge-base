@@ -1,0 +1,112 @@
+plugins {
+    alias libs.plugins.android.library
+    alias libs.plugins.kotlin.android
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.6.21'
+    id 'maven-publish'
+    id 'signing'
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 34
+
+        versionCode 3
+        versionName libs.versions.sdk.version.get()
+
+        buildConfigField "int", "LIBRARY_VERSION_CODE", "${versionCode}"
+        buildConfigField "String", "LIBRARY_VERSION_NAME", "\"${versionName}\""
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    implementation libs.kotlin.serialization
+    implementation libs.security.crypto
+    implementation libs.security.tink
+
+    testImplementation libs.junit4
+    testImplementation libs.kotest
+    androidTestImplementation libs.androidx.junit4
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId 'com.coinbase'
+                artifactId 'coinbase-wallet-sdk'
+                version = android.defaultConfig.versionName
+
+                pom {
+                    name = 'coinbase-wallet-sdk'
+                    description = 'Coinbase Wallet Mobile SDK'
+                    url = 'https://github.com/MobileWalletProtocol/wallet-mobile-sdk'
+                    licenses {
+                        license {
+                            name = 'Coinbase License'
+                            url = 'https://github.com/MobileWalletProtocol/wallet-mobile-sdk/blob/master/LICENSE'
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = 'bangtoven'
+                            name = 'Jungho Bang'
+                            email = 'me@bangtoven.com'
+                        }
+                        developer {
+                            id = 'vishnumad'
+                            name = 'Vishnu Madhusoodanan'
+                            email = 'vishnu.madhusoodanan@coinbase.com'
+                        }
+                    }
+                    scm {
+                        developerConnection = 'scm:git@github.com:MobileWalletProtocol/wallet-mobile-sdk.git'
+                        url = 'https://github.com/MobileWalletProtocol/wallet-mobile-sdk/tree/main'
+                    }
+                }
+            }
+        }
+    }
+}
+
+signing {
+    useInMemoryPgpKeys(
+            rootProject.ext["signing.keyId"],
+            rootProject.ext["signing.key"],
+            rootProject.ext["signing.password"],
+    )
+    sign publishing.publications
+}

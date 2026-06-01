@@ -1,0 +1,69 @@
+name: carp_backend
+version: 2.0.0
+description: CARP data backend for CARP Mobile Sensing. Supports downloading study deployments and uploading data from/to a CARP Web Service (CAWS) server.
+homepage: https://github.com/cph-cachet/carp.sensing-flutter
+repository: https://github.com/carp-dk/carp.sensing-flutter/tree/main/backends/carp_backend
+issue_tracker: https://github.com/cph-cachet/carp.sensing-flutter/issues
+
+documentation: https://docs.carp.dk/carp-mobile-sensing/
+topics:
+  - mobile-sensing
+  - mobile-health
+  - sensors
+  - digital-phenotyping
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+platforms:
+  android:
+  ios:
+
+dependencies:
+  flutter:
+    sdk: flutter
+  meta: ^1.11.0
+  json_annotation: ^4.8.0
+  connectivity_plus: '>=6.0.0 <8.0.0'
+  sqflite: ^2.2.0
+
+  carp_serializable: ^2.0.0
+  carp_core: ^2.0.0
+  carp_mobile_sensing: ^2.0.0
+  carp_webservices: ^4.0.0
+
+  research_package: ^2.0.0
+
+# Overriding carp libraries to use the local copy
+# Remove this before release of package
+dependency_overrides:
+  # carp_serializable:
+  #   path: ../../carp_serializable/
+  # carp_core:
+  #   path: ../../carp_core/
+  # carp_mobile_sensing:
+  #   path: ../../carp_mobile_sensing/
+  # carp_webservices:
+  #   path: ../carp_webservices/
+  # research_package:
+  #   path: ../../../../research.package/
+  # the following sampling packages are only used for unit testing
+  #  carp_esense_package:
+  #    path: ../../packages/carp_esense_package/
+  #  carp_audio_package:
+  #    path: ../../packages/carp_audio_package/
+  #  carp_context_package:
+  #    path: ../../packages/carp_context_package/
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: any
+  json_serializable: any
+  test: any
+  flutter_lints: any
+  shared_preferences: ^2.5.3
+
+flutter:
+  uses-material-design: true # need this since both RP and carp_webservices uses MD

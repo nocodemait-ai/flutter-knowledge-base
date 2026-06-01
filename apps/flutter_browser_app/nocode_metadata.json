@@ -1,0 +1,135 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "flutter_browser_app",
+  "name": "Flutter Browser App",
+  "description": "Imported from https://github.com/pichillilorenzo/flutter_browser_app",
+  "domain": "generic",
+  "app_type": "utility",
+  "keywords": [],
+  "tags": [
+    "app",
+    "browser",
+    "colorpicker",
+    "database",
+    "downloader",
+    "generic",
+    "image",
+    "local",
+    "localization",
+    "material-you",
+    "nocode-flutter",
+    "sharing",
+    "sqlite",
+    "state-management",
+    "svg",
+    "utility",
+    "webview"
+  ],
+  "built_at": "2026-05-27",
+  "platform": "manual",
+  "app": {
+    "name": "Flutter Browser App",
+    "slug": "flutter_browser_app",
+    "app_type": "utility",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 0
+  },
+  "screens": [
+    {
+      "id": "empty-tab",
+      "name": "Empty Tab",
+      "screen_type": "general"
+    },
+    {
+      "id": "scrollable-tab",
+      "name": "Scrollable Tab",
+      "screen_type": "general"
+    },
+    {
+      "id": "web-view-tab",
+      "name": "Web View Tab",
+      "screen_type": "general"
+    },
+    {
+      "id": "java-script-console",
+      "name": "Java Script Console",
+      "screen_type": "general"
+    },
+    {
+      "id": "developers-page",
+      "name": "Developers",
+      "screen_type": "general"
+    },
+    {
+      "id": "network-info",
+      "name": "Network Info",
+      "screen_type": "detail"
+    },
+    {
+      "id": "storage-manager",
+      "name": "Storage Manager",
+      "screen_type": "general"
+    },
+    {
+      "id": "android-settings",
+      "name": "Android Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "cross-platform-settings",
+      "name": "Cross Platform Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "i-o-s-settings",
+      "name": "I O S Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "settings-page",
+      "name": "Settings",
+      "screen_type": "form"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "dynamic_color",
+    "flutter_inappwebview",
+    "flutter_downloader",
+    "path_provider",
+    "permission_handler",
+    "provider",
+    "share_plus",
+    "crypto",
+    "package_info_plus",
+    "flutter_font_icons",
+    "flutter_svg",
+    "mime",
+    "url_launcher",
+    "cached_network_image",
+    "flutter_colorpicker",
+    "intl",
+    "uuid",
+    "collection",
+    "context_menus",
+    "multi_window",
+    "sqflite",
+    "sqflite_common_ffi",
+    "sqlite3_flutter_libs",
+    "window_manager_plus",
+    "path"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0,
+    "warnings": 0
+  },
+  "source_repo": "flutter-knowledge-base"
+}

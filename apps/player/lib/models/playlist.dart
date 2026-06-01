@@ -1,0 +1,87 @@
+import 'package:app/models/models.dart';
+import 'package:faker/faker.dart';
+
+class Playlist {
+  var id; // This might be a UUID string in the near future
+  String name;
+  bool isSmart;
+  String? folderId;
+  String? description;
+  String? cover;
+  List<Playable> playables = [];
+
+  /// Whether the current user is allowed to edit this playlist.
+  /// Sourced from the koel >= 9.2.0 `permissions` object on the JSON
+  /// resource. Defaults to `false` when the server didn't include
+  /// permissions (older koel) so the UI hides the action by default.
+  bool canEdit;
+
+  /// Whether the current user is allowed to delete this playlist.
+  /// See [canEdit] for sourcing.
+  bool canDelete;
+
+  Playlist({
+    required this.id,
+    required this.name,
+    required this.isSmart,
+    this.folderId,
+    this.description,
+    this.cover,
+    this.canEdit = false,
+    this.canDelete = false,
+  });
+
+  bool get isEmpty => playables.length == 0;
+
+  bool get isStandard => !isSmart;
+
+  factory Playlist.fromJson(Map<String, dynamic> json) {
+    final permissions = json['permissions'];
+
+    return Playlist(
+      id: json['id'],
+      name: json['name'],
+      isSmart: json['is_smart'],
+      folderId: json['folder_id'],
+      description: json['description'],
+      cover: json['cover'],
+      canEdit: permissions is Map ? permissions['edit'] == true : false,
+      canDelete: permissions is Map ? permissions['delete'] == true : false,
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'name': name,
+        'is_smart': isSmart,
+        'folder_id': folderId,
+        'description': description,
+        'cover': cover,
+      };
+
+  bool get hasCover => cover != null && cover!.isNotEmpty;
+
+  factory Playlist.fake({
+    var id,
+    String? name,
+    bool? isSmart,
+    String? folderId,
+    String? description,
+    String? cover,
+    bool canEdit = false,
+    bool canDelete = false,
+  }) {
+    Faker faker = Faker();
+
+    return Playlist(
+      id: id ?? faker.guid.guid(),
+      name: name ?? faker.food.cuisine(),
+      isSmart: isSmart ?? false,
+      folderId: folderId,
+      description: description,
+      cover: cover,
+      canEdit: canEdit,
+      canDelete: canDelete,
+    );
+  }
+}

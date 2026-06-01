@@ -1,0 +1,27 @@
+name: settings_ui
+description: Create native settings for Flutter app in minutes. Use single interfaces to build
+version: 3.0.1
+homepage: https://github.com/yako-dev/flutter-settings-ui
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:

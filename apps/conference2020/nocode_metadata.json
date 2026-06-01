@@ -1,0 +1,239 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "conference2020",
+  "name": "Conferenceapp",
+  "description": "Flutter Europe conference app",
+  "domain": "media",
+  "app_type": "streaming",
+  "source_repo": "https://github.com/FlutterEurope/conference2020",
+  "keywords": [],
+  "tags": [
+    "app",
+    "dashboard",
+    "list",
+    "local",
+    "localization",
+    "nocode-flutter",
+    "state-management"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Conferenceapp",
+    "slug": "conference2020",
+    "app_type": "streaming",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 29
+  },
+  "screens": [
+    {
+      "id": "admin-page",
+      "name": "Admin",
+      "screen_type": "general"
+    },
+    {
+      "id": "agenda-page",
+      "name": "Agenda",
+      "screen_type": "general"
+    },
+    {
+      "id": "home-page",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "my-schedule-page",
+      "name": "My Schedule",
+      "screen_type": "general"
+    },
+    {
+      "id": "notifications-page",
+      "name": "Notifications",
+      "screen_type": "general"
+    },
+    {
+      "id": "organizers-page",
+      "name": "Organizers",
+      "screen_type": "general"
+    },
+    {
+      "id": "profile-page",
+      "name": "Profile",
+      "screen_type": "detail"
+    },
+    {
+      "id": "version-info",
+      "name": "Version Info",
+      "screen_type": "detail"
+    },
+    {
+      "id": "sponsors-page",
+      "name": "Sponsors",
+      "screen_type": "general"
+    },
+    {
+      "id": "talk-page",
+      "name": "Talk",
+      "screen_type": "general"
+    },
+    {
+      "id": "talk-rating",
+      "name": "Talk Rating",
+      "screen_type": "general"
+    },
+    {
+      "id": "talk-title",
+      "name": "Talk Title",
+      "screen_type": "general"
+    },
+    {
+      "id": "talk-details",
+      "name": "Talk Details",
+      "screen_type": "detail"
+    },
+    {
+      "id": "custom-expandable-panel",
+      "name": "Custom Expandable Panel",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "top-header",
+      "name": "Top Header",
+      "screen_type": "general"
+    },
+    {
+      "id": "speaker-name-and-job",
+      "name": "Speaker Name And Job",
+      "screen_type": "general"
+    },
+    {
+      "id": "ticket-page",
+      "name": "Ticket",
+      "screen_type": "general"
+    },
+    {
+      "id": "no-qr-code",
+      "name": "No Qr Code",
+      "screen_type": "general"
+    },
+    {
+      "id": "qr-code",
+      "name": "Qr Code",
+      "screen_type": "general"
+    },
+    {
+      "id": "manual-ticket-page",
+      "name": "Manual Ticket",
+      "screen_type": "general"
+    },
+    {
+      "id": "scan-party-page",
+      "name": "Scan Party",
+      "screen_type": "general"
+    },
+    {
+      "id": "scan-party-page-content",
+      "name": "Scan Party Page Content",
+      "screen_type": "general"
+    },
+    {
+      "id": "scan-ticket-page",
+      "name": "Scan Ticket",
+      "screen_type": "general"
+    },
+    {
+      "id": "ticket-error",
+      "name": "Ticket Error",
+      "screen_type": "general"
+    },
+    {
+      "id": "ticket-validated",
+      "name": "Ticket Validated",
+      "screen_type": "general"
+    },
+    {
+      "id": "ticket-info",
+      "name": "Ticket Info",
+      "screen_type": "detail"
+    },
+    {
+      "id": "scan-top-info",
+      "name": "Scan Top Info",
+      "screen_type": "detail"
+    },
+    {
+      "id": "ticket-check-page",
+      "name": "Ticket Check",
+      "screen_type": "general"
+    },
+    {
+      "id": "users-list-page",
+      "name": "Users List",
+      "screen_type": "list"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "bloc",
+    "camera",
+    "characters",
+    "cloud_firestore",
+    "collection",
+    "contentful_rich_text",
+    "contentful",
+    "csv",
+    "dotted_border",
+    "dynamic_theme",
+    "equatable",
+    "expandable",
+    "extended_image",
+    "fast_qr_reader_view",
+    "feature_discovery",
+    "file_picker",
+    "firebase_analytics",
+    "firebase_auth",
+    "firebase_core",
+    "firebase_crashlytics",
+    "firebase_messaging",
+    "firebase_ml_vision",
+    "firebase_performance",
+    "firebase_remote_config",
+    "flare_flutter",
+    "flutter_bloc",
+    "flutter_custom_clippers",
+    "flutter_local_notifications",
+    "fluttertoast",
+    "http",
+    "hydrated_bloc",
+    "intl",
+    "json_serializable",
+    "line_icons",
+    "package_info",
+    "pedantic",
+    "provider",
+    "qr_flutter",
+    "rxdart",
+    "share",
+    "shared_preferences",
+    "smooth_star_rating",
+    "timeago",
+    "url_launcher",
+    "vibration",
+    "snapfeed",
+    "flutter_bugfender",
+    "stack_trace",
+    "flutter_markdown",
+    "add_2_calendar"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

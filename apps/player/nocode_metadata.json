@@ -1,0 +1,263 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "player",
+  "name": "App",
+  "description": "The mobile app for Koel",
+  "domain": "media",
+  "app_type": "streaming",
+  "source_repo": "https://github.com/koel/player",
+  "keywords": [],
+  "tags": [
+    "app",
+    "auth",
+    "dashboard",
+    "image",
+    "list",
+    "local",
+    "localization",
+    "nocode-flutter",
+    "state-management",
+    "utility"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "App",
+    "slug": "player",
+    "app_type": "streaming",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 38
+  },
+  "screens": [
+    {
+      "id": "add-to-playlist-screen",
+      "name": "Add To Playlist",
+      "screen_type": "list"
+    },
+    {
+      "id": "albums-screen",
+      "name": "Albums",
+      "screen_type": "general"
+    },
+    {
+      "id": "album-details-screen",
+      "name": "Album Details",
+      "screen_type": "detail"
+    },
+    {
+      "id": "artists-screen",
+      "name": "Artists",
+      "screen_type": "general"
+    },
+    {
+      "id": "artist-details-screen",
+      "name": "Artist Details",
+      "screen_type": "detail"
+    },
+    {
+      "id": "data-loading-screen",
+      "name": "Data Loading",
+      "screen_type": "general"
+    },
+    {
+      "id": "downloaded-screen",
+      "name": "Downloaded",
+      "screen_type": "general"
+    },
+    {
+      "id": "favorites-screen",
+      "name": "Favorites",
+      "screen_type": "general"
+    },
+    {
+      "id": "genres-screen",
+      "name": "Genres",
+      "screen_type": "general"
+    },
+    {
+      "id": "genre-details-screen",
+      "name": "Genre Details",
+      "screen_type": "detail"
+    },
+    {
+      "id": "home-screen",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "home-recently-played-section",
+      "name": "Home Recently Played Section",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "empty-home-screen",
+      "name": "Empty Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "initial-screen",
+      "name": "Initial",
+      "screen_type": "general"
+    },
+    {
+      "id": "library-screen",
+      "name": "Library",
+      "screen_type": "general"
+    },
+    {
+      "id": "login-screen",
+      "name": "Login",
+      "screen_type": "auth"
+    },
+    {
+      "id": "main-screen",
+      "name": "Main",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "connectivity-info-box",
+      "name": "Connectivity Info Box",
+      "screen_type": "detail"
+    },
+    {
+      "id": "now-playing-screen",
+      "name": "Now Playing",
+      "screen_type": "general"
+    },
+    {
+      "id": "no-connection-screen",
+      "name": "No Connection",
+      "screen_type": "general"
+    },
+    {
+      "id": "playlists-screen",
+      "name": "Playlists",
+      "screen_type": "list"
+    },
+    {
+      "id": "no-playlists-screen",
+      "name": "No Playlists",
+      "screen_type": "list"
+    },
+    {
+      "id": "playlist-details-screen",
+      "name": "Playlist Details",
+      "screen_type": "list"
+    },
+    {
+      "id": "podcasts-screen",
+      "name": "Podcasts",
+      "screen_type": "general"
+    },
+    {
+      "id": "no-podcasts-screen",
+      "name": "No Podcasts",
+      "screen_type": "general"
+    },
+    {
+      "id": "podcast-details-screen",
+      "name": "Podcast Details",
+      "screen_type": "detail"
+    },
+    {
+      "id": "radio-now-playing-screen",
+      "name": "Radio Now Playing",
+      "screen_type": "general"
+    },
+    {
+      "id": "radio-stations-screen",
+      "name": "Radio Stations",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-thumbnail",
+      "name": "_ Thumbnail",
+      "screen_type": "general"
+    },
+    {
+      "id": "recently-played-screen",
+      "name": "Recently Played",
+      "screen_type": "general"
+    },
+    {
+      "id": "search-screen",
+      "name": "Search",
+      "screen_type": "list"
+    },
+    {
+      "id": "songs-screen",
+      "name": "Songs",
+      "screen_type": "general"
+    },
+    {
+      "id": "song-list-header",
+      "name": "Song List Header",
+      "screen_type": "list"
+    },
+    {
+      "id": "album-info-pane",
+      "name": "Album Info Pane",
+      "screen_type": "detail"
+    },
+    {
+      "id": "artist-info-pane",
+      "name": "Artist Info Pane",
+      "screen_type": "detail"
+    },
+    {
+      "id": "info-sheet",
+      "name": "Info Sheet",
+      "screen_type": "detail"
+    },
+    {
+      "id": "info-html",
+      "name": "Info Html",
+      "screen_type": "detail"
+    },
+    {
+      "id": "lyrics-pane",
+      "name": "Lyrics Pane",
+      "screen_type": "general"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "provider",
+    "http",
+    "easy_debounce",
+    "flutter_html",
+    "flutter_spinkit",
+    "crypto",
+    "intl",
+    "get_storage",
+    "cached_network_image",
+    "build_runner",
+    "uuid",
+    "shimmer",
+    "just_audio",
+    "audio_service",
+    "figma_squircle",
+    "connectivity_plus",
+    "path_provider",
+    "fading_edge_scrollview",
+    "version",
+    "native_qr",
+    "lucide_icons",
+    "timeago",
+    "url_launcher",
+    "collection",
+    "faker",
+    "ulid"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

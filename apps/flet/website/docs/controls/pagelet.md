@@ -1,0 +1,20 @@
+---
+class_name: "flet.Pagelet"
+examples: "controls/core/pagelet"
+example_images: "test-images/examples/controls/core/golden/macos/pagelet"
+title: "Pagelet"
+---
+
+import {ClassMembers, ClassSummary, CodeExample, Image} from '@site/src/components/crocodocs';
+
+<ClassSummary name={frontMatter.class_name} image={frontMatter.example_images + '/image_for_docs.png'} imageCaption="Pagelet" />
+
+## Examples
+
+### Pagelet
+
+<CodeExample path={frontMatter.examples + '/basic/main.py'} language="python" />
+
+<Image src={frontMatter.example_images + '/basic.png'} width="55%" />
+
+<ClassMembers name={frontMatter.class_name} />

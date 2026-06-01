@@ -1,0 +1,259 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "harpy",
+  "name": "Harpy",
+  "description": "A Twitter app built with Flutter.",
+  "domain": "media",
+  "app_type": "streaming",
+  "source_repo": "https://github.com/robertodoering/harpy",
+  "keywords": [],
+  "tags": [
+    "app",
+    "auth",
+    "colorpicker",
+    "list",
+    "local",
+    "localization",
+    "material-you",
+    "nocode-flutter",
+    "sharing",
+    "utility"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Harpy",
+    "slug": "harpy",
+    "app_type": "streaming",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 31
+  },
+  "screens": [
+    {
+      "id": "about-page",
+      "name": "About",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-harpy-logo",
+      "name": "_ Harpy Logo",
+      "screen_type": "general"
+    },
+    {
+      "id": "login-webview",
+      "name": "Login Webview",
+      "screen_type": "auth"
+    },
+    {
+      "id": "_-changelog-list",
+      "name": "_ Changelog List",
+      "screen_type": "list"
+    },
+    {
+      "id": "custom-api-page",
+      "name": "Custom Api",
+      "screen_type": "general"
+    },
+    {
+      "id": "error-page",
+      "name": "Error",
+      "screen_type": "general"
+    },
+    {
+      "id": "following-page",
+      "name": "Following",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-home-tab-listener",
+      "name": "_ Home Tab Listener",
+      "screen_type": "list"
+    },
+    {
+      "id": "list-show-page",
+      "name": "List Show",
+      "screen_type": "list"
+    },
+    {
+      "id": "_-harpy-title",
+      "name": "_ Harpy Title",
+      "screen_type": "general"
+    },
+    {
+      "id": "user-page-content",
+      "name": "User Page Content",
+      "screen_type": "general"
+    },
+    {
+      "id": "user-page-error",
+      "name": "User Page Error",
+      "screen_type": "general"
+    },
+    {
+      "id": "user-page-loading",
+      "name": "User Page Loading",
+      "screen_type": "general"
+    },
+    {
+      "id": "user-page-avatar",
+      "name": "User Page Avatar",
+      "screen_type": "general"
+    },
+    {
+      "id": "user-page-banner",
+      "name": "User Page Banner",
+      "screen_type": "general"
+    },
+    {
+      "id": "user-page-connections",
+      "name": "User Page Connections",
+      "screen_type": "general"
+    },
+    {
+      "id": "user-page-description-translation",
+      "name": "User Page Description Translation",
+      "screen_type": "general"
+    },
+    {
+      "id": "user-page-header",
+      "name": "User Page Header",
+      "screen_type": "general"
+    },
+    {
+      "id": "user-page-info",
+      "name": "User Page Info",
+      "screen_type": "detail"
+    },
+    {
+      "id": "_-name",
+      "name": "_ Name",
+      "screen_type": "general"
+    },
+    {
+      "id": "user-page-metadata",
+      "name": "User Page Metadata",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-entry",
+      "name": "_ Entry",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-protected-placeholder",
+      "name": "_ Protected Placeholder",
+      "screen_type": "general"
+    },
+    {
+      "id": "search-page-content",
+      "name": "Search Page Content",
+      "screen_type": "list"
+    },
+    {
+      "id": "font-selection-page",
+      "name": "Font Selection",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-asset-fonts",
+      "name": "_ Asset Fonts",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-media-info-message",
+      "name": "_ Media Info Message",
+      "screen_type": "detail"
+    },
+    {
+      "id": "list-timeline-page",
+      "name": "List Timeline",
+      "screen_type": "list"
+    },
+    {
+      "id": "_-tweet-detail-loading",
+      "name": "_ Tweet Detail Loading",
+      "screen_type": "detail"
+    },
+    {
+      "id": "_-tweet-detail-error",
+      "name": "_ Tweet Detail Error",
+      "screen_type": "detail"
+    },
+    {
+      "id": "_-web-view",
+      "name": "_ Web",
+      "screen_type": "general"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "android_path_provider",
+    "any_link_preview",
+    "built_collection",
+    "collection",
+    "connectivity_plus",
+    "dart_twitter_api",
+    "device_info_plus",
+    "download_manager",
+    "dynamic_color",
+    "encrypt",
+    "file_picker",
+    "flare_flutter",
+    "flutter_colorpicker",
+    "flutter_displaymode",
+    "flutter_feather_icons",
+    "flutter_ffmpeg",
+    "flutter_image",
+    "flutter_keyboard_visibility",
+    "flutter_markdown",
+    "flutter_riverpod",
+    "freezed_annotation",
+    "go_router",
+    "google_fonts",
+    "http",
+    "humanizer",
+    "intl",
+    "json_annotation",
+    "location",
+    "logging",
+    "material_color_utilities",
+    "mime_type",
+    "modal_bottom_sheet",
+    "package_info_plus",
+    "path_provider",
+    "permission_handler",
+    "photo_view",
+    "rby",
+    "riverpod_annotation",
+    "scroll_to_index",
+    "sentry_flutter",
+    "share_plus",
+    "shared_preferences",
+    "shimmer",
+    "sliver_tools",
+    "smooth_page_indicator",
+    "super_sliver_list",
+    "timeago",
+    "tuple",
+    "twitter_api_v2",
+    "twitter_webview_auth",
+    "url_launcher",
+    "uuid",
+    "video_player",
+    "visibility_detector",
+    "wakelock",
+    "waterfall_flow",
+    "webview_flutter"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

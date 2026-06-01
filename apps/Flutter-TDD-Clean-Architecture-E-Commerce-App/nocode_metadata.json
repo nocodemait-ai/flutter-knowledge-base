@@ -1,0 +1,144 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "Flutter-TDD-Clean-Architecture-E-Commerce-App",
+  "name": "Eshop",
+  "description": "A new Flutter project.",
+  "domain": "social",
+  "app_type": "chat",
+  "source_repo": "https://github.com/Sameera-Perera/Flutter-TDD-Clean-Architecture-E-Commerce-App",
+  "keywords": [],
+  "tags": [
+    "app",
+    "dashboard",
+    "image",
+    "local",
+    "nocode-flutter"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Eshop",
+    "slug": "flutter_tdd_clean_architecture_e_commerce_app",
+    "app_type": "chat",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 17
+  },
+  "screens": [
+    {
+      "id": "other-view",
+      "name": "Other",
+      "screen_type": "general"
+    },
+    {
+      "id": "about-view",
+      "name": "About",
+      "screen_type": "general"
+    },
+    {
+      "id": "notification-view",
+      "name": "Notification",
+      "screen_type": "general"
+    },
+    {
+      "id": "user-profile-screen",
+      "name": "User Profile",
+      "screen_type": "detail"
+    },
+    {
+      "id": "settings-view",
+      "name": "Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "sign-in-view",
+      "name": "Sign In",
+      "screen_type": "general"
+    },
+    {
+      "id": "sign-up-screen",
+      "name": "Sign Up",
+      "screen_type": "general"
+    },
+    {
+      "id": "cart-view",
+      "name": "Cart",
+      "screen_type": "general"
+    },
+    {
+      "id": "category-view",
+      "name": "Category",
+      "screen_type": "general"
+    },
+    {
+      "id": "delivery-info-view",
+      "name": "Delivery Info",
+      "screen_type": "detail"
+    },
+    {
+      "id": "delivery-info-form",
+      "name": "Delivery Info Form",
+      "screen_type": "detail"
+    },
+    {
+      "id": "home-view",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "main-view",
+      "name": "Main",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "order-checkout-view",
+      "name": "Order Checkout",
+      "screen_type": "form"
+    },
+    {
+      "id": "order-view",
+      "name": "Order",
+      "screen_type": "form"
+    },
+    {
+      "id": "filter-view",
+      "name": "Filter",
+      "screen_type": "general"
+    },
+    {
+      "id": "product-details-view",
+      "name": "Product Details",
+      "screen_type": "detail"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "shared_preferences",
+    "flutter_secure_storage",
+    "bloc",
+    "flutter_bloc",
+    "get_it",
+    "http",
+    "equatable",
+    "dartz",
+    "internet_connection_checker",
+    "oktoast",
+    "flutter_snake_navigationbar",
+    "shimmer",
+    "cached_network_image",
+    "carousel_slider",
+    "smooth_page_indicator",
+    "flutter_easyloading",
+    "sizer"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

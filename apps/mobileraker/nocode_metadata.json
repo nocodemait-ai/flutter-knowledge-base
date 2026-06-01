@@ -1,0 +1,417 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "mobileraker",
+  "name": "Mobileraker",
+  "description": "A new Flutter project.",
+  "domain": "media",
+  "app_type": "streaming",
+  "source_repo": "https://github.com/Clon1998/mobileraker",
+  "keywords": [],
+  "tags": [
+    "app",
+    "auth",
+    "colorpicker",
+    "dashboard",
+    "image",
+    "list",
+    "local",
+    "nocode-flutter",
+    "sharing",
+    "staggered-grid",
+    "svg",
+    "utility"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Mobileraker",
+    "slug": "mobileraker",
+    "app_type": "streaming",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 56
+  },
+  "screens": [
+    {
+      "id": "customizable-dashboard-page",
+      "name": "Customizable Dashboard",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "_-fab-hider",
+      "name": "_ Fab Hider",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-bed-mesh-loading",
+      "name": "_ Bed Mesh Loading",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-control-extruder-loading",
+      "name": "_ Control Extruder Loading",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-control-x-y-z-loading",
+      "name": "_ Control X Y Z Loading",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-force-move-chip",
+      "name": "_ Force Move Chip",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-limits-sliders-or-texts-loading",
+      "name": "_ Limits Sliders Or Texts Loading",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-macro-group-loading",
+      "name": "_ Macro Group Loading",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-chips-wrap",
+      "name": "_ Chips Wrap",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-multipliers-sliders-or-texts-loading",
+      "name": "_ Multipliers Sliders Or Texts Loading",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-z-offset-loading",
+      "name": "_ Z Offset Loading",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-editing-suffix",
+      "name": "_ Editing Suffix",
+      "screen_type": "form"
+    },
+    {
+      "id": "feature-section-header",
+      "name": "Feature Section Header",
+      "screen_type": "general"
+    },
+    {
+      "id": "paywall-footer",
+      "name": "Paywall Footer",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-body",
+      "name": "_ Body",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-footer",
+      "name": "_ Footer",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-leading",
+      "name": "_ Leading",
+      "screen_type": "general"
+    },
+    {
+      "id": "shimmer-file-list",
+      "name": "Shimmer File List",
+      "screen_type": "list"
+    },
+    {
+      "id": "_-g-code-file-detail-page",
+      "name": "_ G Code File Detail",
+      "screen_type": "detail"
+    },
+    {
+      "id": "mark-down-page",
+      "name": "Mark Down",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-makrdown-viewer",
+      "name": "_ Makrdown Viewer",
+      "screen_type": "general"
+    },
+    {
+      "id": "overview-page",
+      "name": "Overview",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "_-klippy-error-shutdown-unauthorized",
+      "name": "_ Klippy Error Shutdown Unauthorized",
+      "screen_type": "auth"
+    },
+    {
+      "id": "_-job-text",
+      "name": "_ Job Text",
+      "screen_type": "general"
+    },
+    {
+      "id": "progress-tracker",
+      "name": "Progress Tracker",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-subscription-management-notice",
+      "name": "_ Subscription Management Notice",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-sub-lifetime-warning",
+      "name": "_ Sub Lifetime Warning",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-benefit-grid",
+      "name": "_ Benefit Grid",
+      "screen_type": "list"
+    },
+    {
+      "id": "supporter-offerings",
+      "name": "Supporter Offerings",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-tip-option",
+      "name": "_ Tip Option",
+      "screen_type": "general"
+    },
+    {
+      "id": "supporter-benefits-page",
+      "name": "Supporter Benefits",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-s-s-i-d",
+      "name": "_ S S I D",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-http-header",
+      "name": "_ Http Header",
+      "screen_type": "general"
+    },
+    {
+      "id": "macro-groups-form-field",
+      "name": "Macro Groups Form Field",
+      "screen_type": "form"
+    },
+    {
+      "id": "_-macro-group-title",
+      "name": "_ Macro Group Title",
+      "screen_type": "general"
+    },
+    {
+      "id": "orderding-form-field",
+      "name": "Orderding Form Field",
+      "screen_type": "form"
+    },
+    {
+      "id": "_-element",
+      "name": "_ Element",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-motion-system-settings",
+      "name": "_ Motion System Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "_-extruder-settings",
+      "name": "_ Extruder Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "_-temp-sensor-ordering",
+      "name": "_ Temp Sensor Ordering",
+      "screen_type": "form"
+    },
+    {
+      "id": "_-fans-ordering",
+      "name": "_ Fans Ordering",
+      "screen_type": "form"
+    },
+    {
+      "id": "_-misc-ordering",
+      "name": "_ Misc Ordering",
+      "screen_type": "form"
+    },
+    {
+      "id": "section-header",
+      "name": "Section Header",
+      "screen_type": "general"
+    },
+    {
+      "id": "ssl-settings-form-field",
+      "name": "Ssl Settings Form Field",
+      "screen_type": "form"
+    },
+    {
+      "id": "temp-presets-form-field",
+      "name": "Temp Presets Form Field",
+      "screen_type": "form"
+    },
+    {
+      "id": "webcams-form-field",
+      "name": "Webcams Form Field",
+      "screen_type": "form"
+    },
+    {
+      "id": "_-text-shimmer",
+      "name": "_ Text Shimmer",
+      "screen_type": "general"
+    },
+    {
+      "id": "ignore-filament-sensors-notification-setting",
+      "name": "Ignore Filament Sensors Notification Setting",
+      "screen_type": "general"
+    },
+    {
+      "id": "progress-notification-interval-setting",
+      "name": "Progress Notification Interval Setting",
+      "screen_type": "general"
+    },
+    {
+      "id": "_-general-notification-settings",
+      "name": "_ General Notification Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "filament-detail-page",
+      "name": "Filament Detail",
+      "screen_type": "detail"
+    },
+    {
+      "id": "filament-form-page",
+      "name": "Filament Form",
+      "screen_type": "form"
+    },
+    {
+      "id": "spool-detail-page",
+      "name": "Spool Detail",
+      "screen_type": "detail"
+    },
+    {
+      "id": "spool-form-page",
+      "name": "Spool Form",
+      "screen_type": "form"
+    },
+    {
+      "id": "vendor-detail-page",
+      "name": "Vendor Detail",
+      "screen_type": "detail"
+    },
+    {
+      "id": "vendor-form-page",
+      "name": "Vendor Form",
+      "screen_type": "form"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "mobileraker_pro",
+    "common",
+    "firebase_core_platform_interface",
+    "firebase_core",
+    "firebase_analytics",
+    "firebase_app_check",
+    "firebase_crashlytics",
+    "firebase_remote_config",
+    "cloud_firestore",
+    "firebase_auth",
+    "freezed_annotation",
+    "flutter_hooks",
+    "hooks_riverpod",
+    "riverpod_annotation",
+    "json_annotation",
+    "go_router",
+    "go_transitions",
+    "rxdart",
+    "stringr",
+    "vector_math",
+    "enum_to_string",
+    "url_launcher",
+    "talker_flutter",
+    "talker_riverpod_logger",
+    "uuid",
+    "permission_handler",
+    "collection",
+    "fftea",
+    "flutter_audio_capture",
+    "hashlib_codecs",
+    "hashlib",
+    "pem",
+    "iabtcf_consent_info",
+    "hive_ce_flutter",
+    "flutter_secure_storage",
+    "share_plus",
+    "path_provider",
+    "flex_color_scheme",
+    "google_fonts",
+    "awesome_notifications",
+    "awesome_notifications_fcm",
+    "live_activities",
+    "flutter_form_builder",
+    "form_builder_validators",
+    "form_builder_extra_fields",
+    "easy_localization",
+    "easy_localization_loader",
+    "purchases_flutter",
+    "rate_my_app",
+    "responsive_framework",
+    "smooth_sheets",
+    "gap",
+    "persistent_header_adaptive",
+    "extended_wrap",
+    "overflow_view",
+    "flutter_staggered_grid_view",
+    "auto_size_text",
+    "snap_scroll_physics",
+    "expandable_page_view",
+    "badges",
+    "easy_stepper",
+    "flutter_colorpicker",
+    "percent_indicator",
+    "flutter_icons",
+    "flutter_spinkit",
+    "progress_indicators",
+    "pull_to_refresh_flutter3",
+    "animated_bottom_navigation_bar",
+    "flip_card",
+    "cached_network_image",
+    "shimmer",
+    "reorderables",
+    "flutter_speed_dial",
+    "dots_indicator",
+    "webview_flutter",
+    "syncfusion_flutter_charts",
+    "code_text_field",
+    "mobile_scanner",
+    "touchable",
+    "flutter_markdown_plus",
+    "flutter_svg",
+    "flutter_svg_provider",
+    "loader_overlay",
+    "appinio_video_player",
+    "file_picker",
+    "geekyants_flutter_gauges",
+    "pretty_qr_code",
+    "dotted_border"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

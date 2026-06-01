@@ -1,0 +1,103 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "SocialFishMobile",
+  "name": "Socialfish",
+  "description": "SocialFish Mobile.",
+  "domain": "media",
+  "app_type": "streaming",
+  "source_repo": "https://github.com/UndeadSec/SocialFishMobile",
+  "keywords": [],
+  "tags": [
+    "app",
+    "auth",
+    "dashboard",
+    "list",
+    "local",
+    "nocode-flutter",
+    "staggered-grid"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Socialfish",
+    "slug": "socialfishmobile",
+    "app_type": "streaming",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 10
+  },
+  "screens": [
+    {
+      "id": "dashboard",
+      "name": "Dashboard",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "launch-attack",
+      "name": "Launch Attack",
+      "screen_type": "general"
+    },
+    {
+      "id": "login-page",
+      "name": "Login",
+      "screen_type": "auth"
+    },
+    {
+      "id": "login-fields",
+      "name": "Login Fields",
+      "screen_type": "auth"
+    },
+    {
+      "id": "mail-fields",
+      "name": "Mail Fields",
+      "screen_type": "general"
+    },
+    {
+      "id": "send-mail",
+      "name": "Send Mail",
+      "screen_type": "general"
+    },
+    {
+      "id": "attacks-list",
+      "name": "Attacks List",
+      "screen_type": "list"
+    },
+    {
+      "id": "port-scan",
+      "name": "Port Scan",
+      "screen_type": "general"
+    },
+    {
+      "id": "post-logs",
+      "name": "Post Logs",
+      "screen_type": "general"
+    },
+    {
+      "id": "trace-i-p",
+      "name": "Trace I P",
+      "screen_type": "general"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "http",
+    "shared_preferences",
+    "flutter_staggered_grid_view",
+    "progress_hud",
+    "font_awesome_flutter",
+    "url_launcher",
+    "android_intent",
+    "qrcode_reader",
+    "overlay_support"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "Our-E-School",
+  "name": "Oureschool",
+  "description": "A School Management Project",
+  "domain": "ecommerce",
+  "app_type": "marketplace",
+  "source_repo": "https://github.com/ketanchoyal/Our-E-School",
+  "keywords": [],
+  "tags": [
+    "app",
+    "auth",
+    "dashboard",
+    "list",
+    "local",
+    "localization",
+    "nocode-flutter",
+    "state-management"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Oureschool",
+    "slug": "our_e_school",
+    "app_type": "marketplace",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 42
+  },
+  "screens": [
+    {
+      "id": "home",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "welcome-screen",
+      "name": "Welcome",
+      "screen_type": "onboarding"
+    },
+    {
+      "id": "about-us",
+      "name": "About Us",
+      "screen_type": "general"
+    },
+    {
+      "id": "chat-page",
+      "name": "Chat",
+      "screen_type": "general"
+    },
+    {
+      "id": "messaging-screen",
+      "name": "Messaging",
+      "screen_type": "general"
+    },
+    {
+      "id": "student-connection-page",
+      "name": "Student Connection",
+      "screen_type": "general"
+    },
+    {
+      "id": "main-dashboard",
+      "name": "Main Dashboard",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "student-dashboard",
+      "name": "Student Dashboard",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "announcement-page",
+      "name": "Announcement",
+      "screen_type": "general"
+    },
+    {
+      "id": "camera-screen",
+      "name": "Camera",
+      "screen_type": "general"
+    },
+    {
+      "id": "capture-photo",
+      "name": "Capture Photo",
+      "screen_type": "general"
+    },
+    {
+      "id": "create-announcement",
+      "name": "Create Announcement",
+      "screen_type": "form"
+    },
+    {
+      "id": "assignment-image-viewer",
+      "name": "Assignment Image Viewer",
+      "screen_type": "general"
+    },
+    {
+      "id": "assignments-page",
+      "name": "Assignments",
+      "screen_type": "general"
+    },
+    {
+      "id": "childrens-page",
+      "name": "Childrens",
+      "screen_type": "general"
+    },
+    {
+      "id": "quiz-page",
+      "name": "Quiz",
+      "screen_type": "general"
+    },
+    {
+      "id": "start-page",
+      "name": "Start",
+      "screen_type": "general"
+    },
+    {
+      "id": "finish-page",
+      "name": "Finish",
+      "screen_type": "general"
+    },
+    {
+      "id": "question-page",
+      "name": "Question",
+      "screen_type": "general"
+    },
+    {
+      "id": "topic-select-page",
+      "name": "Topic Select",
+      "screen_type": "general"
+    },
+    {
+      "id": "e-book-info",
+      "name": "E Book Info",
+      "screen_type": "detail"
+    },
+    {
+      "id": "_-reusable-ebook-btn",
+      "name": "_ Reusable Ebook Btn",
+      "screen_type": "general"
+    },
+    {
+      "id": "e-book-select",
+      "name": "E Book Select",
+      "screen_type": "general"
+    },
+    {
+      "id": "fees-page",
+      "name": "Fees",
+      "screen_type": "general"
+    },
+    {
+      "id": "holiday-page",
+      "name": "Holiday",
+      "screen_type": "general"
+    },
+    {
+      "id": "home-tab",
+      "name": "Home Tab",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "country-title",
+      "name": "Country Title",
+      "screen_type": "general"
+    },
+    {
+      "id": "holiday-details-page",
+      "name": "Holiday Details",
+      "screen_type": "detail"
+    },
+    {
+      "id": "parenting-guide-page",
+      "name": "Parenting Guide",
+      "screen_type": "general"
+    },
+    {
+      "id": "students-time-table",
+      "name": "Students Time Table",
+      "screen_type": "general"
+    },
+    {
+      "id": "teachers-time-table",
+      "name": "Teachers Time Table",
+      "screen_type": "general"
+    },
+    {
+      "id": "time-table-page",
+      "name": "Time Table",
+      "screen_type": "general"
+    },
+    {
+      "id": "transportation-page",
+      "name": "Transportation",
+      "screen_type": "general"
+    },
+    {
+      "id": "forgot-password-page",
+      "name": "Forgot Password",
+      "screen_type": "auth"
+    },
+    {
+      "id": "login-page",
+      "name": "Login",
+      "screen_type": "auth"
+    },
+    {
+      "id": "guardian-profile-page",
+      "name": "Guardian Profile",
+      "screen_type": "detail"
+    },
+    {
+      "id": "profile-page",
+      "name": "Profile",
+      "screen_type": "detail"
+    },
+    {
+      "id": "profile-fields",
+      "name": "Profile Fields",
+      "screen_type": "detail"
+    },
+    {
+      "id": "setting-page",
+      "name": "Setting",
+      "screen_type": "general"
+    },
+    {
+      "id": "announcement-viewer",
+      "name": "Announcement Viewer",
+      "screen_type": "general"
+    },
+    {
+      "id": "p-d-f-opener",
+      "name": "P D F Opener",
+      "screen_type": "general"
+    },
+    {
+      "id": "exam-topics-grid-view",
+      "name": "Exam Topics Grid",
+      "screen_type": "list"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "camera",
+    "cloud_firestore",
+    "custom_radio_grouped_button",
+    "dio",
+    "division",
+    "file_picker",
+    "firebase_auth",
+    "firebase_core",
+    "firebase_storage",
+    "flutter_plugin_pdf_viewer",
+    "flutter_spinkit",
+    "font_awesome_flutter",
+    "get_it",
+    "http",
+    "image",
+    "image_picker",
+    "image_picker_for_web",
+    "intl",
+    "intro_views_flutter",
+    "path_provider",
+    "permission_handler",
+    "photo_view",
+    "provider",
+    "random_color",
+    "shared_preferences"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

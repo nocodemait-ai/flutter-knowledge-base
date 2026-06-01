@@ -1,0 +1,17 @@
+name: carp_communication_package_example
+description: Examples of how to use the CAMS Communication Package.
+publish_to: none
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  carp_communication_package:
+    path: ../
+
+flutter:
+  uses-material-design: true

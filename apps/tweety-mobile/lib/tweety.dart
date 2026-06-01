@@ -1,0 +1,115 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:tweety_mobile/blocs/chat/chat_bloc.dart';
+import 'package:tweety_mobile/repositories/chat_repository.dart';
+import 'package:tweety_mobile/screens/screens.dart';
+import 'package:tweety_mobile/theme/app_theme.dart';
+import 'package:tweety_mobile/repositories/repositories.dart';
+import 'package:tweety_mobile/blocs/blocs.dart';
+import 'package:tweety_mobile/theme/cubit/theme_cubit.dart';
+
+class Tweety extends StatefulWidget {
+  final UserRepository userRepository;
+
+  const Tweety({Key? key, required this.userRepository}) : super(key: key);
+
+  @override
+  TweetyState createState() => TweetyState();
+}
+
+class TweetyState extends State<Tweety> {
+  late AuthenticationBloc _authenticationBloc;
+
+  @override
+  void initState() {
+    super.initState();
+    _authenticationBloc =
+        AuthenticationBloc(userRepository: widget.userRepository);
+    _authenticationBloc.add(AuthenticationStarted());
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<ThemeCubit>(
+          create: (context) => ThemeCubit(),
+        ),
+        BlocProvider<TweetBloc>(
+          create: (context) => TweetBloc(
+            tweetRepository: TweetRepository(),
+          ),
+        ),
+        BlocProvider<AuthProfileBloc>(
+          create: (context) =>
+              AuthProfileBloc(userRepository: widget.userRepository),
+        ),
+        BlocProvider<ExploreBloc>(
+          create: (context) =>
+              ExploreBloc(userRepository: widget.userRepository),
+        ),
+        BlocProvider<FollowBloc>(
+          create: (context) => FollowBloc(followRepository: FollowRepository()),
+        ),
+        BlocProvider<ProfileBloc>(
+          create: (context) =>
+              ProfileBloc(userRepository: widget.userRepository),
+        ),
+        BlocProvider<NotificationBloc>(
+          create: (context) => NotificationBloc(
+              notificationRepository: NotificationRepository()),
+        ),
+        BlocProvider<UserSearchBloc>(
+          create: (context) =>
+              UserSearchBloc(searchRepository: SearchRepository()),
+        ),
+        BlocProvider<TweetSearchBloc>(
+          create: (context) =>
+              TweetSearchBloc(searchRepository: SearchRepository()),
+        ),
+        BlocProvider<MentionBloc>(
+          create: (context) =>
+              MentionBloc(userRepository: widget.userRepository),
+        ),
+        BlocProvider<ChatBloc>(
+          create: (context) => ChatBloc(chatRepository: ChatRepository()),
+        )
+      ],
+      child: _buildWithTheme(context),
+    );
+  }
+
+  Widget _buildWithTheme(BuildContext context) {
+    return BlocBuilder<ThemeCubit, AppTheme>(
+      builder: (context, appTheme) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Tweety',
+          theme: appThemeData[appTheme],
+          routes: {
+            '/': (context) {
+              return BlocBuilder<AuthenticationBloc, AuthenticationState>(
+                  builder: (context, state) {
+                if (state is AuthenticationFailure) {
+                  return LoginScreen(userRepository: widget.userRepository);
+                }
+                if (state is AuthenticationSuccess) {
+                  return const HomeScreen();
+                }
+                return const SplashScreen();
+              });
+            },
+            '/register': (context) =>
+                RegisterScreen(userRepository: widget.userRepository),
+            '/profile': (context) => const ProfileWrapper(),
+            '/publish-tweet': (context) => const PublishTweetScreen(),
+            '/settings': (context) => const SettingsScreen(),
+            '/tweet-reply': (context) => const ReplyWrapper(),
+            '/tweet': (context) => const TweetWrapper(),
+            '/forgot-password': (context) => const ForgotPasswordScreen(),
+          },
+        );
+      },
+    );
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "bbb_app",
+  "name": "Bbb App",
+  "description": "BigBlueButton client app",
+  "domain": "social",
+  "app_type": "chat",
+  "source_repo": "https://github.com/bennyboer/bbb_app",
+  "keywords": [],
+  "tags": [
+    "app",
+    "dashboard",
+    "local",
+    "localization",
+    "nocode-flutter",
+    "state-management",
+    "svg"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Bbb App",
+    "slug": "bbb_app",
+    "app_type": "chat",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 7
+  },
+  "screens": [
+    {
+      "id": "chat-view",
+      "name": "Chat",
+      "screen_type": "general"
+    },
+    {
+      "id": "fullscreen-view",
+      "name": "Fullscreen",
+      "screen_type": "general"
+    },
+    {
+      "id": "main-view",
+      "name": "Main",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "meeting-info-view",
+      "name": "Meeting Info",
+      "screen_type": "detail"
+    },
+    {
+      "id": "privacy-policy-view",
+      "name": "Privacy Policy",
+      "screen_type": "general"
+    },
+    {
+      "id": "settings-view",
+      "name": "Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "start-view",
+      "name": "Start",
+      "screen_type": "general"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "flutter_webrtc",
+    "shared_preferences",
+    "shared_preferences_macos",
+    "shared_preferences_web",
+    "http",
+    "html",
+    "day_night_switcher",
+    "provider",
+    "intl",
+    "sprintf",
+    "flutter_svg",
+    "sip_ua",
+    "flutter_markdown",
+    "uni_links",
+    "flutter_foreground_plugin",
+    "logger",
+    "bloc",
+    "flutter_bloc",
+    "url_launcher"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

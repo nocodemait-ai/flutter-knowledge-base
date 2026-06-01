@@ -1,0 +1,88 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "my_ollama_app",
+  "name": "My Ollama",
+  "description": "MyOllama",
+  "domain": "social",
+  "app_type": "chat",
+  "source_repo": "https://github.com/bipark/my_ollama_app",
+  "keywords": [],
+  "tags": [
+    "app",
+    "database",
+    "local",
+    "localization",
+    "nocode-flutter",
+    "sharing",
+    "state-management",
+    "utility"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "My Ollama",
+    "slug": "my_ollama_app",
+    "app_type": "chat",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 4
+  },
+  "screens": [
+    {
+      "id": "chat-view",
+      "name": "Chat",
+      "screen_type": "general"
+    },
+    {
+      "id": "desktop-view",
+      "name": "Desktop",
+      "screen_type": "general"
+    },
+    {
+      "id": "my-drawer",
+      "name": "My Drawer",
+      "screen_type": "general"
+    },
+    {
+      "id": "my-settings",
+      "name": "My Settings",
+      "screen_type": "form"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "provider",
+    "flutter_advanced_drawer",
+    "sqflite",
+    "intl",
+    "event_bus",
+    "flutter_chat_ui",
+    "uuid",
+    "ollama_dart",
+    "image_picker",
+    "shared_preferences",
+    "package_info_plus",
+    "dart_ping",
+    "url_launcher",
+    "easy_localization",
+    "app_settings",
+    "flutter_styled_toast",
+    "share_plus",
+    "flutter_markdown",
+    "split_view",
+    "sqflite_common_ffi",
+    "android_intent_plus",
+    "path_provider",
+    "permission_handler"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

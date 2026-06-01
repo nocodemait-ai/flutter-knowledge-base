@@ -1,0 +1,13 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    experimental_member_use: ignore
+  exclude:
+    # Ignore generated files
+    - '**/*.g.dart'
+    - '**/*.mocks.dart' # Mockito @GenerateMocks
+
+linter:
+  rules:
+    depend_on_referenced_packages: false

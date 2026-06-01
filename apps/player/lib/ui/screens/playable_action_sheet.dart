@@ -1,0 +1,367 @@
+import 'package:app/app_state.dart';
+import 'package:app/enums.dart';
+import 'package:app/main.dart';
+import 'package:app/models/models.dart';
+import 'package:app/providers/providers.dart';
+import 'package:app/router.dart';
+import 'package:app/ui/screens/add_to_playlist.dart';
+import 'package:app/ui/screens/info_sheet/info_sheet.dart';
+import 'package:app/ui/widgets/widgets.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:lucide_icons/lucide_icons.dart';
+import 'package:provider/provider.dart';
+
+class PlayableActionSheet extends StatefulWidget {
+  final Playable playable;
+
+  const PlayableActionSheet({Key? key, required this.playable})
+      : super(key: key);
+
+  @override
+  _PlayableActionSheetState createState() => _PlayableActionSheetState();
+}
+
+class _PlayableActionSheetState extends State<PlayableActionSheet> {
+  var _queued = false;
+  var _downloaded = false;
+
+  initState() {
+    super.initState();
+
+    audioHandler.queued(widget.playable).then((queued) {
+      setState(() => _queued = queued);
+    });
+
+    _downloaded =
+        context.read<DownloadProvider>().has(playable: widget.playable);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final playable = widget.playable;
+    final favoriteProvider = context.read<FavoriteProvider>();
+    final isCurrent = audioHandler.mediaItem.value != null &&
+        audioHandler.mediaItem.value!.id == playable.id;
+    final inOfflineMode =
+        AppState.get('mode', AppMode.online) == AppMode.offline;
+
+    late final String subtitle;
+
+    if (playable is Song) {
+      subtitle = '${playable.artistName} • ${playable.albumName}';
+    } else if (playable is Episode) {
+      subtitle = playable.podcastTitle;
+    } else {
+      subtitle = '';
+    }
+
+    return FrostedGlassBackground(
+      sigma: 40.0,
+      child: Container(
+        padding: const EdgeInsets.only(top: 16.0, bottom: 8.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            const SizedBox.shrink(), // to properly align the thumbnail area
+            Column(
+              children: [
+                PlayableThumbnail.lg(playable: playable),
+                const SizedBox(height: 16),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text(
+                    playable.title,
+                    textAlign: TextAlign.center,
+                    softWrap: true,
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text(
+                    subtitle,
+                    textAlign: TextAlign.center,
+                    softWrap: true,
+                    style: const TextStyle(color: Colors.white54),
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16.0,
+                    vertical: 8.0,
+                  ),
+                  child: IntrinsicHeight(
+                    child: Row(
+                      children: [
+                        PlayableQuickAction(
+                          label:
+                              playable.liked ? 'Undo Favorite' : 'Favorite',
+                          icon: Icon(playable.liked
+                              ? CupertinoIcons.star_fill
+                              : CupertinoIcons.star),
+                          enabled: !inOfflineMode,
+                          onTap: () {
+                            Navigator.pop(context);
+                            favoriteProvider.toggleOne(playable: playable);
+                          },
+                        ),
+                        const PlayableQuickActionDivider(),
+                        PlayableQuickAction(
+                          label: 'Details',
+                          icon: const Icon(CupertinoIcons.text_quote),
+                          onTap: () {
+                            Navigator.pop(context);
+                            showInfoSheet(context, playable: playable);
+                          },
+                        ),
+                        const PlayableQuickActionDivider(),
+                        PlayableQuickAction(
+                          label: _downloaded ? 'Remove' : 'Download',
+                          icon: _downloaded
+                              ? const _CloudMinusIcon()
+                              : const Icon(CupertinoIcons.cloud_download),
+                          enabled: _downloaded || !inOfflineMode,
+                          onTap: () {
+                            Navigator.pop(context);
+                            final downloadProvider =
+                                context.read<DownloadProvider>();
+                            if (_downloaded) {
+                              downloadProvider.removeForPlayable(playable);
+                            } else {
+                              downloadProvider.download(playable: playable);
+                            }
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const Divider(indent: 16, endIndent: 16),
+                ListView(
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  children: <Widget>[
+                    if (!isCurrent)
+                      PlayableActionButton(
+                        text: 'Play Next',
+                        icon: const Icon(
+                          CupertinoIcons.arrow_right_circle_fill,
+                          color: Colors.white30,
+                        ),
+                        onTap: () async {
+                          await audioHandler.queueAfterCurrent(playable);
+                          showOverlay(
+                            context,
+                            icon: CupertinoIcons.arrow_right_circle_fill,
+                            caption: 'Queued',
+                            message: 'To be played next.',
+                          );
+                        },
+                      ),
+                    if (!isCurrent)
+                      PlayableActionButton(
+                        text: 'Play Last',
+                        icon: const Icon(
+                          CupertinoIcons.arrow_down_right_circle_fill,
+                          color: Colors.white30,
+                        ),
+                        onTap: () async {
+                          await audioHandler.queueToBottom(playable);
+                          showOverlay(
+                            context,
+                            icon: CupertinoIcons.arrow_down_right_circle_fill,
+                            caption: 'Queued',
+                            message: 'Queued to bottom.',
+                          );
+                        },
+                      ),
+                    if (_queued)
+                      PlayableActionButton(
+                        text: 'Remove from Queue',
+                        icon: const Icon(
+                          CupertinoIcons.text_badge_minus,
+                          color: Colors.white30,
+                        ),
+                        onTap: () async {
+                          await audioHandler.removeFromQueue(playable);
+                          showOverlay(
+                            context,
+                            icon: CupertinoIcons.text_badge_minus,
+                            caption: 'Removed',
+                            message: 'Removed from queue.',
+                          );
+                        },
+                      ),
+                    const Divider(indent: 16, endIndent: 16),
+                    if (playable is Song)
+                      PlayableActionButton(
+                        enabled: !inOfflineMode,
+                        text: 'Go to Album',
+                        icon: const Icon(
+                          CupertinoIcons.music_albums_fill,
+                          color: Colors.white30,
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                          AppRouter().gotoAlbumDetailsScreen(
+                            context,
+                            albumId: playable.albumId,
+                          );
+                        },
+                        hideSheetOnTap: false,
+                      ),
+                    if (playable is Episode)
+                      PlayableActionButton(
+                        enabled: !inOfflineMode,
+                        text: 'Go to Podcast',
+                        icon: const Icon(
+                          LucideIcons.podcast,
+                          color: Colors.white30,
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                          AppRouter().gotoPodcastDetailsScreen(
+                            context,
+                            podcastId: playable.podcastId,
+                          );
+                        },
+                        hideSheetOnTap: false,
+                      ),
+                    if (playable is Song)
+                      PlayableActionButton(
+                        enabled: !inOfflineMode,
+                        text: 'Go to Artist',
+                        icon: const Icon(
+                          CupertinoIcons.music_mic,
+                          color: Colors.white30,
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                          AppRouter().gotoArtistDetailsScreen(
+                            context,
+                            artistId: playable.artistId,
+                          );
+                        },
+                        hideSheetOnTap: false,
+                      ),
+                    const Divider(indent: 16, endIndent: 16),
+                    PlayableActionButton(
+                      enabled: !inOfflineMode,
+                      text: 'Add to a Playlist…',
+                      icon: const Icon(
+                        CupertinoIcons.text_badge_plus,
+                        color: Colors.white30,
+                      ),
+                      onTap: () {
+                        Navigator.pop(context);
+                        gotoAddToPlaylistScreen(context, playable: playable);
+                      },
+                      hideSheetOnTap: false,
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _CloudMinusIcon extends StatelessWidget {
+  const _CloudMinusIcon({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final iconColor = IconTheme.of(context).color ?? Colors.white;
+    final size = IconTheme.of(context).size ?? 24.0;
+    final badgeSize = size * 0.55;
+
+    return SizedBox(
+      width: size,
+      height: size,
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Icon(CupertinoIcons.cloud_fill, size: size, color: iconColor),
+          Positioned(
+            right: -2,
+            bottom: -2,
+            child: Container(
+              width: badgeSize,
+              height: badgeSize,
+              alignment: Alignment.center,
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+                color: CupertinoColors.systemRed,
+              ),
+              child: Icon(
+                CupertinoIcons.minus,
+                size: badgeSize * 0.7,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class PlayableActionButton extends StatelessWidget {
+  final String text;
+  final Icon icon;
+  final Function onTap;
+  final bool hideSheetOnTap;
+  final bool enabled;
+  final bool destructive;
+
+  const PlayableActionButton({
+    Key? key,
+    required this.text,
+    required this.icon,
+    required this.onTap,
+    this.hideSheetOnTap = true,
+    this.enabled = true,
+    this.destructive = false,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final destructiveColor = CupertinoColors.systemRed.resolveFrom(context);
+    final Color? labelColor = !enabled
+        ? Colors.white30
+        : destructive
+            ? destructiveColor
+            : null;
+    final effectiveIcon = destructive && enabled
+        ? Icon(icon.icon, color: destructiveColor)
+        : icon;
+
+    return ListTile(
+      leading: effectiveIcon,
+      minLeadingWidth: 16,
+      title: Text(
+        text,
+        style: labelColor == null ? null : TextStyle(color: labelColor),
+      ),
+      onTap: enabled
+          ? () {
+              onTap();
+              if (hideSheetOnTap) Navigator.pop(context);
+            }
+          : null,
+    );
+  }
+}

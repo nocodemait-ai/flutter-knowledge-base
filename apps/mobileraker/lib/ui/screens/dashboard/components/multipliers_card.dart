@@ -1,0 +1,292 @@
+/*
+ * Copyright (c) 2023-2026. Patrick Schmidt.
+ * All rights reserved.
+ */
+
+// ignore_for_file: prefer-single-widget-per-file
+
+import 'package:common/service/moonraker/klippy_service.dart';
+import 'package:common/service/moonraker/printer_service.dart';
+import 'package:common/ui/components/async_guard.dart';
+import 'package:common/ui/components/skeletons/card_title_skeleton.dart';
+import 'package:common/ui/components/skeletons/slider_or_text_input_skeleton.dart';
+import 'package:common/ui/components/slider_or_text_input.dart';
+import 'package:common/util/extensions/async_ext.dart';
+import 'package:common/util/extensions/ref_extension.dart';
+import 'package:common/util/logger.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:flutter_icons/flutter_icons.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:shimmer/shimmer.dart';
+
+part 'multipliers_card.freezed.dart';
+part 'multipliers_card.g.dart';
+
+class MultipliersCard extends HookWidget {
+  const MultipliersCard({super.key, required this.machineUUID});
+
+  static Widget preview() {
+    return const _Preview();
+  }
+
+  final String machineUUID;
+
+  @override
+  Widget build(BuildContext context) {
+    useAutomaticKeepAlive();
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: 15),
+        child: MultipliersSlidersOrTexts(machineUUID: machineUUID),
+      ),
+    );
+  }
+}
+
+class _Preview extends HookWidget {
+  static const String _machineUUID = 'preview';
+
+  const _Preview({super.key, this.isCard = true});
+
+  final bool isCard;
+
+  @override
+  Widget build(BuildContext context) {
+    useAutomaticKeepAlive();
+    return ProviderScope(
+      overrides: [
+        _multipliersCardControllerProvider(_machineUUID).overrideWith(_PreviewController.new),
+      ],
+      child: isCard
+          ? const MultipliersCard(machineUUID: _machineUUID)
+          : const MultipliersSlidersOrTexts(machineUUID: _machineUUID),
+    );
+  }
+}
+
+class _MultipliersSlidersOrTextsLoading extends StatelessWidget {
+  const _MultipliersSlidersOrTextsLoading({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    var themeData = Theme.of(context);
+    return Shimmer.fromColors(
+      baseColor: Colors.grey,
+      highlightColor: themeData.colorScheme.background,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          CardTitleSkeleton.trailingIcon(),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 8),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                SliderOrTextInputSkeleton(value: 0.9),
+                SliderOrTextInputSkeleton(value: 0.3),
+                SliderOrTextInputSkeleton(value: 0.65),
+                SliderOrTextInputSkeleton(value: 0.8),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class MultipliersSlidersOrTexts extends HookConsumerWidget {
+  const MultipliersSlidersOrTexts({super.key, required this.machineUUID});
+
+  static Widget preview() {
+    return const _Preview(isCard: false);
+  }
+
+  final String machineUUID;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return AsyncGuard(
+      // debugLabel: 'MultipliersSlidersOrTexts-$machineUUID',
+      toGuard: _multipliersCardControllerProvider(machineUUID).selectAs((data) => true),
+      childOnLoading: const _MultipliersSlidersOrTextsLoading(),
+      childOnData: _Body(
+        machineUUID: machineUUID,
+      ),
+    );
+  }
+}
+
+class _Body extends HookConsumerWidget {
+  const _Body({super.key, required this.machineUUID});
+
+  final String machineUUID;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    talker.info('Building MultipliersBody for $machineUUID');
+
+    var inputLocked = useState(true);
+    var controller = ref.watch(_multipliersCardControllerProvider(machineUUID).notifier);
+
+    var model =
+        ref.watch(_multipliersCardControllerProvider(machineUUID).requireValue());
+
+    var canEdit = model.klippyCanReceiveCommands && !inputLocked.value;
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        ListTile(
+          leading: const Icon(FlutterIcons.speedometer_slow_mco),
+          title: const Text('pages.dashboard.control.multipl_card.title').tr(),
+          trailing: IconButton(
+            onPressed: model.klippyCanReceiveCommands ? () => inputLocked.value = !inputLocked.value : null,
+            icon: AnimatedSwitcher(
+              duration: kThemeAnimationDuration,
+              transitionBuilder: (child, anim) => RotationTransition(
+                turns: Tween<double>(begin: 0.5, end: 1).animate(anim),
+                child: ScaleTransition(scale: anim, child: child),
+              ),
+              child: inputLocked.value
+                  ? const Icon(FlutterIcons.lock_faw, key: ValueKey('lock'))
+                  : const Icon(
+                      FlutterIcons.unlock_faw,
+                      key: ValueKey('unlock'),
+                    ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          child: Column(
+            children: [
+              SliderOrTextInput(
+                value: model.speedFactor,
+                prefixText: 'pages.dashboard.general.print_card.speed'.tr(),
+                onChange: canEdit ? controller.onEditedSpeedMultiplier : null,
+                addToMax: true,
+              ),
+              SliderOrTextInput(
+                value: model.extrudeFactor,
+                prefixText: 'pages.dashboard.control.multipl_card.flow'.tr(),
+                onChange: canEdit ? controller.onEditedFlowMultiplier : null,
+              ),
+              if (model.pressureAdvance != null)
+              SliderOrTextInput(
+                value: model.pressureAdvance!,
+                prefixText: 'pages.dashboard.control.multipl_card.press_adv'.tr(),
+                onChange: canEdit ? controller.onEditedPressureAdvanced : null,
+                numberFormat: NumberFormat('0.##### mm/s', context.locale.toStringWithSeparator()),
+                unit: 'mm/s',
+              ),
+              if (model.smoothTime != null)
+              SliderOrTextInput(
+                value: model.smoothTime!,
+                prefixText: 'pages.dashboard.control.multipl_card.smooth_time'.tr(),
+                onChange: canEdit ? controller.onEditedSmoothTime : null,
+                numberFormat: NumberFormat('0.### s', context.locale.toStringWithSeparator()),
+                maxValue: 0.2,
+                unit: 's',
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+@riverpod
+class _MultipliersCardController extends _$MultipliersCardController {
+  @override
+  FutureOr<_Model> build(String machineUUID) {
+    ref.keepAliveFor();
+
+    final klippyAsync = ref.watch(klipperProvider(machineUUID).selectAs((value) => value.klippyCanReceiveCommands));
+    final extruderAsync = ref.watch(printerProvider(machineUUID).selectAs((value) => value.extruder));
+    final gCodeMoveAsync = ref.watch(printerProvider(machineUUID).selectAs((value) => value.gCodeMove));
+
+    final klippyCanReceiveCommands = klippyAsync.requireValue;
+    final extruder = extruderAsync.requireValue;
+    final gCodeMove = gCodeMoveAsync.requireValue;
+
+    return _Model(
+      klippyCanReceiveCommands: klippyCanReceiveCommands,
+      speedFactor: gCodeMove.speedFactor,
+      extrudeFactor: gCodeMove.extrudeFactor,
+      pressureAdvance: extruder?.pressureAdvance,
+      smoothTime: extruder?.smoothTime,
+    );
+  }
+
+  PrinterService get _printerService => ref.read(printerServiceSelectedProvider);
+
+  onEditedSpeedMultiplier(double value) {
+    _printerService.speedMultiplier((value * 100).toInt());
+  }
+
+  onEditedFlowMultiplier(double value) {
+    _printerService.flowMultiplier((value * 100).toInt());
+  }
+
+  onEditedPressureAdvanced(double value) {
+    _printerService.pressureAdvance(value);
+  }
+
+  onEditedSmoothTime(double value) {
+    _printerService.smoothTime(value);
+  }
+}
+
+@riverpod
+class _PreviewController extends _MultipliersCardController {
+  @override
+  FutureOr<_Model> build(String machineUUID) {
+    const model = _Model(
+      klippyCanReceiveCommands: true,
+      speedFactor: 1.25,
+      extrudeFactor: 0.98,
+      pressureAdvance: 0.65,
+      smoothTime: 0.069,
+    );
+    state = const AsyncValue.data(model);
+
+    return model;
+  }
+
+  @override
+  onEditedSpeedMultiplier(double value) {
+    // do nothing preview
+  }
+
+  @override
+  onEditedFlowMultiplier(double value) {
+    // do nothing preview
+  }
+
+  @override
+  onEditedPressureAdvanced(double value) {
+    // do nothing preview
+  }
+
+  @override
+  onEditedSmoothTime(double value) {
+    // do nothing preview
+  }
+}
+
+@freezed
+sealed class _Model with _$Model {
+  const factory _Model({
+    required bool klippyCanReceiveCommands,
+    required double speedFactor,
+    required double extrudeFactor,
+    required double? pressureAdvance,
+    required double? smoothTime,
+  }) = __Model;
+}

@@ -1,0 +1,239 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "taskwarrior-flutter",
+  "name": "Taskwarrior",
+  "description": "A new Flutter project.",
+  "domain": "social",
+  "app_type": "chat",
+  "source_repo": "https://github.com/CCExtractor/taskwarrior-flutter",
+  "keywords": [],
+  "tags": [
+    "app",
+    "dashboard",
+    "database",
+    "list",
+    "local",
+    "localization",
+    "nocode-flutter",
+    "svg",
+    "utility"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Taskwarrior",
+    "slug": "taskwarrior_flutter",
+    "app_type": "chat",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 29
+  },
+  "screens": [
+    {
+      "id": "about-page-body",
+      "name": "About Page Body",
+      "screen_type": "general"
+    },
+    {
+      "id": "tags-route",
+      "name": "Tags Route",
+      "screen_type": "general"
+    },
+    {
+      "id": "add-task-bottom-sheet",
+      "name": "Add Task Bottom Sheet",
+      "screen_type": "form"
+    },
+    {
+      "id": "filter-drawer",
+      "name": "Filter Drawer",
+      "screen_type": "general"
+    },
+    {
+      "id": "home-page-body",
+      "name": "Home Page Body",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "nav-drawer",
+      "name": "Nav Drawer",
+      "screen_type": "general"
+    },
+    {
+      "id": "projects-column",
+      "name": "Projects Column",
+      "screen_type": "general"
+    },
+    {
+      "id": "project-column-taskc",
+      "name": "Project Column Taskc",
+      "screen_type": "general"
+    },
+    {
+      "id": "tag-filters-wrap",
+      "name": "Tag Filters Wrap",
+      "screen_type": "general"
+    },
+    {
+      "id": "manage-task-server-page-body",
+      "name": "Manage Task Server Page Body",
+      "screen_type": "general"
+    },
+    {
+      "id": "onboarding-page",
+      "name": "Onboarding",
+      "screen_type": "onboarding"
+    },
+    {
+      "id": "onboarding-page-bottom-section",
+      "name": "Onboarding Page Bottom Section",
+      "screen_type": "onboarding"
+    },
+    {
+      "id": "onboarding-page-animated-container",
+      "name": "Onboarding Page Animated Container",
+      "screen_type": "onboarding"
+    },
+    {
+      "id": "permission-section",
+      "name": "Permission Section",
+      "screen_type": "general"
+    },
+    {
+      "id": "profiles-list",
+      "name": "Profiles List",
+      "screen_type": "list"
+    },
+    {
+      "id": "burn-down-daily",
+      "name": "Burn Down Daily",
+      "screen_type": "general"
+    },
+    {
+      "id": "burn-down-daily-replica",
+      "name": "Burn Down Daily Replica",
+      "screen_type": "general"
+    },
+    {
+      "id": "burn-down-daily-taskc",
+      "name": "Burn Down Daily Taskc",
+      "screen_type": "general"
+    },
+    {
+      "id": "burn-down-monthly",
+      "name": "Burn Down Monthly",
+      "screen_type": "general"
+    },
+    {
+      "id": "burn-down-monthly-replica",
+      "name": "Burn Down Monthly Replica",
+      "screen_type": "general"
+    },
+    {
+      "id": "burn-down-monthly-taskc",
+      "name": "Burn Down Monthly Taskc",
+      "screen_type": "general"
+    },
+    {
+      "id": "burn-down-weekly",
+      "name": "Burn Down Weekly",
+      "screen_type": "general"
+    },
+    {
+      "id": "burn-down-weekly-replica",
+      "name": "Burn Down Weekly Replica",
+      "screen_type": "general"
+    },
+    {
+      "id": "burn-down-weekly-task",
+      "name": "Burn Down Weekly Task",
+      "screen_type": "general"
+    },
+    {
+      "id": "reports-home-replica",
+      "name": "Reports Home Replica",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "reports-home-taskc",
+      "name": "Reports Home Taskc",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "settings-page-body",
+      "name": "Settings Page Body",
+      "screen_type": "form"
+    },
+    {
+      "id": "settings-page-select-the-language-trailing",
+      "name": "Settings Page Select The Language Trailing",
+      "screen_type": "form"
+    },
+    {
+      "id": "tag-editor",
+      "name": "Tag Editor",
+      "screen_type": "form"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "connectivity_plus",
+    "crypto",
+    "date_format",
+    "double_back_to_close_app",
+    "file_picker",
+    "file_picker_writable",
+    "file_selector",
+    "flutter_gen",
+    "flutter_launcher_icons",
+    "flutter_local_notifications",
+    "flutter_native_splash",
+    "flutter_timezone",
+    "flutter_platform_widgets",
+    "flutter_slidable",
+    "flutter_svg",
+    "get",
+    "get_test",
+    "google_fonts",
+    "hive",
+    "hive_flutter",
+    "home_widget",
+    "http",
+    "import_sorter",
+    "in_app_update",
+    "intl",
+    "loggy",
+    "mockito",
+    "package_info_plus",
+    "pem",
+    "permission_handler",
+    "shared_preferences",
+    "shared_preferences_web",
+    "sizer",
+    "sqflite",
+    "syncfusion_flutter_calendar",
+    "syncfusion_flutter_charts",
+    "test",
+    "timezone",
+    "tuple",
+    "tutorial_coach_mark",
+    "url_launcher",
+    "uuid",
+    "built_collection",
+    "textfield_tags",
+    "path_provider",
+    "flutter_rust_bridge",
+    "ffi",
+    "app_links"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

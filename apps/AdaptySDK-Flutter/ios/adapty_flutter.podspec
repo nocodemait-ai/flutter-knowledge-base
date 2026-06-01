@@ -1,0 +1,28 @@
+#
+# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
+# Run `pod lib lint adapty_flutter.podspec' to validate before publishing.
+#
+Pod::Spec.new do |s|
+  s.name             = 'adapty_flutter'
+  s.version          = '3.15.5'
+  s.summary          = 'Adapty flutter plugin.'
+  s.description      = <<-DESC
+Win back churned subscribers in your iOS app.
+Adapty helps you track business metrics, and lets you run ad campaigns targeted at churned users faster
+                       DESC
+  s.homepage         = 'https://adapty.io/'
+  s.license          = { :file => '../LICENSE' }
+  s.author           = { 'Adapty' => 'contact@adapty.io' }
+  s.source           = { :path => '.' }
+  s.source_files = 'Classes/**/*'
+  s.dependency 'Flutter'
+  
+  s.ios.dependency 'Adapty', '3.15.7'
+  s.ios.dependency 'AdaptyUI', '3.15.7'
+  s.ios.dependency 'AdaptyPlugin', '3.15.7'
+  
+  s.platform = :ios, '13.0'
+
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+  s.swift_version = '5.9'
+end

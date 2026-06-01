@@ -1,0 +1,99 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "Flutter-Grocery-App",
+  "name": "My Grocery",
+  "description": "A new Flutter project.",
+  "domain": "generic",
+  "app_type": "utility",
+  "source_repo": "https://github.com/Sameera-Perera/Flutter-Grocery-App",
+  "keywords": [],
+  "tags": [
+    "app",
+    "dashboard",
+    "image",
+    "local",
+    "localization",
+    "nocode-flutter"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "My Grocery",
+    "slug": "flutter_grocery_app",
+    "app_type": "utility",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 9
+  },
+  "screens": [
+    {
+      "id": "account-screen",
+      "name": "Account",
+      "screen_type": "general"
+    },
+    {
+      "id": "sign-in-screen",
+      "name": "Sign In",
+      "screen_type": "general"
+    },
+    {
+      "id": "sign-up-screen",
+      "name": "Sign Up",
+      "screen_type": "general"
+    },
+    {
+      "id": "category-screen",
+      "name": "Category",
+      "screen_type": "general"
+    },
+    {
+      "id": "dashboard-screen",
+      "name": "Dashboard",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "home-screen",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "carousel-slider-view",
+      "name": "Carousel Slider",
+      "screen_type": "general"
+    },
+    {
+      "id": "product-screen",
+      "name": "Product",
+      "screen_type": "general"
+    },
+    {
+      "id": "product-details-screen",
+      "name": "Product Details",
+      "screen_type": "detail"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "get",
+    "flutter_snake_navigationbar",
+    "badges",
+    "http",
+    "shimmer",
+    "cached_network_image",
+    "carousel_slider",
+    "intl",
+    "flutter_easyloading",
+    "hive",
+    "hive_flutter"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

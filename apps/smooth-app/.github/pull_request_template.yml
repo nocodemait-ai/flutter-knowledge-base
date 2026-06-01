@@ -1,0 +1,31 @@
+## ⚠️ Acceptance Requirements
+**This Pull Request will only be accepted if:**
+- ✅ It is linked to an issue (using linking keywords like `Fixes`, `Closes`, or `Resolves`)
+- ✅ The linked issue is assigned to the author of this PR
+
+---
+
+### What
+<!-- description of the PR -->
+- <!-- Changed x to achieve y -->
+<!-- 
+Please name your pull request following this scheme: `type: What you did` this allows us to automatically generate the changelog
+Following `type`s are allowed:
+  - `feat`, for Features
+  - `fix`, for Bug Fixes
+  - `docs`, for Documentation
+  - `ci`, for Automation
+  - `refactor`, for code Refactoring
+  - `chore`, for Miscellaneous things
+-->
+
+### Screenshot or video
+<!-- Insert a screenshot or a video to provide visual record of your changes (if visible) -->
+
+### Fixes bug(s)
+<!-- change by appropriate issues. -->
+<!-- Please use a linking keyword https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword -->
+- Fixes: <!-- #1 Note: you can also use Closes: -->
+
+### Part of 
+- #525 <!-- Add the most granular issue possible -->

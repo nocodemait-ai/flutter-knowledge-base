@@ -1,0 +1,57 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "FlutterFurnitureAppUI",
+  "name": "Furniture App",
+  "description": "A new Flutter application.",
+  "domain": "generic",
+  "app_type": "utility",
+  "source_repo": "https://github.com/JideGuru/FlutterFurnitureAppUI",
+  "keywords": [],
+  "tags": [
+    "app",
+    "dashboard",
+    "local",
+    "nocode-flutter"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Furniture App",
+    "slug": "flutterfurnitureappui",
+    "app_type": "utility",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 3
+  },
+  "screens": [
+    {
+      "id": "details",
+      "name": "Details",
+      "screen_type": "detail"
+    },
+    {
+      "id": "home",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "main-screen",
+      "name": "Main",
+      "screen_type": "dashboard"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "flutter_icons"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

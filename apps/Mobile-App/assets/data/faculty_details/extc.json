@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Dr. Maniroja M. Edinburgh",
+    "designation": "Professor and Head of Department",
+    "qualification": "Ph.D. (Engineering)",
+    "experience": "31 Years",
+    "area_of_specialization": "Image Processing, Speech Processing, Random Signal Analysis, Machine Learning, Deep Learning, Neural Networks and Python Programming",
+    "email": "maniroja@thadomal.org",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/extc/maniroja_edinburgh.jpg",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Dr. Ashwini Kunte",
+    "designation": "Professor",
+    "qualification": "B.E., M.E, PhD",
+    "experience": "29 Years",
+    "area_of_specialization": "Image Processing, Wireless Communication and Digital Logic Design",
+    "email": "askunte@gmail.com",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/extc/ashwini_kunte.jpg",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Dr. Shrishti Bhatia",
+    "designation": "Associate Professor",
+    "qualification": "Ph.D (EXTC)",
+    "experience": "24 Years",
+    "area_of_specialization": "Communication Systems, Analogue & Digital Communication, Wireless Networks",
+    "email": "shrishti.bhatia@thadomal.org",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/extc/shrishti_bhatia.png",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Dr. Dhanajay Theckedath",
+    "designation": "Associate Professor",
+    "qualification": "Ph.D. (Technology) (Instrumentation), B.Sc (Physics)",
+    "experience": "23 Years",
+    "area_of_specialization": "Signal Processing, Machine Learning and Deep Learning",
+    "email": "dhananjay.kishore@gmail.com",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/extc/dhanajay_.jpg",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Ms. Anuradha Rao",
+    "designation": "Associate Professor",
+    "qualification": "M.Tech",
+    "experience": "30 Years + 1 Year Industry",
+    "area_of_specialization": "Optical Communication, Computer Communication & Internet Communication",
+    "email": "karaop@yahoo.com",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/extc/anuradha_rao.jpg",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Ms. Neeru Pathak",
+    "designation": "Assistant Professor",
+    "email": "neerupathak@hotmail.com",
+    "experience": "23 years",
+    "area_of_specialization": "Instrumentation & Control Engineering",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/extc/neeru_pathak.jpg",
+    "phd_guide": "na",
+    "qualification": "M.Tech"
+  },
+  {
+    "name": "Ms. Uttara Bhatt",
+    "designation": "Assistant Professor",
+    "email": "uttara.bhatt@thadomal.org",
+    "experience": "23 years",
+    "area_of_specialization": "VLSI Design, Microelectronics and Signal Processing",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/extc/uttara_bhatt.png",
+    "phd_guide": "na",
+    "qualification": "PhD pursuing"
+  },
+  {
+    "name": "Ms. Jyoti Kashyap",
+    "designation": "Assistant Professor",
+    "email": "jyotikashyap1@rediffmail.com",
+    "experience": "24 years",
+    "area_of_specialization": "Electro Magnetics, Microwave Engineering and Communication System",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/extc/jyoti_kashyap.png",
+    "phd_guide": "na",
+    "qualification": "PhD Pursuing"
+  },
+  {
+    "name": "Mr. Amit Hatekar",
+    "designation": "Assistant Professor",
+    "email": "a_hatekar@yahoo.com",
+    "experience": "21 years",
+    "area_of_specialization": "Microprocessors & Micro Controllers",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/extc/amit_hatekar.jpg",
+    "phd_guide": "na",
+    "qualification": "PhD pursuing"
+  },
+  {
+    "name": "Mr. Manoj S. Kavedia",
+    "designation": "Assistant Professor",
+    "email": "ermanojkavedia.tsec@gmail.com",
+    "experience": "24 years + 2 years Industry",
+    "area_of_specialization": "Electronics and Communication",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/extc/manoj_kavedia.jpg",
+    "phd_guide": "na",
+    "qualification": "PhD pursuing"
+  },
+  {
+    "name": "Mr. Tanvir M Daphedar",
+    "designation": "Assistant Professor",
+    "qualification": "M.Tech. (IITB)",
+    "experience": "19 Years",
+    "area_of_specialization": "Bioinstrumentation, Embedded systems, Microfluidics and biological physics",
+    "email": "tanvir.daphedar@gmail.com",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/extc/tanvir_daphedar.jpg",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Bharati Ingale",
+    "designation": "Assistant Professor",
+    "qualification": "Pursuing PhD from IIT Bombay",
+    "experience": "26 Years",
+    "area_of_specialization": "Sensors and Biosensors design, Signal Processing, IOT, AI",
+    "email": "bharatijingale@gmail.com",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/extc/bharati_ingale.jpg",
+    "phd_guide": "na"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "app.mobile.flutter-instagram-app-ui",
+  "name": "Ig Ui App",
+  "description": "A new Flutter project.",
+  "domain": "social",
+  "app_type": "chat",
+  "source_repo": "https://github.com/sopheamen007/app.mobile.flutter-instagram-app-ui",
+  "keywords": [],
+  "tags": [
+    "app",
+    "dashboard",
+    "list",
+    "local",
+    "nocode-flutter",
+    "svg"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Ig Ui App",
+    "slug": "app.mobile.flutter_instagram_app_ui",
+    "app_type": "chat",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 3
+  },
+  "screens": [
+    {
+      "id": "home-page",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "root-app",
+      "name": "Root App",
+      "screen_type": "general"
+    },
+    {
+      "id": "search-page",
+      "name": "Search",
+      "screen_type": "list"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "flutter_svg",
+    "line_icons"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

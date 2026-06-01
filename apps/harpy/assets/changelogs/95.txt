@@ -1,0 +1,6 @@
+Version 0.10.2
+2023-01-20
+
+- Fix webview background sometimes transparent
+- Fix email link in about page opened in in-app browser
+- Minor style improvements

@@ -1,0 +1,16 @@
+name: carp_audio_package_example
+description: A simple example of using the CARP Media Package
+publish_to: 'none' 
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  carp_audio_package:
+    path: ../
+
+flutter:
+  uses-material-design: true

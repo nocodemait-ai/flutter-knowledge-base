@@ -1,0 +1,74 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "FlutterGrocery-ShoppingAppUI",
+  "name": "Fryo",
+  "description": "A food ordering app template kit.",
+  "domain": "ecommerce",
+  "app_type": "marketplace",
+  "source_repo": "https://github.com/ahkohd/FlutterGrocery-ShoppingAppUI",
+  "keywords": [],
+  "tags": [
+    "app",
+    "dashboard",
+    "local",
+    "nocode-flutter",
+    "shopping"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Fryo",
+    "slug": "fluttergrocery_shoppingappui",
+    "app_type": "marketplace",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 6
+  },
+  "screens": [
+    {
+      "id": "dashboard",
+      "name": "Dashboard",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "home-page",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "product-page",
+      "name": "Product",
+      "screen_type": "general"
+    },
+    {
+      "id": "sample-page",
+      "name": "Sample",
+      "screen_type": "general"
+    },
+    {
+      "id": "sign-in-page",
+      "name": "Sign In",
+      "screen_type": "general"
+    },
+    {
+      "id": "sign-up-page",
+      "name": "Sign Up",
+      "screen_type": "general"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "page_transition",
+    "smooth_star_rating"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

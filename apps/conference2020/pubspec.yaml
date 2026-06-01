@@ -1,0 +1,97 @@
+name: conferenceapp
+description: Flutter Europe conference app
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bloc: ^3.0.0
+  camera: ^0.5.7+2
+  characters: ^0.5.0
+  cloud_firestore: ^0.12.11
+  collection: ^1.14.11
+  contentful_rich_text: ^0.1.2
+  contentful: ^1.1.3
+  csv: ^4.0.3
+  dotted_border: ^1.0.3
+  dynamic_theme: ^1.0.1
+  equatable: ^1.0.1
+  expandable: ^4.0.1
+  extended_image: ^0.6.8
+  fast_qr_reader_view:
+    path: plugins/fast_qr_reader_view2
+  feature_discovery:
+    git: https://github.com/ayalma/feature_discovery.git
+  file_picker: ^1.4.3+2
+  firebase_analytics: ^5.0.9
+  firebase_auth: ^0.15.2
+  firebase_core: ^0.4.3+1
+  firebase_crashlytics: ^0.1.2+3
+  firebase_messaging: ^5.1.8
+  firebase_ml_vision: ^0.9.3+3
+  firebase_performance: ^0.3.1+2
+  firebase_remote_config: ^0.3.0
+  flare_flutter: ^1.8.1
+  flutter_bloc: ^3.1.0
+  flutter_custom_clippers: ^1.1.0
+  flutter_local_notifications: ^0.9.1+1
+  fluttertoast: ^3.1.3
+  http: ^0.12.0+2
+  hydrated_bloc: ^3.0.0
+  intl: ^0.16.0
+  json_serializable: ^3.2.3
+  line_icons: ^0.2.0
+  package_info: ^0.4.0+10
+  pedantic: ^1.8.0+1
+  provider: ^4.0.1
+  qr_flutter: ^3.2.0
+  rxdart: ^0.23.1
+  share: ^0.6.3+1
+  shared_preferences: ^0.5.4+5
+  smooth_star_rating: ^1.0.4+2
+  timeago: ^2.0.24
+  url_launcher: ^5.2.7
+  vibration: ^1.2.2
+  snapfeed: ^0.1.0+1
+  flutter_bugfender: ^1.0.0
+  stack_trace: ^1.9.3
+  flutter_markdown: ^0.3.2
+  add_2_calendar: ^1.3.1
+
+  cupertino_icons: ^0.1.2
+dependency_overrides:
+  flutter_bugfender:
+    # path: ../BugfenderSDK-Flutter
+    git: 
+      url: https://github.com/orestesgaolin/BugfenderSDK-Flutter
+      ref: d8ed5c7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  test:
+  build_runner:
+  mockito:
+
+flutter:
+  uses-material-design: true
+
+  assets:
+   - assets/flare/
+   - assets/
+
+  fonts:
+    - family: PTSans
+      fonts:
+        - asset: assets/PT_Sans/PTSans-Bold.ttf
+          weight: 600
+        - asset: assets/PT_Sans/PTSans-Regular.ttf
+          weight: 400
+        - asset: assets/PT_Sans/PTSans-Italic.ttf
+          # weight: 500
+        - asset: assets/PT_Sans/PTSans-BoldItalic.ttf
+          # weight: 600

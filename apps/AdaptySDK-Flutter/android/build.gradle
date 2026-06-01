@@ -1,0 +1,58 @@
+buildscript {
+    ext.kotlin_version = '1.9.10'
+    repositories {
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.3.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+    }
+}
+
+android {
+    compileSdk = 34
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    defaultConfig {
+        minSdk = 21
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    if (project.android.hasProperty("namespace")) {
+        namespace = 'com.adapty.flutter'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation platform('io.adapty:adapty-bom:3.15.2')
+    implementation 'io.adapty:android-sdk'
+    implementation 'io.adapty:android-ui'
+    implementation 'io.adapty:android-ui-video'
+    implementation 'io.adapty.internal:crossplatform:3.15.3'
+}

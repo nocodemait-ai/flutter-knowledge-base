@@ -1,0 +1,12 @@
+{
+	"display": {
+		"prefix": "display",
+		"scope": "dart",
+		"body": "final display = ref.watch(displayPreferencesProvider);"
+	},
+	"harpy theme": {
+		"prefix": "harpytheme",
+		"scope": "dart",
+		"body": "final harpyTheme = ref.watch(harpyThemeProvider);"
+	},
+}

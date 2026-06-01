@@ -1,0 +1,61 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "flutter_parallax_scroll",
+  "name": "Flutter Parallax Scroll",
+  "description": "Parallax scroll app based on Stian's UI.",
+  "domain": "generic",
+  "app_type": "utility",
+  "source_repo": "https://github.com/pawlik92/flutter_parallax_scroll",
+  "keywords": [],
+  "tags": [
+    "app",
+    "dashboard",
+    "local",
+    "nocode-flutter",
+    "svg"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Flutter Parallax Scroll",
+    "slug": "flutter_parallax_scroll",
+    "app_type": "utility",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 3
+  },
+  "screens": [
+    {
+      "id": "home-screen",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "benefits-subscreen",
+      "name": "Benefits Subscreen",
+      "screen_type": "general"
+    },
+    {
+      "id": "urban-planners-subscreen",
+      "name": "Urban Planners Subscreen",
+      "screen_type": "general"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "rxdart",
+    "google_fonts",
+    "flutter_svg",
+    "quiver"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

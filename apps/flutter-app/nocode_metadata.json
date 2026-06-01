@@ -1,0 +1,127 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "flutter-app",
+  "name": "Todo Open",
+  "description": "A new Flutter application.",
+  "domain": "generic",
+  "app_type": "utility",
+  "source_repo": "https://github.com/ionicfirebaseapp/flutter-app",
+  "keywords": [],
+  "tags": [
+    "app",
+    "auth",
+    "dashboard",
+    "list",
+    "local",
+    "nocode-flutter"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Todo Open",
+    "slug": "flutter_app",
+    "app_type": "utility",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 17
+  },
+  "screens": [
+    {
+      "id": "login",
+      "name": "Login",
+      "screen_type": "auth"
+    },
+    {
+      "id": "register",
+      "name": "Register",
+      "screen_type": "auth"
+    },
+    {
+      "id": "reset-password",
+      "name": "Reset Password",
+      "screen_type": "auth"
+    },
+    {
+      "id": "drawer-list",
+      "name": "Drawer List",
+      "screen_type": "list"
+    },
+    {
+      "id": "home",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "task-in-progress",
+      "name": "Task In Progress",
+      "screen_type": "general"
+    },
+    {
+      "id": "task-completed",
+      "name": "Task Completed",
+      "screen_type": "general"
+    },
+    {
+      "id": "landing",
+      "name": "Landing",
+      "screen_type": "general"
+    },
+    {
+      "id": "priority-task",
+      "name": "Priority Task",
+      "screen_type": "general"
+    },
+    {
+      "id": "profile",
+      "name": "Profile",
+      "screen_type": "detail"
+    },
+    {
+      "id": "contact-us",
+      "name": "Contact Us",
+      "screen_type": "general"
+    },
+    {
+      "id": "settings",
+      "name": "Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "add-task",
+      "name": "Add Task",
+      "screen_type": "form"
+    },
+    {
+      "id": "set-time-date",
+      "name": "Set Time Date",
+      "screen_type": "general"
+    },
+    {
+      "id": "current-location",
+      "name": "Current Location",
+      "screen_type": "general"
+    },
+    {
+      "id": "task-expanded",
+      "name": "Task Expanded",
+      "screen_type": "general"
+    },
+    {
+      "id": "task-list",
+      "name": "Task List",
+      "screen_type": "list"
+    }
+  ],
+  "models": [],
+  "packages": [],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

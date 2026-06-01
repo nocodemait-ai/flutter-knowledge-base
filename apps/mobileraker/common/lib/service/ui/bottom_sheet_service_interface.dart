@@ -1,0 +1,73 @@
+/*
+ * Copyright (c) 2023-2026. Patrick Schmidt.
+ * All rights reserved.
+ */
+
+import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/experimental/mutation.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
+
+part 'bottom_sheet_service_interface.g.dart';
+
+mixin BottomSheetIdentifierMixin implements Enum {
+  // String get name;
+}
+
+@Riverpod(keepAlive: true)
+BottomSheetService bottomSheetService(Ref ref) => throw UnimplementedError();
+
+
+
+abstract interface class BottomSheetService {
+  static final showSheetMutation = Mutation();
+
+  Map<BottomSheetIdentifierMixin, Widget Function(BuildContext, Object?)> get availableSheets;
+
+  Future<BottomSheetResult> show(BottomSheetConfig config);
+}
+
+class BottomSheetConfig<T> {
+  BottomSheetConfig({
+    required this.type,
+    this.data,
+  });
+
+  final BottomSheetIdentifierMixin type;
+
+  final T? data;
+}
+
+class BottomSheetResult<T> {
+  BottomSheetResult({
+    this.confirmed = false,
+    this.data,
+  });
+
+  BottomSheetResult.confirmed([
+    T? data,
+  ]) : this(confirmed: true, data: data);
+
+  BottomSheetResult.dismissed() : this(confirmed: false);
+
+  /// Indicate if the bottom sheet was confirmed or dismissed
+  final bool confirmed;
+
+  // Optional data that can be passed back from the bottom sheet to the caller
+  final T? data;
+
+  @override
+  String toString() {
+    return 'BottomSheetResult{confirmed: $confirmed, data: $data}';
+  }
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is BottomSheetResult &&
+          runtimeType == other.runtimeType &&
+          confirmed == other.confirmed &&
+          data == other.data;
+
+  @override
+  int get hashCode => confirmed.hashCode ^ data.hashCode;
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "EtornamVpnFlutter",
+  "name": "Etornam Vpn",
+  "description": "A simple VPN application built with flutter",
+  "domain": "generic",
+  "app_type": "utility",
+  "source_repo": "https://github.com/iamEtornam/EtornamVpnFlutter",
+  "keywords": [],
+  "tags": [
+    "app",
+    "dashboard",
+    "list",
+    "local",
+    "nocode-flutter"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Etornam Vpn",
+    "slug": "etornamvpnflutter",
+    "app_type": "utility",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 2
+  },
+  "screens": [
+    {
+      "id": "home-page",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "server-list-page",
+      "name": "Server List",
+      "screen_type": "list"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "google_fonts",
+    "avatar_glow",
+    "circularbox",
+    "flutter_vpn",
+    "roundcheckbox"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

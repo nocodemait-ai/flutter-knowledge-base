@@ -1,0 +1,95 @@
+{
+  "1": {
+    "url": "https://firebasestorage.googleapis.com/v0/b/tsec-app.appspot.com/o/syllabus%2FFE%20SEM%201.pdf?alt=media&token=991b935d-48d5-4042-845c-1894068af963",
+    "subjects": [
+      "Engineering Mathematics-I",
+      "Engineering Physics-I",
+      "Engineering Chemistry-I",
+      "Engineering Mechanics",
+      "Basic Electrical Engineering"
+    ]
+  },
+  "2": {
+    "url": "https://firebasestorage.googleapis.com/v0/b/tsec-app.appspot.com/o/syllabus%2FFE%20SEM%202.pdf?alt=media&token=b6ed621c-e66c-4b27-b371-f237c9fb14a4",
+    "subjects": [
+      "Engineering Mathematics-II",
+      "Engineering Physics-II",
+      "Engineering Chemistry-II",
+      "Engineering Graphics",
+      "C Programming",
+      "Professional Communication and Ethics-I"
+    ]
+  },
+  "3": {
+    "url": "https://firebasestorage.googleapis.com/v0/b/tsec-app.appspot.com/o/syllabus%2Faids_sem3_sem4_rev.pdf?alt=media&token=7e80f748-0838-4145-abe9-7a331aface34",
+    "subjects": [
+      "Mathematics for Computer Engineering",
+      "Discrete Structures and Graph Theory",
+      "Analysis of Algorithm",
+      "Computer Organization and Architecture",
+      "Full Stack Java Programming",
+      "Entrepreneurship Development",
+      "Environmental Science for Engineers"
+    ]
+  },
+  "4": {
+    "url": "https://firebasestorage.googleapis.com/v0/b/tsec-app.appspot.com/o/syllabus%2Faids_sem3_sem4_rev.pdf?alt=media&token=7e80f748-0838-4145-abe9-7a331aface34",
+    "subjects": [
+      "Computational Theory ",
+      "Database Management System",
+      "Operating System",
+      "Business Model Development",
+      "Design Thinking"
+    ]
+  },
+  "5": {
+    "url": "https://firebasestorage.googleapis.com/v0/b/tsec-app.appspot.com/o/syllabus%2Fcomputer_sem5_rev.pdf?alt=media&token=26ca1b57-6c32-4a29-b89a-3780767f2faa",
+    "subjects": [
+      "Theoretical Computer Science",
+      "Web Computing",
+      "Computer Network",
+      "Data Warehousing & Mining",
+      "Operation Research",
+      "Entrepreneur and e-Business",
+      "Quantitative Analysis"
+    ]
+  },
+  "6": {
+    "url": "https://firebasestorage.googleapis.com/v0/b/tsec-app.appspot.com/o/syllabus%2Fcomputer_sem6_rev.pdf?alt=media&token=1e8ff3b7-e6e8-46d5-8c68-f2b8c75832d5",
+    "subjects": [
+      "Data Analysis",
+      "System Security",
+      "Software Engineering",
+      "Artificial Intelligence",
+      "Internet of Things",
+      "Mobile Computing",
+      "Distributed Computing"
+    ]
+  },
+  "7": {
+    "url": "https://firebasestorage.googleapis.com/v0/b/tsec-app.appspot.com/o/syllabus%2Fcomps_sem7_sem8.pdf?alt=media&token=85fb96b3-c205-4085-9dc2-695824fd34ca",
+    "subjects": [
+      "Artificial Neural Network",
+      "Big Data Analysis",
+      "Natural Language Processing Information Retrieval",
+      "Blockchain Technology",
+      "User Interface Design",
+      "High Performance Computing",
+      "Game Theory",
+      "Institute Level Course-I"
+    ]
+  },
+  "8": {
+    "url": "https://firebasestorage.googleapis.com/v0/b/tsec-app.appspot.com/o/syllabus%2Fcomps_sem7_sem8.pdf?alt=media&token=85fb96b3-c205-4085-9dc2-695824fd34ca",
+    "subjects": [
+      "Applied Data Science",
+      "Deep Learning",
+      "Quantum Computing",
+      "Robotics and Automation",
+      "Data Visualization",
+      "Machine Vision",
+      "Social Media Analytics",
+      "Institute Level Course-II"
+    ]
+  }
+}

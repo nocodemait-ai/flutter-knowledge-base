@@ -1,0 +1,19 @@
+name: carp_apps_package_example
+description: A simple example of using the CARP Apps Package
+publish_to: 'none' 
+version: 2.0.0
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  carp_apps_package:
+    path: ../
+
+flutter:
+  uses-material-design: true
+

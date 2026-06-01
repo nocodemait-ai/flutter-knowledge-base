@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Dr. Nita Mehta",
+    "designation": "Associate Professor, Head of Department",
+    "qualification": "Ph.D(Tech)-Chemical Engineering",
+    "experience": "27 Years",
+    "area_of_specialization": "Process Modelling and Simulation, Reaction Engineering, Kinetic Modelling",
+    "email": "nita.mehta@thadomal.org",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/nita_mehta.jpg",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Dr. Anita Kumari",
+    "designation": "Professor",
+    "qualification": "PhD (Chemical Engg.), IIT, Delhi",
+    "experience": "26 Years (Teaching), 6 Years (Research)",
+    "area_of_specialization": "Environmental Engg., Green Technology, Advance Separation Processes",
+    "email": "ak.kailash@gmail.com, anita.kumari@thadomal.org",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/anita_kumari.jpg",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Dr. Ramesh Sakharam Bhande",
+    "designation": "Associate Professor, Chemical Engineering",
+    "email": "bhande.ramesh@gmail.com",
+    "experience": "11 Years (Teaching), 01 Year (Industry)",
+    "area_of_specialization": "Interfacial Engineering, Chemical Engineering Design and Process Engineering",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/ramesh_bhande.jpg",
+    "phd_guide": "na",
+    "qualification": "PhD (Chemical Engineering), IIT Bombay"
+  },
+  {
+    "name": "Prasad J. Parulekar",
+    "designation": "Assistant Professor (Sr. Scale)",
+    "email": "prasad.parulekar@thadomal.org",
+    "experience": "19 Years (Teaching), 1 Year (Research Industry)",
+    "area_of_specialization": "Cavitation, Process Engineering, Energy Integration, Engineering Economics",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/prasad_parulekar.jpg",
+    "phd_guide": "na",
+    "qualification": "PhD (Pursuing)"
+  },
+  {
+    "name": "R. R. Joshi",
+    "designation": "Assistant Professor, Chemical Engineering",
+    "email": "joshravi1@yahoo.com",
+    "experience": "17 Years",
+    "area_of_specialization": "Food Technology",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/r.r._joshi.png",
+    "phd_guide": "na",
+    "qualification": "M.Tech, Ph.D (Pursuing)"
+  },
+  {
+    "name": "Sangita Sachin Gaikwad",
+    "designation": "Assistant Professor, Chemical Engineering",
+    "email": "shsan2326.sangita@gmail.com",
+    "experience": "13 Years",
+    "area_of_specialization": "Environmental Engg., Advance Separation Processes, Mass Transfer Operation",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/sangita_gaikwad.jpg",
+    "phd_guide": "na",
+    "qualification": "M.Tech. (Chemical Engineering), DBATU, Lonere"
+  },
+  {
+    "name": "Dr. Trupti Dharmarao",
+    "designation": "Assistant Professor, Chemical Engineering",
+    "email": "charpe.trupti@gmail.com",
+    "experience": "6 Years (Teaching), 1 Year (Industry)",
+    "area_of_specialization": "Separation technology",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/trupti_dharmarao.jpg",
+    "phd_guide": "na",
+    "qualification": "Ph.D. (Chemical Engineering), ICT, Mumbai"
+  },
+  {
+    "name": "Mannat Ajay Khanwani",
+    "designation": "Assistant Professor, Chemical Engineering",
+    "qualification": "ME (Chemical Engineering)",
+    "experience": "4 Years (Teaching), 1.5 Years (Research)",
+    "area_of_specialization": "Process Intensification, Numerical Method for Chemical Engineering, Modelling and Simulation, Equipment Design.",
+    "email": "karuna.saswani7891@gmail.com",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/mannat_khanwani.jpg",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Dr. Nitin Pereira",
+    "designation": "Asst. Professor",
+    "qualification": "M.S. in Bioreactor Systems, Ph.D in Chemical Engineering, PGDSM from MIT",
+    "experience": "4 Years (Industrial), 10 Years (Teaching)",
+    "area_of_specialization": "Thermodynamics, Reactor Design",
+    "email": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/nitin_pereira.jpg",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Ms. Praseeda Nambisian",
+    "designation": "Assistant Professor",
+    "qualification": "Pursuing Ph.D.",
+    "experience": "9 Years",
+    "area_of_specialization": "Bioinformatics, Microbiology",
+    "email": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/praseeda_nambisian.jpg",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Mr. Jethani Haresh Ashokkumar",
+    "designation": "Technical Assistant",
+    "qualification": "",
+    "experience": "",
+    "area_of_specialization": "",
+    "email": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/jethani_ashokkumar.jpg",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Mr. Shobha Singh",
+    "designation": "Lab Assistant",
+    "qualification": "",
+    "experience": "",
+    "area_of_specialization": "",
+    "email": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/shobha_singh.png",
+    "phd_guide": "na"
+  },
+  {
+    "name": "Mrs. Deepti Vikas Pol",
+    "designation": "Lab Assistant",
+    "email": "",
+    "experience": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/deepti_pol.png",
+    "area_of_specialization": "",
+    "phd_guide": "na",
+    "qualification": ""
+  },
+  {
+    "name": "Mr. Rahul Singh",
+    "designation": "Lab Assistant",
+    "email": "",
+    "experience": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/rahul_singh.png",
+    "area_of_specialization": "",
+    "phd_guide": "na",
+    "qualification": ""
+  },
+  {
+    "name": "Ms. Vaishali P Sangle",
+    "designation": "Lab Assistant",
+    "email": "",
+    "experience": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/vaishali_sangle.png",
+    "area_of_specialization": "",
+    "phd_guide": "na",
+    "qualification": ""
+  },
+  {
+    "name": "Mr. Ramashankar Dubey",
+    "designation": "Lab Attendant",
+    "email": "",
+    "experience": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/ramshankar_dubey.png",
+    "area_of_specialization": "",
+    "phd_guide": "na",
+    "qualification": ""
+  },
+  {
+    "name": "Mr. Arjunprasad Shukla",
+    "designation": "Lab Attendant",
+    "email": "",
+    "experience": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/arjunprasad_shukla.png",
+    "area_of_specialization": "",
+    "phd_guide": "na",
+    "qualification": ""
+  },
+  {
+    "name": "Mr. Chhediram Tiwari",
+    "designation": "Lab Attendant",
+    "email": "",
+    "experience": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/chhediram_tiwari.png",
+    "area_of_specialization": "",
+    "phd_guide": "na",
+    "qualification": ""
+  },
+  {
+    "name": "Mr. Chandrabhan Chaubey",
+    "designation": "Lab Attendant",
+    "email": "",
+    "experience": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/chandrabhan_chaubey.png",
+    "area_of_specialization": "",
+    "phd_guide": "na",
+    "qualification": ""
+  },
+  {
+    "name": "Mr. Swaminath G. Barai",
+    "designation": "Peon",
+    "email": "",
+    "experience": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/swaminath_barai.jpg",
+    "area_of_specialization": "",
+    "phd_guide": "na",
+    "qualification": ""
+  },
+  {
+    "name": "Mr. Arunkumar Verma",
+    "designation": "Peon",
+    "email": "",
+    "experience": "",
+    "image": "https://storage.googleapis.com/tsec-app.appspot.com/faculty/chem/arunkumar_verma.jpg",
+    "area_of_specialization": "",
+    "phd_guide": "na",
+    "qualification": ""
+  }
+]

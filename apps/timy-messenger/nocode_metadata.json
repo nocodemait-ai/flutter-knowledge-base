@@ -1,0 +1,132 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "timy-messenger",
+  "name": "Circles App",
+  "description": "Timy group messaging app",
+  "domain": "media",
+  "app_type": "streaming",
+  "source_repo": "https://github.com/janoodleFTW/timy-messenger",
+  "keywords": [],
+  "tags": [
+    "app",
+    "auth",
+    "dashboard",
+    "local",
+    "nocode-flutter"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Circles App",
+    "slug": "timy_messenger",
+    "app_type": "streaming",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 14
+  },
+  "screens": [
+    {
+      "id": "calendar-screen",
+      "name": "Calendar",
+      "screen_type": "general"
+    },
+    {
+      "id": "channel-screen",
+      "name": "Channel",
+      "screen_type": "general"
+    },
+    {
+      "id": "create-channel-screen",
+      "name": "Create Channel",
+      "screen_type": "form"
+    },
+    {
+      "id": "create-event-screen",
+      "name": "Create Event",
+      "screen_type": "form"
+    },
+    {
+      "id": "invite-to-channel-screen",
+      "name": "Invite To Channel",
+      "screen_type": "general"
+    },
+    {
+      "id": "home-screen",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "main-screen",
+      "name": "Main",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "slide-out-screen",
+      "name": "Slide Out",
+      "screen_type": "general"
+    },
+    {
+      "id": "file-picker-screen",
+      "name": "File Picker",
+      "screen_type": "general"
+    },
+    {
+      "id": "image-pinch-screen",
+      "name": "Image Pinch",
+      "screen_type": "general"
+    },
+    {
+      "id": "image-screen",
+      "name": "Image",
+      "screen_type": "general"
+    },
+    {
+      "id": "login-screen",
+      "name": "Login",
+      "screen_type": "auth"
+    },
+    {
+      "id": "settings-screen",
+      "name": "Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "user-screen",
+      "name": "User",
+      "screen_type": "general"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "firebase_core",
+    "firebase_analytics",
+    "cloud_firestore",
+    "firebase_auth",
+    "google_sign_in",
+    "firebase_storage",
+    "firebase_messaging",
+    "firebase_crashlytics",
+    "redux",
+    "flutter_redux",
+    "built_value",
+    "built_collection",
+    "image_picker",
+    "transparent_image",
+    "media_picker_builder",
+    "flutter_native_image",
+    "pinch_zoom_image",
+    "flutter_platform_widgets",
+    "flutter_linkify",
+    "url_launcher"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

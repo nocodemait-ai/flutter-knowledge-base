@@ -1,0 +1,33 @@
+/*
+ * Copyright (c) 2024-2026. Patrick Schmidt.
+ * All rights reserved.
+ */
+
+import 'package:common/data/converters/string_integer_converter.dart';
+import 'package:flutter/foundation.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:hashlib/hashlib.dart';
+
+import 'developer_announcement_entry_type.dart';
+
+part 'developer_announcement_entry.freezed.dart';
+part 'developer_announcement_entry.g.dart';
+
+@freezed
+sealed class DeveloperAnnouncementEntry with _$DeveloperAnnouncementEntry {
+  const DeveloperAnnouncementEntry._();
+
+  @StringIntegerConverter()
+  const factory DeveloperAnnouncementEntry({
+    required bool show,
+    @JsonKey(unknownEnumValue: DeveloperAnnouncementEntryType.info) required DeveloperAnnouncementEntryType type,
+    required String title,
+    required String body,
+    @Default(1) int showCount,
+    String? link,
+  }) = _DeveloperAnnouncementEntry;
+
+  String get hash => sha256.string('$title$body').base64();
+
+  factory DeveloperAnnouncementEntry.fromJson(Map<String, dynamic> json) => _$DeveloperAnnouncementEntryFromJson(json);
+}

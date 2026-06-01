@@ -1,0 +1,113 @@
+import 'package:app/models/models.dart';
+import 'package:app/ui/screens/screens.dart';
+import 'package:app/ui/widgets/now_playing_page_route.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class AppRouter {
+  const AppRouter();
+
+  static Map<String, Widget Function(BuildContext)> routes = {
+    InitialScreen.routeName: (_) => const InitialScreen(),
+    NoConnectionScreen.routeName: (_) => const NoConnectionScreen(),
+    LoginScreen.routeName: (_) => const LoginScreen(),
+    MainScreen.routeName: (_) => const MainScreen(),
+    HomeScreen.routeName: (_) => const HomeScreen(),
+    SearchScreen.routeName: (_) => const SearchScreen(),
+    LibraryScreen.routeName: (_) => const LibraryScreen(),
+    FavoritesScreen.routeName: (_) => const FavoritesScreen(),
+    PlaylistsScreen.routeName: (_) => const PlaylistsScreen(),
+    SongsScreen.routeName: (_) => const SongsScreen(),
+    ArtistsScreen.routeName: (_) => const ArtistsScreen(),
+    AlbumsScreen.routeName: (_) => const AlbumsScreen(),
+    AlbumDetailsScreen.routeName: (_) => const AlbumDetailsScreen(),
+    ArtistDetailsScreen.routeName: (_) => const ArtistDetailsScreen(),
+    PlaylistDetailsScreen.routeName: (_) => const PlaylistDetailsScreen(),
+    AddToPlaylistScreen.routeName: (_) => const AddToPlaylistScreen(),
+    DataLoadingScreen.routeName: (_) => const DataLoadingScreen(),
+    DownloadedScreen.routeName: (_) => DownloadedScreen(),
+    RecentlyPlayedScreen.routeName: (_) => const RecentlyPlayedScreen(),
+  };
+
+  Future<void> gotoAlbumDetailsScreen(
+    BuildContext context, {
+    required dynamic albumId,
+  }) async {
+    await Navigator.of(context).push(CupertinoPageRoute(
+      builder: (_) => const AlbumDetailsScreen(),
+      settings: RouteSettings(
+        name: AlbumDetailsScreen.routeName,
+        arguments: albumId,
+      ),
+    ));
+  }
+
+  Future<void> gotoArtistDetailsScreen(
+    BuildContext context, {
+    required dynamic artistId,
+  }) async {
+    await Navigator.of(context).push(CupertinoPageRoute(
+      builder: (_) => const ArtistDetailsScreen(),
+      settings: RouteSettings(
+        name: ArtistDetailsScreen.routeName,
+        arguments: artistId,
+      ),
+    ));
+  }
+
+  gotoPodcastDetailsScreen(
+    BuildContext context, {
+    required String podcastId,
+  }) async {
+    await Navigator.of(context).push(CupertinoPageRoute(
+      builder: (_) => const PodcastDetailsScreen(),
+      settings: RouteSettings(
+        name: PodcastDetailsScreen.routeName,
+        arguments: podcastId,
+      ),
+    ));
+  }
+
+  gotoGenreDetailsScreen(
+    BuildContext context, {
+    required Genre genre,
+  }) async {
+    await Navigator.of(context).push(CupertinoPageRoute(
+      builder: (_) => const GenreDetailsScreen(),
+      settings: RouteSettings(
+        name: GenreDetailsScreen.routeName,
+        arguments: genre,
+      ),
+    ));
+  }
+
+  Future<void> openNowPlayingScreen(BuildContext context) async {
+    await Navigator.of(context, rootNavigator: true).push(
+      NowPlayingPageRoute(builder: (_) => const NowPlayingScreen()),
+    );
+  }
+
+  Future<void> showCreatePlaylistSheet(BuildContext context) async {
+    await showCreatePlaylistDialog(context);
+  }
+
+  Future<void> showCreatePlaylistFolderSheet(BuildContext context) async {
+    await showCreatePlaylistFolderDialog(context);
+  }
+
+  Future<void> showPlayableActionSheet(
+    BuildContext context, {
+    required Playable playable,
+  }) async {
+    showModalBottomSheet<void>(
+      useRootNavigator: true, // covering everything else
+      context: context,
+      isScrollControlled: true,
+      builder: (_) => PlayableActionSheet(playable: playable),
+    );
+  }
+
+  Future<void> showAddPodcastSheet(BuildContext context) async {
+    await showAddPodcastDialog(context);
+  }
+}

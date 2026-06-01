@@ -1,0 +1,324 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "lakasir_flutter",
+  "name": "Lakasir",
+  "description": "A new Flutter project.",
+  "domain": "social",
+  "app_type": "chat",
+  "source_repo": "https://github.com/lakasir/lakasir_flutter",
+  "keywords": [],
+  "tags": [
+    "app",
+    "auth",
+    "list",
+    "local",
+    "localization",
+    "nocode-flutter",
+    "sharing"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Lakasir",
+    "slug": "lakasir_flutter",
+    "app_type": "chat",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 50
+  },
+  "screens": [
+    {
+      "id": "auth-screen",
+      "name": "Auth",
+      "screen_type": "auth"
+    },
+    {
+      "id": "forgot-screen",
+      "name": "Forgot",
+      "screen_type": "general"
+    },
+    {
+      "id": "login-screen",
+      "name": "Login",
+      "screen_type": "auth"
+    },
+    {
+      "id": "onboarding-screen",
+      "name": "Onboarding",
+      "screen_type": "onboarding"
+    },
+    {
+      "id": "about-screen",
+      "name": "About",
+      "screen_type": "general"
+    },
+    {
+      "id": "edit-about-screen",
+      "name": "Edit About",
+      "screen_type": "form"
+    },
+    {
+      "id": "register-domain-screen",
+      "name": "Register Domain",
+      "screen_type": "auth"
+    },
+    {
+      "id": "setup-screen",
+      "name": "Setup",
+      "screen_type": "general"
+    },
+    {
+      "id": "add-member-screen",
+      "name": "Add Member",
+      "screen_type": "form"
+    },
+    {
+      "id": "edit-member-screen",
+      "name": "Edit Member",
+      "screen_type": "form"
+    },
+    {
+      "id": "member-form",
+      "name": "Member Form",
+      "screen_type": "form"
+    },
+    {
+      "id": "member-screen",
+      "name": "Member",
+      "screen_type": "general"
+    },
+    {
+      "id": "notification-screen",
+      "name": "Notification",
+      "screen_type": "general"
+    },
+    {
+      "id": "add-product-screen",
+      "name": "Add Product",
+      "screen_type": "form"
+    },
+    {
+      "id": "detail-screen",
+      "name": "Detail",
+      "screen_type": "detail"
+    },
+    {
+      "id": "detail-stock-screen",
+      "name": "Detail Stock",
+      "screen_type": "detail"
+    },
+    {
+      "id": "my-image",
+      "name": "My Image",
+      "screen_type": "general"
+    },
+    {
+      "id": "edit-product-screen",
+      "name": "Edit Product",
+      "screen_type": "form"
+    },
+    {
+      "id": "product-form",
+      "name": "Product Form",
+      "screen_type": "form"
+    },
+    {
+      "id": "product-screen",
+      "name": "Product",
+      "screen_type": "general"
+    },
+    {
+      "id": "edit-profile-screen",
+      "name": "Edit Profile",
+      "screen_type": "detail"
+    },
+    {
+      "id": "profile-screen",
+      "name": "Profile",
+      "screen_type": "detail"
+    },
+    {
+      "id": "category-screen",
+      "name": "Category",
+      "screen_type": "general"
+    },
+    {
+      "id": "hide-initial-price-screen",
+      "name": "Hide Initial Price",
+      "screen_type": "general"
+    },
+    {
+      "id": "layout-screen",
+      "name": "Layout",
+      "screen_type": "general"
+    },
+    {
+      "id": "selling-method-screen",
+      "name": "Selling Method",
+      "screen_type": "general"
+    },
+    {
+      "id": "setting-screen",
+      "name": "Setting",
+      "screen_type": "general"
+    },
+    {
+      "id": "auth-setting",
+      "name": "Auth Setting",
+      "screen_type": "auth"
+    },
+    {
+      "id": "general-setting",
+      "name": "General Setting",
+      "screen_type": "general"
+    },
+    {
+      "id": "product-setting",
+      "name": "Product Setting",
+      "screen_type": "general"
+    },
+    {
+      "id": "system-setting",
+      "name": "System Setting",
+      "screen_type": "general"
+    },
+    {
+      "id": "setting-notification-screen",
+      "name": "Setting Notification",
+      "screen_type": "general"
+    },
+    {
+      "id": "add-printer-page-screen",
+      "name": "Add Printer",
+      "screen_type": "form"
+    },
+    {
+      "id": "printer-page-screen",
+      "name": "Printer",
+      "screen_type": "general"
+    },
+    {
+      "id": "fifo-screen",
+      "name": "Fifo",
+      "screen_type": "general"
+    },
+    {
+      "id": "lifo-screen",
+      "name": "Lifo",
+      "screen_type": "general"
+    },
+    {
+      "id": "normal-screen",
+      "name": "Normal",
+      "screen_type": "general"
+    },
+    {
+      "id": "invoice-screen",
+      "name": "Invoice",
+      "screen_type": "general"
+    },
+    {
+      "id": "dashed-line",
+      "name": "Dashed Line",
+      "screen_type": "general"
+    },
+    {
+      "id": "payment-screen",
+      "name": "Payment",
+      "screen_type": "general"
+    },
+    {
+      "id": "payment-success-screen",
+      "name": "Payment Success",
+      "screen_type": "general"
+    },
+    {
+      "id": "cart-list",
+      "name": "Cart List",
+      "screen_type": "list"
+    },
+    {
+      "id": "detail-field",
+      "name": "Detail Field",
+      "screen_type": "detail"
+    },
+    {
+      "id": "payment-calculator",
+      "name": "Payment Calculator",
+      "screen_type": "general"
+    },
+    {
+      "id": "sub-total-field",
+      "name": "Sub Total Field",
+      "screen_type": "general"
+    },
+    {
+      "id": "history-detail-screen",
+      "name": "History Detail",
+      "screen_type": "detail"
+    },
+    {
+      "id": "history-screen",
+      "name": "History",
+      "screen_type": "general"
+    },
+    {
+      "id": "cashier-report-screen",
+      "name": "Cashier Report",
+      "screen_type": "general"
+    },
+    {
+      "id": "pdf-preview-screen",
+      "name": "Pdf Preview",
+      "screen_type": "general"
+    },
+    {
+      "id": "onboarding-page",
+      "name": "Onboarding",
+      "screen_type": "onboarding"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "http",
+    "infinite_scroll_pagination",
+    "shared_preferences",
+    "image_picker",
+    "intl",
+    "flutter_launcher_icons",
+    "flutter_dotenv",
+    "get",
+    "image_cropper",
+    "http_parser",
+    "flutter_masked_text2",
+    "heroicons",
+    "pdf",
+    "google_fonts",
+    "flutter_pdfview",
+    "blue_thermal_printer",
+    "isar",
+    "isar_flutter_libs",
+    "path_provider",
+    "image",
+    "firebase_core",
+    "firebase_messaging",
+    "rxdart",
+    "share_plus",
+    "screenshot",
+    "package_info_plus",
+    "url_launcher",
+    "sunmi_printer_plus",
+    "flutter_speed_dial",
+    "flutter_slidable"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

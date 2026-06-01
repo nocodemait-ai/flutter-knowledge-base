@@ -1,0 +1,55 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "app-flutter-mobile-banking",
+  "name": "Banking App",
+  "description": "A new Flutter project.",
+  "domain": "finance",
+  "app_type": "dashboard",
+  "source_repo": "https://github.com/sangvaleap/app-flutter-mobile-banking",
+  "keywords": [],
+  "tags": [
+    "app",
+    "dashboard",
+    "local",
+    "nocode-flutter",
+    "svg"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Banking App",
+    "slug": "app_flutter_mobile_banking",
+    "app_type": "dashboard",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 2
+  },
+  "screens": [
+    {
+      "id": "home-page",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "root-app",
+      "name": "Root App",
+      "screen_type": "general"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "flutter_svg",
+    "multiavatar",
+    "badges"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

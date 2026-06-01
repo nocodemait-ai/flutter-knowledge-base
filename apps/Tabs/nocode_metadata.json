@@ -1,0 +1,94 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "Tabs",
+  "name": "Tabs",
+  "description": "The expense sharing app.",
+  "domain": "ecommerce",
+  "app_type": "marketplace",
+  "source_repo": "https://github.com/michaelroudnitski/Tabs",
+  "keywords": [],
+  "tags": [
+    "app",
+    "auth",
+    "dashboard",
+    "local",
+    "nocode-flutter",
+    "state-management"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Tabs",
+    "slug": "tabs",
+    "app_type": "marketplace",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 7
+  },
+  "screens": [
+    {
+      "id": "new-tab",
+      "name": "New Tab",
+      "screen_type": "general"
+    },
+    {
+      "id": "forgot-pass",
+      "name": "Forgot Pass",
+      "screen_type": "general"
+    },
+    {
+      "id": "home",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "login",
+      "name": "Login",
+      "screen_type": "auth"
+    },
+    {
+      "id": "register",
+      "name": "Register",
+      "screen_type": "auth"
+    },
+    {
+      "id": "settings",
+      "name": "Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "welcome",
+      "name": "Welcome",
+      "screen_type": "onboarding"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "firebase_core",
+    "firebase_auth",
+    "cloud_firestore",
+    "provider",
+    "permission_handler",
+    "contacts_service",
+    "flutter_typeahead",
+    "flutter_money_formatter",
+    "timeago",
+    "flutter_spinkit",
+    "flutter_staggered_animations",
+    "auto_animated",
+    "google_sign_in",
+    "flutter_signin_button",
+    "apple_sign_in",
+    "shared_preferences"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

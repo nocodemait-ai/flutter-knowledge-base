@@ -1,0 +1,41 @@
+# Configuration file for CARP Study Generator Utility
+# Contains authentication details for the server, hence
+#
+#         DO NOT CHECK INTO GIT REPOSITORY
+#
+
+# configuration of the CARP server URI and the user credentials who uploads this study
+server:
+  uri: https://dev.carp.dk
+  # username: xxx@cachet.dk
+  # password: xxx  
+  username: jakob@bardram.net
+  password: Christian
+
+# configuration of the study ID - used for upload of informed consent and translations
+study:
+  study_id: 75b95ab5-bfc8-48ce-a5d4-d11b228ca74b
+
+# configuration of the local path to the protocol, consent document, messages, 
+# and localization files to be uploaded
+protocol:
+  path: carp/resources/protocol.json
+
+consent:
+  path: carp/resources/consent.json
+
+message:
+  path: carp/messages/
+  # list the messages to be uploaded
+  # add each message as a <name>.json file in the [path] folder
+  messages:
+    - 1
+    - 2
+    
+localization:
+  path: carp/lang/
+  # list the locales supported
+  # for each locale, add a <locale>.json file in the [path] folder
+  locales:
+    - en
+    - da

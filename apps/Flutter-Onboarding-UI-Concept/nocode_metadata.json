@@ -1,0 +1,49 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "Flutter-Onboarding-UI-Concept",
+  "name": "Flutter Onboarding Ui Concept",
+  "description": "A new Flutter project.",
+  "domain": "generic",
+  "app_type": "utility",
+  "source_repo": "https://github.com/CODEHOMIE/Flutter-Onboarding-UI-Concept",
+  "keywords": [],
+  "tags": [
+    "app",
+    "local",
+    "nocode-flutter"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Flutter Onboarding Ui Concept",
+    "slug": "flutter_onboarding_ui_concept",
+    "app_type": "utility",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 2
+  },
+  "screens": [
+    {
+      "id": "landing-page",
+      "name": "Landing",
+      "screen_type": "general"
+    },
+    {
+      "id": "slider-layout-view",
+      "name": "Slider Layout",
+      "screen_type": "general"
+    }
+  ],
+  "models": [],
+  "packages": [],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}

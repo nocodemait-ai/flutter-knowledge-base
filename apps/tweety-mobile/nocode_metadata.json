@@ -1,0 +1,212 @@
+{
+  "schema": "1",
+  "type": "app",
+  "id": "tweety-mobile",
+  "name": "Tweety Mobile",
+  "description": "A new Flutter project.",
+  "domain": "media",
+  "app_type": "streaming",
+  "source_repo": "https://github.com/TunNandaAung/tweety-mobile",
+  "keywords": [],
+  "tags": [
+    "animation",
+    "app",
+    "auth",
+    "dashboard",
+    "list",
+    "local",
+    "localization",
+    "nocode-flutter",
+    "svg"
+  ],
+  "built_at": "2026-06-01",
+  "platform": "manual",
+  "app": {
+    "name": "Tweety Mobile",
+    "slug": "tweety_mobile",
+    "app_type": "streaming",
+    "prd_summary": "Auto-imported application from GitHub"
+  },
+  "architecture": {
+    "state_management": "stateful",
+    "navigation": "navigator",
+    "storage": "none",
+    "backend_type": "none",
+    "screen_count": 30
+  },
+  "screens": [
+    {
+      "id": "chat-screen",
+      "name": "Chat",
+      "screen_type": "general"
+    },
+    {
+      "id": "messages-screen",
+      "name": "Messages",
+      "screen_type": "general"
+    },
+    {
+      "id": "photo-view-screen",
+      "name": "Photo",
+      "screen_type": "general"
+    },
+    {
+      "id": "publish-tweet-screen",
+      "name": "Publish Tweet",
+      "screen_type": "general"
+    },
+    {
+      "id": "splash-screen",
+      "name": "Splash",
+      "screen_type": "onboarding"
+    },
+    {
+      "id": "tweet-reply-form",
+      "name": "Tweet Reply Form",
+      "screen_type": "form"
+    },
+    {
+      "id": "forgot-password-screen",
+      "name": "Forgot Password",
+      "screen_type": "auth"
+    },
+    {
+      "id": "login-form",
+      "name": "Login Form",
+      "screen_type": "auth"
+    },
+    {
+      "id": "login-screen",
+      "name": "Login",
+      "screen_type": "auth"
+    },
+    {
+      "id": "register-form",
+      "name": "Register Form",
+      "screen_type": "auth"
+    },
+    {
+      "id": "register-images-form",
+      "name": "Register Images Form",
+      "screen_type": "auth"
+    },
+    {
+      "id": "register-screen",
+      "name": "Register",
+      "screen_type": "auth"
+    },
+    {
+      "id": "explore-screen",
+      "name": "Explore",
+      "screen_type": "general"
+    },
+    {
+      "id": "home-screen",
+      "name": "Home",
+      "screen_type": "dashboard"
+    },
+    {
+      "id": "notifications-screen",
+      "name": "Notifications",
+      "screen_type": "general"
+    },
+    {
+      "id": "edit-profile-screen",
+      "name": "Edit Profile",
+      "screen_type": "detail"
+    },
+    {
+      "id": "follow-list-screen",
+      "name": "Follow List",
+      "screen_type": "list"
+    },
+    {
+      "id": "profile-screen",
+      "name": "Profile",
+      "screen_type": "detail"
+    },
+    {
+      "id": "tweety-header",
+      "name": "Tweety Header",
+      "screen_type": "general"
+    },
+    {
+      "id": "tweet",
+      "name": "Tweet",
+      "screen_type": "general"
+    },
+    {
+      "id": "tweety-avatar",
+      "name": "Tweety Avatar",
+      "screen_type": "general"
+    },
+    {
+      "id": "add-children-reply-screen",
+      "name": "Add Children Reply",
+      "screen_type": "form"
+    },
+    {
+      "id": "add-reply-screen",
+      "name": "Add Reply",
+      "screen_type": "form"
+    },
+    {
+      "id": "settings-screen",
+      "name": "Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "account-settings-screen",
+      "name": "Account Settings",
+      "screen_type": "form"
+    },
+    {
+      "id": "update-email-screen",
+      "name": "Update Email",
+      "screen_type": "general"
+    },
+    {
+      "id": "update-password-screen",
+      "name": "Update Password",
+      "screen_type": "auth"
+    },
+    {
+      "id": "tweets-screen",
+      "name": "Tweets",
+      "screen_type": "general"
+    },
+    {
+      "id": "tweet-reply-screen",
+      "name": "Tweet Reply",
+      "screen_type": "general"
+    },
+    {
+      "id": "tweet-screen",
+      "name": "Tweet",
+      "screen_type": "general"
+    }
+  ],
+  "models": [],
+  "packages": [
+    "animations",
+    "bloc_concurrency",
+    "equatable",
+    "flutter_bloc",
+    "flutter_svg",
+    "http",
+    "image_cropper",
+    "image_picker",
+    "intl",
+    "json_annotation",
+    "laravel_echo",
+    "laravel_flutter_pusher",
+    "photo_view",
+    "shared_preferences",
+    "stream_transform",
+    "timeago"
+  ],
+  "build": {
+    "status": "partial",
+    "fixer_attempts": 0
+  }
+}
